@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Victor-Hugo-Amaya/centro-stem/schemas/resultado-cuestionario.schema.json",
+  "title": "Resultado del cuestionario vocacional Centro STEM",
+  "description": "Contrato entre el cuestionario (paso 1), la base de conocimiento (paso 2), el loop semanal (paso 3) y el prototipo web (paso 4). Ver docs/03-modelo-de-salida.md.",
+  "type": "object",
+  "required": ["version_esquema", "id_respuesta", "fecha", "ruta", "privacidad", "perfil", "recomendaciones"],
+  "properties": {
+    "version_esquema": { "const": 1 },
+    "id_respuesta": { "type": "string", "description": "Identificador aleatorio; nunca nombre ni correo." },
+    "fecha": { "type": "string", "format": "date" },
+    "ruta": { "enum": ["estudiante", "cambio_carrera", "ambas"] },
+    "privacidad": {
+      "type": "object",
+      "required": ["menor_de_edad", "almacenamiento"],
+      "properties": {
+        "menor_de_edad": { "type": "boolean" },
+        "consentimiento_tutor": { "type": ["boolean", "null"] },
+        "almacenamiento": { "enum": ["dispositivo", "servidor"] }
+      }
+    },
+    "perfil": {
+      "type": "object",
+      "required": ["rango_edad", "estado", "nivel"],
+      "properties": {
+        "rango_edad": { "enum": ["12-14", "15-17", "18-22", "23-29", "30-39", "40+"] },
+        "estado": { "type": "string" },
+        "nivel": {
+          "enum": ["secundaria_en_curso", "bachillerato_en_curso", "bachillerato_terminado", "superior_en_curso", "licenciatura_terminada", "posgrado", "carrera_tecnica", "sin_estudios_en_curso"]
+        },
+        "horas_semana": { "enum": ["<3", "3-5", "6-10", "11-20", ">20"] },
+        "presupuesto_6m": { "enum": ["nada", "hasta_1000", "1000-5000", "5000-15000", ">15000"] },
+        "familias_interes": { "type": "array", "items": { "type": "string", "pattern": "^fam-" } },
+        "industrias": { "type": "array", "items": { "type": "string" } },
+        "empresas_objetivo": { "type": "array", "items": { "type": "string" } },
+        "valores": { "type": "array", "items": { "type": "string" }, "maxItems": 3 },
+        "ingles": { "enum": ["basico", "intermedio", "avanzado"] },
+        "situacion_laboral": { "type": "string" },
+        "area_actual": { "type": "string" },
+        "anios_experiencia": { "enum": ["0-1", "2-4", "5-9", "10+"] },
+        "roles_objetivo": { "type": "array", "items": { "type": "string" } },
+        "habilidades": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1, "maximum": 5 } },
+        "herramientas": { "type": "array", "items": { "type": "string" } },
+        "portafolio": { "type": "array", "items": { "type": "string", "format": "uri" } },
+        "certificaciones_actuales": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id_catalogo"],
+            "properties": {
+              "id_catalogo": { "type": "string", "pattern": "^cert-" },
+              "vence": { "type": ["string", "null"], "format": "date" }
+            }
+          }
+        },
+        "plazo_meses": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "recomendaciones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tipo"],
+        "properties": {
+          "tipo": {
+            "enum": ["bachillerato", "carrera", "optativa", "servicio_social", "practicas", "voluntariado", "extracurricular", "certificacion", "curso_preparacion", "programa_socio", "proyecto_portafolio"]
+          },
+          "id_catalogo": { "type": "string", "pattern": "^(car|bach|cert|prep|opo|org|fam)-" },
+          "descripcion": { "type": "string" },
+          "nivel_escalera": { "type": "integer", "minimum": 1, "maximum": 3 },
+          "puntaje": { "type": "number", "minimum": 0, "maximum": 100 },
+          "desglose": {
+            "type": "object",
+            "properties": {
+              "demanda": { "type": "number" },
+              "ajuste": { "type": "number" },
+              "accesibilidad": { "type": "number" },
+              "senal_regional": { "type": "number" }
+            }
+          },
+          "costo": {
+            "type": "object",
+            "properties": {
+              "monto": { "type": ["number", "null"] },
+              "moneda": { "enum": ["MXN", "USD"] },
+              "verificado": { "type": "boolean" }
+            }
+          },
+          "vigencia_meses": { "type": ["integer", "null"] },
+          "renovacion": { "type": "string" },
+          "via_ahorro": { "type": "array", "items": { "type": "string" } },
+          "evidencia": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["dato", "fuente", "fecha_verificacion"],
+              "properties": {
+                "dato": { "type": "string" },
+                "fuente": { "type": "string" },
+                "fuente_url": { "type": "string", "format": "uri" },
+                "fecha_verificacion": { "type": "string", "format": "date" }
+              }
+            }
+          }
+        },
+        "if": { "properties": { "tipo": { "not": { "const": "proyecto_portafolio" } } } },
+        "then": { "required": ["id_catalogo", "evidencia"], "properties": { "evidencia": { "minItems": 1 } } }
+      }
+    },
+    "semillas_busqueda": {
+      "type": "object",
+      "properties": {
+        "empresas": { "type": "array", "items": { "type": "string" } },
+        "palabras_clave": { "type": "array", "items": { "type": "string" } },
+        "alertas": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "privacidad": { "properties": { "menor_de_edad": { "const": true } } } } },
+      "then": { "properties": { "semillas_busqueda": { "properties": { "empresas": { "maxItems": 0 } } } } }
+    }
+  ]
+}
