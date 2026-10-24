@@ -139,15 +139,15 @@ Una persona universitaria que ya trabaja puede tomar las dos rutas; el sistema g
 
 ### 6.1 Salida de la ruta B: plan de certificación
 
-Para cada rol objetivo, el sistema entrega una **escalera de 2 o 3 certificaciones** (fundamentos, asociado, especialidad) con curso de preparación y la vía más barata de obtenerla. Ejemplos verificados el 24-oct-2026 (fuentes secundarias; el paso 2 los confirma en el sitio oficial):
+Para cada rol objetivo, el sistema entrega una **escalera de 2 o 3 certificaciones** (fundamentos, asociado, especialidad) con curso de preparación y la vía más barata de obtenerla. Ejemplos revisados el 24-oct-2026. El paso 2 los confirmó en el sitio oficial; los datos vigentes están en [05-catalogo.md](05-catalogo.md) y en `data/certificaciones.yaml`:
 
 | Rol | Certificación | Costo del examen | Vigencia y renovación | Vía de ahorro |
 |---|---|---|---|---|
-| Nube | Microsoft Azure Fundamentals (AZ-900) | USD 99 (precio en moneda local varía) | No caduca | Voucher gratuito al completar un *Microsoft Virtual Training Day* |
+| Nube | Microsoft Azure Fundamentals (AZ-900) | USD 99 según fuente secundaria; Microsoft calcula el precio por país | No caduca | 50% de descuento al completar un *Microsoft Virtual Training Day* (no es gratuito; usar en 90 días) |
 | Nube | AWS Certified Cloud Practitioner (CLF-C02) | USD 100 | 3 años | Al aprobar, voucher de 50% para el siguiente examen AWS; AWS re/Start gratuito vía Generation México |
 | IA | AWS Certified AI Practitioner (AIF-C01) | USD 100 | 3 años | Igual que la anterior |
-| Ciberseguridad | ISC2 Certified in Cybersecurity (CC) | USD 199 + cuota anual de USD 50 | Anual con cuota | **El programa gratuito *One Million Certified* cerró inscripciones**; los códigos emitidos valen hasta el 31-dic-2026 |
-| Ciberseguridad | CompTIA Security+ (SY0-701) | USD 439 desde jun-2026 | 3 años; 50 CEU + USD 50 por año | Revendedores autorizados a USD 365–395 |
+| Ciberseguridad | ISC2 Certified in Cybersecurity (CC) | USD 199 + cuota anual de USD 50 | Cuota anual | **El programa gratuito *One Million Certified* cerró inscripciones**; paquete en español de USD 199 con curso, dos intentos y la primera cuota incluida |
+| Ciberseguridad | CompTIA Security+ (SY0-701) | Sin confirmar en página oficial (USD 439 según fuente secundaria) | Sin confirmar en página oficial | La versión V8 sale alrededor del 17-nov-2026 |
 | Desarrollo | Bootcamp Java FullStack (Generation México) | Gratuito para la persona participante | No aplica | Tres meses, horario completo |
 | Soporte TI | Bootcamp Especialista en Soporte (HelpDesk) (Generation México) | Gratuito | No aplica | Programa con colocación laboral |
 

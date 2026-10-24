@@ -1,0 +1,96 @@
+# Cursos, bootcamps y rutas de preparación.
+# `costo_participante: 0` significa gratuito para la persona (financiado por la organización o aliados).
+# `convocatoria.estado`: abierta | cerrada | permanente | por_confirmar.
+
+# --- Generation México (socio prioritario) ---
+# Requisitos generales (FAQ de Generation): buscar empleo activamente, no tener empleo actual,
+# aprobar el proceso de selección y disponibilidad de tiempo completo.
+- id: prep-generation-java-fullstack
+  nombre: "Desarrollador/a Java Full Stack"
+  organizacion: org-generation-mexico
+  familias: [fam-software-nube]
+  modalidad: en_linea
+  duracion: "13 semanas, lunes a viernes de 9:30 a 17:30, más 12 semanas de acompañamiento de empleabilidad"
+  costo_participante: 0
+  publico: {edad_min: 18, edad_max: 29, nota: "Mayores de 29 pueden postularse con cupo limitado. Bachillerato terminado; prácticas o servicio social liberados. Preferentemente CDMX o Monterrey y zonas metropolitanas. No requiere experiencia en programación."}
+  resultados: "Informe 2024: 74% empleado a 90 días y 90% a seis meses; ingreso promedio de $13,574 mensuales (2.79 veces el previo)."
+  convocatoria: {estado: abierta, proxima_fecha: 2026-11-02, nota: "Grupos con inicio el 19-oct y el 2-nov listados en la página; la respuesta de selección tarda hasta 10 días."}
+  fuente_url: https://mexico.generation.org/programs/java/
+  fecha_verificacion: 2026-10-24
+
+- id: prep-generation-aws-restart
+  nombre: "AWS re/Start con especialización en IA Foundational"
+  organizacion: org-generation-mexico
+  familias: [fam-software-nube, fam-datos-ia]
+  modalidad: en_linea
+  duracion: "15 semanas síncronas, lunes a viernes de 9:30 a 17:30, más 12 semanas de empleabilidad"
+  costo_participante: 0
+  publico: {edad_min: 22, edad_max: 29, nota: "Licenciatura o ingeniería terminada o trunca. CDMX, Estado de México (zona metropolitana) y Monterrey."}
+  prepara_para: [cert-aws-clf-c02, cert-aws-aif-c01]
+  convocatoria: {estado: por_confirmar, nota: "La página muestra fechas incongruentes ('12 de octubre' y 'AWS02 - JUN 15'). No indica si incluye voucher de examen."}
+  fuente_url: https://mexico.generation.org/programs/aws-cloud/
+  fecha_verificacion: 2026-10-24
+
+- id: prep-generation-helpdesk
+  nombre: "Especialista en Soporte de TI (HelpDesk)"
+  organizacion: org-generation-mexico
+  familias: [fam-soporte-ti-redes]
+  modalidad: en_linea
+  duracion: "9 semanas (340 horas), síncrono"
+  costo_participante: 0
+  publico: {edad_min: 18, edad_max: 29}
+  convocatoria: {estado: por_confirmar}
+  fuente_url: https://mexico.generation.org/encuentra-una-carrera/
+  fecha_verificacion: 2026-10-24
+
+- id: prep-generation-unity
+  nombre: "Desarrollador(a) Jr. en Unity"
+  organizacion: org-generation-mexico
+  familias: [fam-software-nube]
+  modalidad: en_linea
+  duracion: "14 semanas síncronas, más 12 semanas de empleabilidad"
+  costo_participante: 0
+  publico: {edad_min: 18, edad_max: 29, nota: "Requiere experiencia laboral, proyectos personales o formación previa en programación."}
+  convocatoria: {estado: por_confirmar}
+  fuente_url: https://mexico.generation.org/programs/desarrolladora-jr-en-unity/
+  fecha_verificacion: 2026-10-24
+
+# --- Gratuitos de certificadores ---
+- id: prep-aws-educate
+  nombre: "AWS Educate"
+  organizacion: org-aws
+  familias: [fam-software-nube, fam-datos-ia]
+  modalidad: en_linea_autodirigido
+  costo_participante: 0
+  publico: {edad_min: 13, nota: "Registro con correo electrónico. Bolsa de trabajo sólo para mayores de 18."}
+  incluye: "Laboratorios prácticos (S3, EC2, VPC, RDS), cursos autodirigidos e insignias digitales."
+  prepara_para: [cert-aws-clf-c02, cert-aws-aif-c01]
+  advertencia: "La página no indica disponibilidad en español ni descuentos de examen."
+  convocatoria: {estado: permanente}
+  fuente_url: https://aws.amazon.com/education/awseducate/
+  fecha_verificacion: 2026-10-24
+
+- id: prep-cisco-junior-cybersecurity-analyst
+  nombre: "Junior Cybersecurity Analyst Career Path (Cisco Networking Academy)"
+  organizacion: org-cisco
+  familias: [fam-ciberseguridad]
+  modalidad: en_linea_autodirigido
+  costo_participante: 0
+  publico: {nota: "Sin requisitos previos; disponible en español."}
+  prepara_para: [cert-cisco-ccst-cybersecurity]
+  advertencia: "La formación es gratuita, pero Cisco no da descuento de examen directo a estudiantes; sólo a instituciones."
+  convocatoria: {estado: permanente}
+  fuente_url: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html
+  fecha_verificacion: 2026-10-24
+
+- id: prep-autodesk-autocad-cert-prep
+  nombre: "Prepare for AutoCAD for Design and Drafting Professional Certification"
+  organizacion: org-autodesk
+  familias: [fam-manufactura-avanzada]
+  modalidad: en_linea_autodirigido
+  costo_participante: null
+  incluye: "Lecciones, ejercicios y examen de práctica."
+  prepara_para: [cert-autodesk-autocad-professional]
+  convocatoria: {estado: permanente}
+  fuente_url: https://www.autodesk.com/learn/ondemand/course/autocad-design-drafting-cert-prep
+  fecha_verificacion: 2026-10-24

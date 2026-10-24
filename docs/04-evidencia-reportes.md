@@ -87,7 +87,7 @@
 - Costo CompTIA Security+ (fuente secundaria): <https://hackerdna.com/blog/security-plus-certification-cost>
 - Costo AZ-900 y vouchers (fuente secundaria): <https://www.examcert.app/blog/az-900-exam-cost-2026/>
 
-Las fuentes secundarias de costos deben reemplazarse por la página oficial de cada certificador en el paso 2.
+El paso 2 reemplazó estas fuentes secundarias por la página oficial de cada certificador cuando fue posible; ver [05-catalogo.md](05-catalogo.md) §4. Los costos que siguen sin fuente oficial están marcados con `verificado: false` en `data/certificaciones.yaml`.
 
 ## 7. Cómo incorporar nuevos reportes
 
@@ -106,3 +106,4 @@ Este documento es un registro vivo. Cada reporte nuevo (por ejemplo, una nueva e
 | Fecha | Reporte agregado o actualizado | Cambios relevantes |
 |---|---|---|
 | 2026-10-24 | WEF 2025, Coursera 2025, IMCO 2025 (dos documentos), OIT 2023 | Versión inicial |
+| 2026-10-24 | IMCO Compara Carreras (fichas por carrera de la plataforma) | Ingreso, desempleo, informalidad y porcentaje de mujeres de 14 carreras en `data/carreras.yaml`. Las fichas no coinciden exactamente con las gráficas del PDF; se usa la ficha. Pendiente: Coursera *Global Skills Report 2026*, ya publicado. |
