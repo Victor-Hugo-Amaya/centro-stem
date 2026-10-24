@@ -49,6 +49,24 @@ class Vacantes(unittest.TestCase):
         self.assertEqual(demanda, {"cert-cisco-ccna": 1})
 
 
+class Escaner(unittest.TestCase):
+    def test_entradas_escaner(self):
+        entradas = semanal.entradas_escaner(semanal.leer("portales.yaml"))
+        proveedores = {e["provider"] for e in entradas}
+        self.assertLessEqual(proveedores, {"greenhouse", "lever", "ashby", "workable", "computrabajo", "getonbrd"})
+        self.assertNotIn("occ", proveedores)  # bloqueado fuera de México
+        self.assertTrue(all(e["pais"] == "México" for e in entradas if e["provider"] == "computrabajo"))
+
+    def test_acepta_salida_del_escaner(self):
+        lote = [vacante("Analista SOC", description="CCNA", url="https://a")]
+        filtradas, demanda = semanal.analizar_vacantes(lote, BUSQUEDA)
+        datos = (semanal.leer("oportunidades.yaml"), semanal.leer("preparacion.yaml"), semanal.leer("portales.yaml"), BUSQUEDA)
+        texto = semanal.reporte(dt.date(2026, 10, 26), datos,
+                                (filtradas, demanda, [{"nombre": "Get on Board", "ok": False, "error": "HTTP 503"}]))
+        self.assertIn("Get on Board: HTTP 503", texto)
+        self.assertIn("`cert-cisco-ccna`: 1", texto)
+
+
 class Agenda(unittest.TestCase):
     def test_vencidos_y_cierres(self):
         hoy = dt.date(2026, 11, 1)

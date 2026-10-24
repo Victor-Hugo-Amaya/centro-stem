@@ -6,6 +6,7 @@ Uso:
     python3 scripts/semanal.py --hoy 2026-10-26      # agenda para otra fecha
     python3 scripts/semanal.py --escribir            # guarda reportes/semanal/AAAA-MM-DD.md
     python3 scripts/semanal.py --vacantes v.json     # agrega el análisis de vacantes escaneadas
+    python3 scripts/semanal.py --entradas-escaner    # fuentes que lee el escáner (fase B), en JSON
 
 La agenda contiene:
   1. Registros del directorio cuyo `revisar_antes` vence en los próximos 7 días (o ya venció).
@@ -110,6 +111,37 @@ def consultas_de_la_semana(portales, busqueda, hoy):
     return familias, salida
 
 
+# ---------------------------------------------------------------- escáner (fase B)
+
+PROVEEDORES_POR_HOST = {
+    "job-boards.greenhouse.io": "greenhouse",
+    "jobs.lever.co": "lever",
+    "jobs.ashbyhq.com": "ashby",
+    "apply.workable.com": "workable",
+    "mx.computrabajo.com": "computrabajo",
+}
+
+
+def entradas_escaner(portales):
+    """Traduce las fuentes `metodo: escaner` a entradas de proveedor de career-ops."""
+    entradas = []
+    for bolsa in portales["bolsas"]:
+        if bolsa.get("estado") != "activa" or bolsa.get("metodo") != "escaner":
+            continue
+        if bolsa.get("categorias"):
+            entradas.append({"name": bolsa["nombre"], "provider": "getonbrd", "categories": bolsa["categorias"]})
+        for url in bolsa.get("urls", []):
+            host = url.split("/")[2]
+            entradas.append({"name": bolsa["nombre"], "provider": PROVEEDORES_POR_HOST[host],
+                             "careers_url": url, "max_pages": 1, "pais": "México"})
+    for empresa in portales["empresas"]:
+        if empresa.get("estado") != "activa" or empresa.get("metodo") != "escaner":
+            continue
+        host = empresa["url"].split("/")[2]
+        entradas.append({"name": empresa["nombre"], "provider": PROVEEDORES_POR_HOST[host], "careers_url": empresa["url"]})
+    return entradas
+
+
 # ---------------------------------------------------------------- vacantes
 
 def ubicacion_valida(vacante, busqueda):
@@ -209,9 +241,14 @@ def reporte(hoy, datos, analisis=None):
     l.append("")
 
     if analisis is not None:
-        filtradas, demanda = analisis
+        filtradas, demanda, fuentes = analisis
         l += ["## 5. Vacantes escaneadas (México y remoto LatAm)", "",
               f"{len(filtradas)} vacantes después de filtrar por ubicación.", ""]
+        fallidas = [f for f in fuentes if not f.get("ok")]
+        if fallidas:
+            l += ["**Fuentes que fallaron** (sin resultados no significa sin vacantes):", ""]
+            l += [f"- {f['nombre']}: {f.get('error', 'sin detalle')}" for f in fallidas]
+            l.append("")
         conteo = {}
         for v in filtradas:
             clave = (v["familia"] or "sin familia", v["tipo"])
@@ -234,14 +271,22 @@ def main():
     parser.add_argument("--hoy", type=dt.date.fromisoformat, default=dt.date.today())
     parser.add_argument("--vacantes", type=Path, help="JSON con vacantes en forma Job de career-ops")
     parser.add_argument("--escribir", action="store_true", help="guarda el reporte en reportes/semanal/")
+    parser.add_argument("--entradas-escaner", action="store_true",
+                        help="imprime en JSON las fuentes que lee el escáner (fase B) y termina")
     args = parser.parse_args()
 
+    if args.entradas_escaner:
+        print(json.dumps(entradas_escaner(leer("portales.yaml")), ensure_ascii=False, indent=1))
+        return 0
     busqueda = leer("busqueda.yaml")
     datos = (leer("oportunidades.yaml"), leer("preparacion.yaml"), leer("portales.yaml"), busqueda)
     analisis = None
     if args.vacantes:
-        vacantes = json.loads(args.vacantes.read_text(encoding="utf-8"))
-        analisis = analizar_vacantes(vacantes, busqueda)
+        contenido = json.loads(args.vacantes.read_text(encoding="utf-8"))
+        # Acepta la salida de scripts/escanear.mjs ({fuentes, vacantes}) o una lista simple.
+        vacantes = contenido["vacantes"] if isinstance(contenido, dict) else contenido
+        fuentes = contenido.get("fuentes", []) if isinstance(contenido, dict) else []
+        analisis = (*analizar_vacantes(vacantes, busqueda), fuentes)
     texto = reporte(args.hoy, datos, analisis)
     if args.escribir:
         REPORTES.mkdir(parents=True, exist_ok=True)
@@ -249,7 +294,8 @@ def main():
         destino.write_text(texto, encoding="utf-8")
         if analisis is not None:
             destino.with_suffix(".json").write_text(
-                json.dumps({"vacantes": analisis[0], "demanda": analisis[1]}, ensure_ascii=False, indent=1),
+                json.dumps({"vacantes": analisis[0], "demanda": analisis[1], "fuentes": analisis[2]},
+                           ensure_ascii=False, indent=1),
                 encoding="utf-8")
         print(f"Escrito: {destino.relative_to(RAIZ)}")
     else:

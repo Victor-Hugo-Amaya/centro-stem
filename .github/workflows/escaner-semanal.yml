@@ -1,0 +1,70 @@
+name: Escáner semanal de vacantes
+
+# Fase B del loop semanal (docs/07-loop-semanal.md §6). Lee Computrabajo México, Get on Board y
+# portales ATS de empresas con los proveedores de career-ops (MIT, ver THIRD_PARTY_NOTICES.md),
+# descargados fijos al commit CAREER_OPS_SHA. Publica el resultado en la rama `datos-escaner`
+# (escaner/ultimo.json y escaner/AAAA-MM-DD.json), de donde lo toma la revisión semanal.
+
+on:
+  schedule:
+    - cron: "0 11 * * 1"   # lunes 05:00 en Ciudad de México (UTC-6)
+  workflow_dispatch:
+  pull_request:
+    paths: ["scripts/escanear.mjs", ".github/workflows/escaner-semanal.yml", "data/portales.yaml"]
+
+env:
+  CAREER_OPS_SHA: b564412d3b811df096dcb2eca7e5f19b234eafda   # versión 1.38.0, revisada en el paso 1
+
+permissions:
+  contents: write
+
+jobs:
+  escanear:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: career-ops-hq/career-ops
+          ref: ${{ env.CAREER_OPS_SHA }}
+          path: .career-ops
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Escanear fuentes
+        env:
+          CAREER_OPS_DIR: .career-ops
+        run: |
+          python3 scripts/semanal.py --entradas-escaner > entradas.json
+          node scripts/escanear.mjs entradas.json vacantes.json
+      - name: Resumen
+        run: python3 scripts/semanal.py --vacantes vacantes.json | sed -n '/^## 5/,/^## Hallazgos/p' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vacantes
+          path: vacantes.json
+          retention-days: 30
+      - name: Publicar en la rama datos-escaner
+        # En un PR sólo se prueba; la publicación ocurre en la ejecución programada o manual.
+        if: github.event_name != 'pull_request'
+        run: |
+          fecha=$(TZ=America/Mexico_City date +%F)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch --depth 1 origin datos-escaner; then
+            git switch -c datos-escaner FETCH_HEAD
+          else
+            git switch --orphan datos-escaner
+          fi
+          mkdir -p escaner
+          cp vacantes.json "escaner/$fecha.json"
+          cp vacantes.json escaner/ultimo.json
+          git add escaner
+          git commit -m "Escáner semanal $fecha"
+          git push origin datos-escaner

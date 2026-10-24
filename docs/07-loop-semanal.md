@@ -11,14 +11,14 @@ Hallazgo que condiciona el diseño: **desde la nube no hay acceso directo a las 
 | Fase | Qué hace | Dónde corre | Estado |
 |---|---|---|---|
 | **A · Revisión asistida** | Agenda por `revisar_antes`, verificación de fuentes oficiales, búsqueda web en bolsas y convocatorias | Sesión programada de Claude | Lista con este PR |
-| **B · Escáner de vacantes** | Lectura automática de Computrabajo, Get on Board y portales ATS de empresas con los proveedores de career-ops; cuenta qué certificaciones piden las vacantes | GitHub Actions (gratuito en repositorios públicos) | Pendiente de autorización de Victor |
+| **B · Escáner de vacantes** | Lectura automática de Computrabajo, Get on Board y portales ATS de empresas con los proveedores de career-ops; cuenta qué certificaciones piden las vacantes | GitHub Actions (gratuito en repositorios públicos) | Autorizada por Victor (24-oct-2026); en este PR |
 
 ## 2. Ciclo semanal (lunes)
 
 ```
-05:00  (fase B) GitHub Actions escanea portales → vacantes.json
+05:00  (fase B) GitHub Actions escanea portales → rama datos-escaner, escaner/ultimo.json
 07:41  Sesión semanal de Claude:
-        1. python3 scripts/semanal.py --escribir [--vacantes vacantes.json]
+        1. python3 scripts/semanal.py --escribir --vacantes escaner/ultimo.json
         2. Verifica cada registro de la sección 1 de la agenda en su fuente oficial
         3. Revisa la lista de vigilancia (¿abrió una edición nueva?)
         4. Ejecuta las consultas de la semana y abre cada resultado
@@ -64,14 +64,14 @@ Todavía no hay respuestas reales del cuestionario, así que [`data/busqueda.yam
 
 ## 6. Fase B: escáner con career-ops
 
-Reutiliza los proveedores de career-ops (licencia MIT) para Greenhouse, Lever, Ashby, Workable, Computrabajo y Get on Board. Propuesta:
+Autorizada por Victor el 24-oct-2026. Reutiliza los proveedores de career-ops (licencia MIT) para Greenhouse, Lever, Ashby, Workable, Computrabajo y Get on Board.
 
-- **Sin copiar el código al repositorio:** la tarea de GitHub Actions descarga career-ops **fijado al commit `b564412`** (versión 1.38.0, la revisada en el paso 1). Una actualización requiere un PR explícito que cambie ese número.
-- **Atribución:** `THIRD_PARTY_NOTICES.md` con el aviso MIT; el proyecto no usa la marca career-ops (docs/01 §3).
-- **Salida:** `vacantes.json` con la forma `Job` de career-ops, que `scripts/semanal.py --vacantes` ya sabe filtrar, clasificar y convertir en conteo de certificaciones.
+- **Sin copiar el código al repositorio:** [`.github/workflows/escaner-semanal.yml`](../.github/workflows/escaner-semanal.yml) descarga career-ops **fijado al commit `b564412`** (versión 1.38.0, la revisada en el paso 1). Una actualización requiere un PR explícito que cambie `CAREER_OPS_SHA`.
+- **Atribución:** [`THIRD_PARTY_NOTICES.md`](../THIRD_PARTY_NOTICES.md) con el aviso MIT; el proyecto no usa la marca career-ops (docs/01 §3).
+- **Flujo:** `scripts/semanal.py --entradas-escaner` traduce `data/portales.yaml` a entradas de proveedor; [`scripts/escanear.mjs`](../scripts/escanear.mjs) las lee y produce `{fuentes, vacantes}`; una fuente que falla no detiene las demás y queda registrada.
+- **Entrega:** la Action publica el resultado en la rama `datos-escaner` (`escaner/ultimo.json` y una copia con fecha) y un resumen en la página de la ejecución. La revisión semanal lo toma de ahí. En un PR la Action sólo prueba, no publica.
+- **Cobertura conservadora:** Computrabajo se lee con una página por búsqueda (tope del proveedor: 15 vacantes); las vacantes remotas sin país explícito se descartan, porque no se puede saber si aceptan candidatos en México.
 - **OCC directo** sólo sería posible con un ejecutor en México (por ejemplo, una computadora de Victor con GitHub Actions *self-hosted*). No lo recomiendo por ahora: exige mantener un equipo encendido y la búsqueda web ya cubre OCC con menor precisión.
-
-La lógica propia (filtro por ubicación, tipo, familia y certificaciones) ya está en `scripts/semanal.py` y tiene pruebas en `tests/test_semanal.py`, así que la fase B sólo añade la descarga de vacantes.
 
 ## 7. Revisión mensual de reportes
 
@@ -90,7 +90,7 @@ Pendiente conocido para la primera revisión (noviembre de 2026): incorporar el 
 |---|---|---|
 | Revisión semanal de oportunidades | Lunes 07:41 | PR `Revisión semanal AAAA-MM-DD` con reporte y cambios al directorio |
 | Revisión mensual de reportes | Día 2 de cada mes, 08:43 | PR `Revisión mensual AAAA-MM` con cambios a docs/04 y, si aplica, a familias.yaml |
-| (Fase B) Escáner de vacantes | Lunes 05:00 | `vacantes.json` como artefacto de GitHub Actions |
+| Escáner de vacantes (GitHub Actions) | Lunes 05:00 | `escaner/ultimo.json` en la rama `datos-escaner` |
 
 Cada ejecución inicia una sesión nueva con el repositorio recién clonado, de modo que el estado vive en git, no en la memoria de la sesión. Si una ejecución falla, la siguiente retoma lo vencido porque la agenda se calcula a partir de `revisar_antes`.
 

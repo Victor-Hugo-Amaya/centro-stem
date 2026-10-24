@@ -33,6 +33,7 @@ python3 scripts/catalogo.py --generar
 
 - [07 · Loop semanal de oportunidades y revisión mensual de reportes](docs/07-loop-semanal.md): ciclo, fuentes, reglas de aceptación, fase B con career-ops y tareas programadas.
 - Configuración en [`data/portales.yaml`](data/portales.yaml) (fuentes) y [`data/busqueda.yaml`](data/busqueda.yaml) (semillas por familia y ruta, patrones de certificaciones).
+- Escáner de vacantes en GitHub Actions con proveedores de career-ops fijados a una versión ([avisos de terceros](THIRD_PARTY_NOTICES.md)).
 - Instrucciones de las tareas programadas: [semanal](docs/prompts/loop-semanal.md) y [mensual](docs/prompts/revision-mensual.md). Los reportes quedan en `reportes/semanal/`.
 
 ```bash
