@@ -101,6 +101,32 @@ Este documento es un registro vivo. Cada reporte nuevo (por ejemplo, una nueva e
 6. **Revisar el impacto en el motor.** Si una cifra cambia la demanda de un rol, actualizar el componente `demanda` y la `fecha_verificacion` de las recomendaciones afectadas ([03-modelo-de-salida.md](03-modelo-de-salida.md)).
 7. **Registrar el cambio** en la bitácora siguiente.
 
+### Cadencia de revisión
+
+Los reportes se publican con periodicidad anual, bianual o trimestral, y organizaciones sociales y empresas publican análisis intermedios. Por eso la revisión combina dos ritmos:
+
+| Ritmo | Qué se hace | Cuándo |
+|---|---|---|
+| **Mensual** | Revisar el calendario siguiente y los análisis recientes de las instituciones (IMCO, OCDE, OIT, ManpowerGroup, LinkedIn, Coursera, organizaciones sociales y empresas). Registrar en la bitácora cualquier cifra nueva con fuente y fecha. | Primera semana de cada mes |
+| **Investigación profunda** | Lectura completa del reporte, comparación con la edición anterior y ajuste del componente `demanda` del motor. | El mes en que se publica un reporte mayor |
+| **Semanal** (paso 3) | Vacantes, becas y vouchers. No sustituye la revisión de reportes; la alimenta con demanda observada. | Cada semana |
+
+### Calendario de publicación de referencia
+
+Meses aproximados según ediciones anteriores; se confirman en cada revisión mensual.
+
+| Emisor y reporte | Periodicidad | Mes habitual | Próxima edición esperada |
+|---|---|---|---|
+| WEF · *Future of Jobs Report* | Bianual | Enero | Enero 2027 |
+| LinkedIn · *Jobs on the Rise* y *Economic Graph* | Anual, con análisis intermedios | Enero | Enero 2027 |
+| OIT · *World Employment and Social Outlook: Trends* | Anual, con actualizaciones | Enero | Enero 2027 |
+| ManpowerGroup · Encuesta de Expectativas de Empleo (México) | Trimestral | Marzo, junio, septiembre y diciembre | Diciembre 2026 |
+| INEGI · ENOE (resultados trimestrales) | Trimestral | Febrero, mayo, agosto y noviembre | Noviembre 2026 |
+| Coursera · *Global Skills Report* | Anual | Junio | Junio 2027 |
+| OCDE · *Employment Outlook* | Anual | Julio | Julio 2027 |
+| IMCO · *Compara Carreras* | Anual | Octubre a noviembre | Otoño 2027 |
+| ManpowerGroup · Escasez de Talento | Anual | Primer semestre | 2027 |
+
 ### Bitácora de actualizaciones
 
 | Fecha | Reporte agregado o actualizado | Cambios relevantes |

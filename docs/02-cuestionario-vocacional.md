@@ -184,8 +184,8 @@ puntaje = 0.35 · demanda + 0.30 · ajuste + 0.20 · accesibilidad + 0.15 · se�
 | Junior Achievement México | Educación financiera y habilidades para el trabajo para personas de 7 a 29 años; mentorías con voluntarios corporativos ([Samsung, 13-nov-2024](https://news.samsung.com/mx/voluntarios-de-samsung-inspiran-a-jovenes-en-su-camino-profesional-junto-a-junior-achievement-mexico)) | A1, A2 y A3: mentorías, extracurriculares y emprendimiento |
 | JA Americas | En 2025, con Honeywell: *Socios* (orientación vocacional y exposición laboral, hasta 18 años; CDMX, Monterrey y San Luis Potosí) y *Desafío Innova* (15–18 años, fundamentos STEM; Ciudad Juárez) ([JA Americas](https://jaamericas.org/new-blog/honeywell-2025)) | A1 y A2: retos STEM y orientación |
 | Generation México | Bootcamps gratuitos: Java FullStack, HelpDesk, AWS re/Start con IA, Unity Jr. y operador de tractocamión. En 2025: 1,068 participantes y 85% empleado a 90 días ([Expansión, 29-may-2026](https://expansion.mx/carrera/2026/05/29/cambiar-carrera-tres-meses-si-es-posible-generation-mexico)) | Ruta B y A3 (egreso) |
-| BioCiencia Wild | **Pendiente:** no encontré presencia pública verificable | A: divulgación científica y voluntariado (ciencias de la vida y ambiente), a confirmar |
-| Regeni | **Pendiente:** no encontré presencia pública verificable | A: divulgación STEM y voluntariado, a confirmar |
+| BioCiencia Wild | **En espera** (decisión de Victor, 24-oct-2026): colectivo con presencia sólo en Instagram, sin sitio web | A: divulgación científica y voluntariado (ciencias de la vida y ambiente), a confirmar |
+| Regeni | **En espera** (decisión de Victor, 24-oct-2026): colectivo con presencia sólo en Instagram, sin sitio web | A: divulgación STEM y voluntariado, a confirmar |
 
 ## 9. Limitaciones del instrumento
 
