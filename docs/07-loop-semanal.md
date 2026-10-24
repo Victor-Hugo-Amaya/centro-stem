@@ -83,6 +83,8 @@ Aplica el procedimiento de [04-evidencia-reportes.md §7](04-evidencia-reportes.
 3. Comparar la **demanda observada** acumulada en `reportes/semanal/` (conteo de certificaciones y vacantes por familia) contra `puntaje_demanda` de `data/familias.yaml`, y proponer ajustes con su evidencia.
 4. Actualizar el calendario y la bitácora de docs/04 y abrir un PR.
 
+Decisión pendiente para la revisión del 2 de diciembre de 2026 (con cuatro reportes semanales en la mano, por decisión de Victor del 24-oct-2026): comparar la cobertura de OCC, LinkedIn e Indeed obtenida con búsqueda web y proponer, con datos, si conviene probar una API de Google for Jobs.
+
 Pendiente conocido para la primera revisión (noviembre de 2026): incorporar el **Coursera *Global Skills Report 2026***, ya publicado, y el resultado de la ENOE del tercer trimestre de INEGI.
 
 ## 8. Tareas programadas
