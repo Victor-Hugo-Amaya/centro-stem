@@ -1,0 +1,267 @@
+# Directorio de vouchers, descuentos, becas, retos, voluntariados y prácticas (México y LatAm).
+#
+# tipo:   voucher | descuento | beca | apoyo_economico | reto | voluntariado | practicas | programa
+# estado: abierta (convocatoria con fecha vigente) | permanente (sin convocatoria, disponible siempre)
+#         | recurrente (se repite; hay que vigilar la siguiente) | cerrada | por_confirmar
+# fuente_tipo: oficial | secundaria. Una fuente secundaria nunca basta para mostrar "abierta".
+# revisar_antes: fecha límite para que el loop semanal (paso 3) vuelva a verificar el registro.
+# Edades en `publico`: la regla de menores (docs/02 §7) usa edad_min.
+
+# ===================== Socios prioritarios: JA México y JA Americas =====================
+- id: opo-ja-desafio-innova
+  nombre: "Desafío Innova"
+  tipo: reto
+  organizacion: org-ja-mexico
+  beneficio: "Reto por equipos: diseñar una idea de negocio viable y sostenible para un problema social o ambiental, con Design Thinking, Business Model Canvas y Elevator Pitch."
+  publico: {edad_min: 15, edad_max: 18, nivel: [bachillerato], region: "México (sedes variables)", nota: "Rango de edad tomado de JA Americas (15+); JA México no lo publica en la ficha."}
+  costo_participante: 0
+  estado: recurrente
+  familias: [fam-gestion-proyectos]
+  fuente_url: https://www.jamexico.org.mx/programasmx/desaf%C3%ADo-innova
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2026-11-30
+  pendiente: "Confirmar fechas, sedes y si se requiere inscripción por escuela (WhatsApp 55 5211 9444)."
+
+- id: opo-ja-yo-puedo-programar
+  nombre: "Yo puedo programar"
+  tipo: programa
+  organizacion: org-ja-mexico
+  beneficio: "Bases para diseñar una página web; pensamiento computacional, creatividad y trabajo colaborativo."
+  publico: {nota: "Edad y nivel no publicados."}
+  costo_participante: null
+  estado: cerrada
+  familias: [fam-software-nube]
+  nota: "Sesiones el 6, 9, 13, 16, 23 y 27 de noviembre (año no indicado); la página muestra 'RSVP cerrada'."
+  fuente_url: https://www.jamexico.org.mx/programasmx/yo-puedo-programar
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2027-01-31
+
+- id: opo-ja-mujer-digital
+  nombre: "Mujer Digital (She is Digital)"
+  tipo: beca
+  organizacion: org-ja-americas
+  organizaciones_aliadas: [org-ja-mexico]
+  beneficio: "Formación técnica becada (ciberseguridad, desarrollo web front-end, Java y Spring, nube), habilidades socioemocionales, mentoría y apoyo de colocación. Ciclo 2025-2026: 545 certificaciones internacionales reportadas."
+  publico: {edad_min: 18, edad_max: 29, genero: mujeres, region: "México, Brasil y Costa Rica"}
+  costo_participante: 0
+  estado: por_confirmar
+  familias: [fam-ciberseguridad, fam-software-nube]
+  nota: "El sitio es inconsistente: una sección invita a la lista de espera y otra dice que hay convocatoria abierta en México. JA Americas indica registro en mayo y junio."
+  fuente_url: https://jamujerdigital.org/inscribete/
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2026-11-30
+
+- id: opo-ja-socios-por-un-dia
+  nombre: "Socios por un día (Job Shadow)"
+  tipo: programa
+  organizacion: org-ja-mexico
+  beneficio: "Acompañar durante una jornada a una persona profesional para conocer su trabajo."
+  publico: {edad_min: 16, nota: "Edad de la versión regional (JA Americas, Job Shadow 16+)."}
+  costo_participante: 0
+  estado: por_confirmar
+  familias: []
+  fuente_url: https://www.jamexico.org.mx/programas-empleabilidad
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2026-11-30
+  pendiente: "Confirmar empresas participantes y si incluye perfiles STEM."
+
+- id: opo-ja-servicio-social-practicas
+  nombre: "Servicio social, estadías y prácticas profesionales en JA México"
+  tipo: practicas
+  organizacion: org-ja-mexico
+  beneficio: "Liberar servicio social o prácticas apoyando programas de emprendimiento, finanzas y empleabilidad."
+  publico: {edad_min: 18, nivel: [universidad, tsu]}
+  costo_participante: 0
+  estado: permanente
+  familias: []
+  fuente_url: https://www.jamexico.org.mx/ss-practicas
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2027-01-31
+
+- id: opo-ja-voluntariado
+  nombre: "Voluntariado corporativo e individual en JA México"
+  tipo: voluntariado
+  organizacion: org-ja-mexico
+  beneficio: "Profesionistas imparten programas o mentorías a jóvenes. Útil para la ruta B: evidencia de liderazgo y comunicación."
+  publico: {edad_min: 18}
+  costo_participante: 0
+  estado: permanente
+  familias: []
+  fuente_url: https://www.jamexico.org.mx/ss-practicas
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2027-01-31
+
+# ===================== Vouchers y descuentos de certificadores =====================
+- id: opo-ms-virtual-training-day-az900
+  nombre: "Microsoft Virtual Training Days: 50% de descuento en examen"
+  tipo: descuento
+  organizacion: org-microsoft
+  beneficio: "Un examen con 50% de descuento por cada Virtual Training Day completado. Debe presentarse dentro de los 90 días posteriores al evento; no se combina con otras ofertas."
+  publico: {edad_min: 18, nota: "Edad no indicada por Microsoft; se asume adulto por ser evento profesional."}
+  costo_participante: 0
+  estado: recurrente
+  aplica_a: [cert-microsoft-az-900, cert-microsoft-ai-901]
+  nota: "Es obligatorio asistir a todas las sesiones. El descuento se aplica al perfil de Microsoft Learn del correo registrado unos cinco días hábiles después."
+  fuente_url: https://arch-center.azureedge.net/Credentials/microsoft-mvtd-cert-faq-en-us.pdf
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2026-11-30
+
+- id: opo-ms-descuento-estudiantes
+  nombre: "Precio académico en exámenes Microsoft"
+  tipo: descuento
+  organizacion: org-microsoft
+  beneficio: "Descuento para estudiantes verificados en la mayoría de los países (excepto India y China). La verificación dura 12 meses y debe hacerse antes de pagar."
+  publico: {nivel: [bachillerato, universidad, tsu]}
+  costo_participante: 0
+  estado: permanente
+  aplica_a: [cert-microsoft-az-900, cert-microsoft-ai-901, cert-microsoft-pl-300]
+  nota: "Microsoft no publica el porcentaje; varía por examen y país."
+  fuente_url: https://learn.microsoft.com/en-us/credentials/certifications/student-discounts
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2027-01-31
+
+- id: opo-aws-descuento-siguiente-examen
+  nombre: "AWS: 50% en el siguiente examen tras certificarse"
+  tipo: descuento
+  organizacion: org-aws
+  beneficio: "Al obtener cualquier certificación AWS, 50% de descuento en otro examen AWS (en la cuenta de AWS Certification)."
+  publico: {}
+  costo_participante: 0
+  estado: permanente
+  aplica_a: [cert-aws-clf-c02, cert-aws-aif-c01]
+  fuente_url: https://aws.amazon.com/certification/certified-cloud-practitioner/
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2027-01-31
+
+- id: opo-isc2-cc-paquete-es
+  nombre: "ISC2 CC en español: curso + examen + dos intentos"
+  tipo: descuento
+  organizacion: org-isc2
+  beneficio: "Por USD 199: curso autodirigido de 180 días, voucher, dos intentos y exención de la primera cuota anual (USD 50)."
+  publico: {}
+  costo_participante: 199
+  estado: abierta
+  aplica_a: [cert-isc2-cc]
+  nota: "ISC2 lo describe como oferta por tiempo limitado sin fecha de cierre."
+  fuente_url: https://www.isc2.org/training/online-self-paced/spanish
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2026-11-30
+
+- id: opo-isc2-1mcc
+  nombre: "ISC2 One Million Certified in Cybersecurity"
+  tipo: voucher
+  organizacion: org-isc2
+  beneficio: "Curso y examen CC gratuitos (un intento)."
+  publico: {}
+  costo_participante: 0
+  estado: cerrada
+  fecha_cierre: 2026-05-20
+  aplica_a: [cert-isc2-cc]
+  nota: "Inscripciones cerradas el 20-may-2026. Los códigos emitidos deben usarse antes del 31-dic-2026."
+  fuente_url: https://www.isc2.org/landing/1mcc
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2026-12-31
+
+- id: opo-solidworks-voucher-academico
+  nombre: "Voucher gratuito CSWA para estudiantes"
+  tipo: voucher
+  organizacion: org-solidworks
+  beneficio: "Voucher gratuito si la escuela participa en el SOLIDWORKS Academic Certification Provider program, o al comprar la versión estudiantil de SOLIDWORKS."
+  publico: {nivel: [bachillerato, universidad, tsu]}
+  costo_participante: 0
+  estado: permanente
+  aplica_a: [cert-solidworks-cswa]
+  nota: "Acción concreta para planteles: el docente puede solicitar el alta de su escuela como proveedor académico."
+  fuente_url: https://www.solidworks.com/solidworks-certification-program
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2027-01-31
+
+- id: opo-coursera-ayuda-financiera
+  nombre: "Ayuda financiera de Coursera"
+  tipo: beca
+  organizacion: org-coursera
+  beneficio: "Ayuda financiera disponible para certificados profesionales de Coursera."
+  publico: {}
+  costo_participante: 0
+  estado: permanente
+  aplica_a: [cert-google-data-analytics]
+  pendiente: "El centro de ayuda de Coursera no cargó; confirmar tiempos de revisión y límites."
+  fuente_url: https://www.coursera.org/professional-certificates/google-data-analytics
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2026-12-31
+
+- id: opo-google-sep-becas
+  nombre: "Becas Google + SEP para Certificados de Carrera de Google"
+  tipo: beca
+  organizacion: org-google
+  beneficio: "Edición 2025: 30,000 becas para estudiantes y docentes en Ciberseguridad, Marketing digital, Soporte de TI, Gestión de proyectos, Análisis de datos, UX y Fundamentos de IA, en Coursera."
+  publico: {region: "México", nota: "Nacionalidad o residencia mexicana."}
+  costo_participante: 0
+  estado: cerrada
+  fecha_cierre: 2025-04-30
+  aplica_a: [cert-google-data-analytics]
+  nota: "Vigilar si se repite. El registro se hizo en becas.inroads.org.mx."
+  fuente_url: https://www.unotv.com/tecnologia/google-abre-30-mil-becas-para-estudiantes-y-educadores-mexicanos-como-aplicar/
+  fuente_tipo: secundaria
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2027-03-31
+
+# ===================== Apoyos públicos =====================
+- id: opo-jovenes-construyendo-el-futuro
+  nombre: "Jóvenes Construyendo el Futuro"
+  tipo: apoyo_economico
+  organizacion: org-stps
+  beneficio: "Capacitación en un centro de trabajo con apoyo de $9,582 mensuales (2026) en tarjeta del Banco del Bienestar."
+  publico: {edad_min: 18, edad_max: 29, nota: "No estudiar ni trabajar al postularse."}
+  costo_participante: 0
+  estado: recurrente
+  nota: "Próximas postulaciones 'por anunciar'. Útil para buscar centros de trabajo STEM (manufactura, TI, energía) en el estado de la persona."
+  fuente_url: https://www.programasparaelbienestar.gob.mx/programas/jovenes/jovenes-construyendo-el-futuro/
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2026-12-31
+
+# ===================== Retos y comunidad =====================
+- id: opo-nasa-space-apps-2026
+  nombre: "NASA Space Apps Challenge 2026"
+  tipo: reto
+  organizacion: org-nasa
+  beneficio: "Hackatón internacional de 48 horas con datos abiertos de la NASA; eventos locales presenciales o virtuales, o el evento universal virtual."
+  publico: {nota: "La página no indica edad mínima; revisar términos y condiciones antes de recomendar a menores."}
+  costo_participante: 0
+  estado: abierta
+  fecha_cierre: 2026-11-15
+  familias: [fam-datos-ia, fam-software-nube]
+  nota: "Hackatón el 14 y 15 de noviembre de 2026; el registro cierra el 15 de noviembre."
+  fuente_url: https://www.spaceappschallenge.org/2026/
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2026-11-10
+
+- id: opo-technovation-girls
+  nombre: "Technovation Girls"
+  tipo: reto
+  organizacion: org-technovation
+  beneficio: "Equipos de niñas y jóvenes desarrollan una app o un proyecto de IA para un problema de su comunidad, con mentoría."
+  publico: {edad_min: 8, edad_max: 18, genero: mujeres, nota: "Divisiones: 8-12, 13-15 y 16-18 años."}
+  costo_participante: null
+  estado: por_confirmar
+  familias: [fam-software-nube, fam-datos-ia]
+  nota: "La página consultada describe la temporada 2021-2022; confirmar el calendario vigente."
+  fuente_url: https://www.technovation.org/blogs/updates-to-technovation-programs
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-24
+  revisar_antes: 2026-11-30

@@ -1,0 +1,30 @@
+# Fuentes de evidencia citadas por el catálogo y el directorio.
+# Cada familia, carrera o certificación cita estas claves en `senales[].fuente`.
+# Resumen de cifras: docs/04-evidencia-reportes.md
+- clave: wef-foj-2025
+  titulo: "WEF · The Future of Jobs Report 2025"
+  fuente_url: https://www.weforum.org/publications/the-future-of-jobs-report-2025
+  fecha_verificacion: 2026-10-24
+- clave: coursera-gsr-2025
+  titulo: "Coursera · Global Skills Report 2025"
+  fuente_url: https://www.coursera.org/skills-reports/global/get-report
+  fecha_verificacion: 2026-10-24
+  nota: "Ya existe la edición 2026 (https://www.coursera.org/skills-reports/global); pendiente de incorporar con el procedimiento de docs/04 §7."
+- clave: imco-cc-2025
+  titulo: "IMCO · Compara Carreras 2025 (documento y plataforma)"
+  fuente_url: https://imco.org.mx/compara-carreras-2025/
+  fecha_verificacion: 2026-10-24
+- clave: imco-cc-plataforma
+  titulo: "IMCO · Compara Carreras, ficha por carrera"
+  fuente_url: https://comparacarreras.imco.org.mx/
+  fecha_verificacion: 2026-10-24
+  nota: "Las fichas de la plataforma y las gráficas del documento PDF no coinciden exactamente (p. ej., Medicina general: $27,823 en la ficha y $25,732 en la gráfica del PDF). El catálogo usa la ficha y cita su URL."
+- clave: imco-tendencias
+  titulo: "IMCO · Tendencias Educativas (comunicado e investigación)"
+  fuente_url: https://imco.org.mx/
+  fecha_verificacion: 2026-10-24
+  nota: "Original en la carpeta de conocimiento del proyecto; falta la URL exacta de la publicación."
+- clave: oit-wp96
+  titulo: "OIT · Generative AI and jobs (Working Paper 96)"
+  fuente_url: https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and
+  fecha_verificacion: 2026-10-24

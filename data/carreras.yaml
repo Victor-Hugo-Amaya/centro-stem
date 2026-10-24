@@ -1,0 +1,172 @@
+# Carreras (licenciatura y TSU) y tipos de bachillerato.
+# Cifras de mercado: ficha de cada carrera en IMCO Compara Carreras (consultada el 2026-10-24).
+# La plataforma no indica el año de referencia de los datos; el IMCO los construye con la ENOE.
+# Orden: por familia (según data/familias.yaml) y, dentro de cada familia, por ingreso promedio.
+#
+# Campos de `imco`:
+#   ingreso_mensual_mxn  ingreso promedio mensual
+#   desempleo_pct        tasa de desempleo
+#   informalidad_pct     tasa de informalidad
+#   profesionistas       personas que estudiaron la carrera
+#   mujeres_pct          porcentaje de mujeres entre profesionistas
+# Referencia: ingreso promedio de la población ocupada en México = $14,170 (misma plataforma).
+
+carreras:
+  # --- fam-datos-ia ---
+  - id: car-matematicas
+    nombre: "Matemáticas (licenciatura)"
+    nivel: licenciatura
+    familias: [fam-datos-ia]
+    imco: {ingreso_mensual_mxn: 29887, desempleo_pct: 1.3, informalidad_pct: 22.7, profesionistas: 42023, mujeres_pct: 36.3}
+    nota: "La carrera mejor pagada del país según IMCO, con sólo 1,167 egresados nuevos al año. Ruta natural hacia ciencia de datos e IA."
+    fuente_url: https://comparacarreras.imco.org.mx/matemáticas/
+    fecha_verificacion: 2026-10-24
+
+  - id: car-ciencias-computacionales
+    nombre: "Ciencias computacionales (licenciatura)"
+    nivel: licenciatura
+    familias: [fam-datos-ia, fam-software-nube, fam-ciberseguridad]
+    imco: {ingreso_mensual_mxn: 24983, desempleo_pct: 5.2, informalidad_pct: 23.2, profesionistas: 134640, mujeres_pct: 54.0}
+    fuente_url: https://comparacarreras.imco.org.mx/ciencias_computacionales/
+    fecha_verificacion: 2026-10-24
+
+  # --- fam-software-nube ---
+  - id: car-informatica
+    nombre: "Informática (licenciatura o ingeniería)"
+    nivel: licenciatura
+    familias: [fam-software-nube, fam-soporte-ti-redes, fam-ciberseguridad]
+    imco: {ingreso_mensual_mxn: 23590, desempleo_pct: 5.1, informalidad_pct: 21.1, profesionistas: 274047, mujeres_pct: 43.8}
+    nota: "Primer ingreso a la baja (−6.2% entre 2023-24 y 2024-25) mientras crece Desarrollo de software. Brecha salarial: $20,541 mujeres frente a $25,349 hombres."
+    fuente_url: https://comparacarreras.imco.org.mx/inform%C3%A1tica/
+    fecha_verificacion: 2026-10-24
+
+  - id: car-tsu-desarrollo-software
+    nombre: "TSU en Desarrollo de software"
+    nivel: tsu
+    familias: [fam-software-nube]
+    imco: {ingreso_mensual_mxn: 15604, desempleo_pct: 2.4, informalidad_pct: 34.2, profesionistas: 74564, mujeres_pct: 48.1}
+    nota: "Empleo alto pero informalidad de 34%. Conviene acompañarlo de una certificación de nube o un portafolio verificable."
+    fuente_url: https://comparacarreras.imco.org.mx/tsu._desarrollo_de_software
+    fecha_verificacion: 2026-10-24
+
+  # --- fam-manufactura-avanzada ---
+  - id: car-ingenieria-mecatronica
+    nombre: "Electrónica, automatización y mecánica-eléctrica (incluye Mecatrónica)"
+    nivel: licenciatura
+    familias: [fam-manufactura-avanzada, fam-energia-ambiente]
+    imco: {ingreso_mensual_mxn: 25953, desempleo_pct: 3.3, informalidad_pct: 19.4, profesionistas: 452338, mujeres_pct: 10.7}
+    nota: "IMCO agrupa Mecatrónica en este campo amplio. Sólo 10.7% de mujeres: las becas y programas para mujeres en ingeniería son especialmente relevantes aquí."
+    fuente_url: https://comparacarreras.imco.org.mx/electrónica_automatización_y_aplicaciones_de_la_mecánica-eléctrica/
+    fecha_verificacion: 2026-10-24
+
+  - id: car-tsu-electronica-automatizacion
+    nombre: "TSU en Electrónica, automatización y mecánica-eléctrica"
+    nivel: tsu
+    familias: [fam-manufactura-avanzada]
+    imco: {ingreso_mensual_mxn: 19317, desempleo_pct: 2.3, informalidad_pct: 29.9, profesionistas: 83360, mujeres_pct: 6.2}
+    nota: "El TSU mejor pagado del país según IMCO."
+    fuente_url: https://comparacarreras.imco.org.mx/tsu._electrónica_automatización_y_aplicaciones_de_la_mecánica-eléctrica
+    fecha_verificacion: 2026-10-24
+
+  # --- fam-energia-ambiente ---
+  - id: car-ingenieria-civil
+    nombre: "Construcción e ingeniería civil"
+    nivel: licenciatura
+    familias: [fam-energia-ambiente]
+    imco: {ingreso_mensual_mxn: 25603, desempleo_pct: 4.0, informalidad_pct: 28.6, profesionistas: 320812, mujeres_pct: 11.9}
+    nota: "Los 232 proyectos de inversión de Banobras (IMCO, Tendencias Educativas) sostienen la demanda de este perfil."
+    fuente_url: https://comparacarreras.imco.org.mx/construcción_e_ingeniería_civil/
+    fecha_verificacion: 2026-10-24
+
+  - id: car-electricidad-energia
+    nombre: "Electricidad y generación de energía (licenciatura)"
+    nivel: licenciatura
+    familias: [fam-energia-ambiente]
+    imco: {ingreso_mensual_mxn: 23837, desempleo_pct: 2.8, informalidad_pct: 22.1, profesionistas: 100631, mujeres_pct: 8.2}
+    nota: "Entre las 10 carreras con mayor vinculación laboral (60% trabaja en su campo)."
+    fuente_url: https://comparacarreras.imco.org.mx/electricidad_y_generación_de_energía/
+    fecha_verificacion: 2026-10-24
+
+  - id: car-tsu-electricidad-energia
+    nombre: "TSU en Electricidad y generación de energía"
+    nivel: tsu
+    familias: [fam-energia-ambiente]
+    imco: {ingreso_mensual_mxn: 18308, desempleo_pct: 0.8, informalidad_pct: 36.9, profesionistas: 54473, mujeres_pct: 0.9}
+    nota: "Desempleo de 0.8%, el más bajo de este catálogo, pero informalidad de 36.9%."
+    fuente_url: https://comparacarreras.imco.org.mx/tsu._electricidad_y_generación_de_energía
+    fecha_verificacion: 2026-10-24
+
+  - id: car-tecnologia-medio-ambiente
+    nombre: "Tecnología para la protección del medio ambiente"
+    nivel: licenciatura
+    familias: [fam-energia-ambiente]
+    imco: {ingreso_mensual_mxn: 19496, desempleo_pct: 8.9, informalidad_pct: 27.3, profesionistas: 41107, mujeres_pct: 59.0}
+    advertencia: "Entre las 10 carreras de mayor riesgo de informalidad o desempleo (31.8%). La demanda ambiental del WEF se concentra en ingeniería; preferir Ingeniería civil, Electricidad o Química con especialidad ambiental."
+    fuente_url: https://comparacarreras.imco.org.mx/tecnología_para_la_protección_del_medio_ambiente/
+    fecha_verificacion: 2026-10-24
+
+  # --- fam-salud-biotecnologia ---
+  - id: car-medicina-general
+    nombre: "Medicina general"
+    nivel: licenciatura
+    familias: [fam-salud-biotecnologia]
+    imco: {ingreso_mensual_mxn: 27823, desempleo_pct: 1.6, informalidad_pct: 21.8, profesionistas: 357527, mujeres_pct: 51.8}
+    nota: "Mayor vinculación laboral del país (80.7%). Formación larga y costosa: considerar en la regla de accesibilidad."
+    fuente_url: https://comparacarreras.imco.org.mx/medicina_general/
+    fecha_verificacion: 2026-10-24
+
+  - id: car-enfermeria
+    nombre: "Enfermería general y obstetricia"
+    nivel: licenciatura
+    familias: [fam-salud-biotecnologia]
+    imco: {ingreso_mensual_mxn: 19970, desempleo_pct: 2.2, informalidad_pct: 24.0, profesionistas: 630763, mujeres_pct: 82.4}
+    nota: "74.7% trabaja en su campo. El IMCO anticipa mayor demanda del sector de cuidados hacia 2050."
+    fuente_url: https://comparacarreras.imco.org.mx/enfermería_general_y_obstetricia/
+    fecha_verificacion: 2026-10-24
+
+  # --- fam-administracion-contabilidad ---
+  - id: car-administracion-empresas
+    nombre: "Administración de empresas"
+    nivel: licenciatura
+    familias: [fam-administracion-contabilidad]
+    imco: {ingreso_mensual_mxn: 23576, desempleo_pct: 3.7, informalidad_pct: 22.4, profesionistas: 1309409, mujeres_pct: 57.8}
+    advertencia: "Carrera más estudiada del país (8% de quienes tienen carrera; 46,493 egresados nuevos al año). El WEF proyecta −25% para asistentes administrativos en México. Combinar con análisis de datos o gestión de proyectos."
+    fuente_url: https://comparacarreras.imco.org.mx/administraci%C3%B3n_de_empresas/
+    fecha_verificacion: 2026-10-24
+
+  - id: car-contabilidad
+    nombre: "Contabilidad y fiscalización"
+    nivel: licenciatura
+    familias: [fam-administracion-contabilidad]
+    imco: {ingreso_mensual_mxn: 22192, desempleo_pct: 1.9, informalidad_pct: 22.4, profesionistas: 1265328, mujeres_pct: 56.0}
+    advertencia: "Hoy tiene desempleo bajo (1.9%), pero el WEF proyecta −20% para auxiliares de contabilidad y nómina en México. Advertencia obligatoria del cuestionario (docs/02 §5.3): sugerir contabilidad + análisis de datos o fintech."
+    fuente_url: https://comparacarreras.imco.org.mx/contabilidad_y_fiscalización/
+    fecha_verificacion: 2026-10-24
+
+bachilleratos:
+  - id: bach-tecnologico
+    nombre: "Bachillerato tecnológico (CBTIS, CETIS; CECyT del IPN)"
+    titulo: "Bachillerato con carrera técnica"
+    familias: [fam-manufactura-avanzada, fam-software-nube, fam-energia-ambiente]
+    nota: "Permite continuar a licenciatura y egresar con título de técnico. El IMCO proyecta la pérdida de 300 mil técnicos hacia 2050: presentarlo como opción de primera línea."
+    fuente_url: http://www.sems.gob.mx/es_mx/sems/cbtis
+    fecha_verificacion: 2026-10-24
+    pendiente: "Listar especialidades por plantel con la oferta oficial de DGETI de cada estado."
+
+  - id: bach-tecnologico-mecatronica
+    nombre: "Bachillerato tecnológico, especialidad en Mecatrónica"
+    titulo: "Técnico en Mecatrónica"
+    familias: [fam-manufactura-avanzada]
+    nota: "Especialidad de referencia del ejemplo de docs/03. Ruta hacia car-tsu-electronica-automatizacion o car-ingenieria-mecatronica."
+    fuente_url: http://www.sems.gob.mx/es_mx/sems/cbtis
+    fecha_verificacion: 2026-10-24
+    pendiente: "Confirmar planteles que la ofrecen por estado."
+
+  - id: bach-profesional-tecnico-conalep
+    nombre: "Profesional Técnico Bachiller (CONALEP)"
+    titulo: "Profesional Técnico Bachiller"
+    familias: [fam-manufactura-avanzada, fam-energia-ambiente, fam-salud-biotecnologia, fam-soporte-ti-redes]
+    nota: "Áreas de oferta: Producción y transformación; Mantenimiento e instalación; Tecnología y transporte; Electricidad y electrónica; Salud; Contaduría y administración; Turismo. Preregistro en tramites.conalep.edu.mx/preregistro/."
+    fuente_url: https://portal.conalep.edu.mx/
+    fecha_verificacion: 2026-10-24
+    pendiente: "El catálogo nacional de carreras 2025-2026 redirige al portal; obtener la lista por plantel."

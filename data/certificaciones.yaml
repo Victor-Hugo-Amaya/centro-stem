@@ -1,0 +1,353 @@
+# Certificaciones. Costos y vigencias consultados en la página oficial de cada certificador el 2026-10-24.
+#
+# Reglas (docs/03 §6 y docs/05 §3):
+#   costo.verificado: true  -> el monto aparece en la página oficial citada en costo.fuente_url.
+#   costo.verificado: false -> el monto proviene de una fuente secundaria o falta; el prototipo
+#                              NO debe mostrarlo como dato firme.
+#   vigencia_meses: null y no_caduca: true -> la credencial no vence.
+#   vigencia_meses: null y no_caduca: false -> la vigencia no está confirmada (pendiente).
+#   nivel_escalera: 1 fundamentos, 2 asociado o profesional de entrada, 3 especialidad.
+#   idioma_es: true si el examen se ofrece en español; false si no; null si no está confirmado.
+
+# ===================== fam-datos-ia =====================
+- id: cert-google-data-analytics
+  nombre: "Google Data Analytics Professional Certificate"
+  organizacion: org-google
+  tipo: certificado_profesional
+  familias: [fam-datos-ia]
+  nivel_escalera: 1
+  costo:
+    monto: 49
+    moneda: USD
+    periodicidad: mensual
+    verificado: true
+    nota: "Suscripción de Coursera en EE. UU. y Canadá tras 7 días de prueba; la página indica que la mayoría termina por menos de USD 300 y que el precio puede ser menor en otros países. Tiene ayuda financiera."
+    fuente_url: https://www.coursera.org/professional-certificates/google-data-analytics
+  duracion: "9 cursos; cerca de 6 meses a 10 horas por semana"
+  vigencia_meses: null
+  no_caduca: true
+  renovacion: "No requiere."
+  idioma_es: null
+  vias_ahorro: [opo-coursera-ayuda-financiera, opo-google-sep-becas]
+  evidencia: "Certificado profesional más tomado en la región junto con Project Management (Coursera GSR 2025)."
+  advertencia: "Es un certificado de curso, no un examen supervisado. Señal útil para el primer empleo si se acompaña de un proyecto de portafolio."
+  fuente_url: https://www.coursera.org/professional-certificates/google-data-analytics
+  fecha_verificacion: 2026-10-24
+
+- id: cert-microsoft-pl-300
+  nombre: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
+  organizacion: org-microsoft
+  tipo: examen
+  familias: [fam-datos-ia, fam-administracion-contabilidad]
+  nivel_escalera: 2
+  costo:
+    monto: 165
+    moneda: USD
+    verificado: true
+    nota: "Precio típico de los exámenes Associate según las FAQ de Microsoft; el precio final depende del país donde se presenta. Descuento académico para estudiantes verificados."
+    fuente_url: https://learn.microsoft.com/en-us/credentials/certifications/frequently-asked-questions
+  vigencia_meses: 12
+  no_caduca: false
+  renovacion: "Anual y gratuita: evaluación en línea, sin supervisión y a libro abierto, dentro de una ventana de seis meses antes del vencimiento."
+  idioma_es: null
+  vias_ahorro: [opo-ms-descuento-estudiantes]
+  evidencia: "Ruta de cambio de carrera para finanzas y contabilidad hacia análisis de datos (docs/03 §5)."
+  fuente_url: https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/
+  fecha_verificacion: 2026-10-24
+
+- id: cert-microsoft-ai-901
+  nombre: "Microsoft Certified: Azure AI Fundamentals (examen AI-901)"
+  organizacion: org-microsoft
+  tipo: examen
+  familias: [fam-datos-ia]
+  nivel_escalera: 1
+  costo:
+    monto: null
+    moneda: USD
+    verificado: false
+    nota: "La página del examen calcula el precio por país al agendar; no se pudo leer el monto."
+    fuente_url: https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-901/
+  vigencia_meses: null
+  no_caduca: true
+  renovacion: "Las certificaciones Fundamentals de Microsoft no caducan."
+  idioma_es: null
+  vias_ahorro: [opo-ms-virtual-training-day-az900, opo-ms-descuento-estudiantes]
+  advertencia: "El examen AI-900 se retiró el 30-jun-2026 y lo sustituye AI-901 (enfoque en Microsoft Foundry). No recomendar material de estudio del AI-900."
+  fuente_url: https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams
+  fecha_verificacion: 2026-10-24
+
+- id: cert-aws-aif-c01
+  nombre: "AWS Certified AI Practitioner (AIF-C01)"
+  organizacion: org-aws
+  tipo: examen
+  familias: [fam-datos-ia]
+  nivel_escalera: 1
+  costo:
+    monto: 100
+    moneda: USD
+    verificado: true
+    nota: "Más posibles cargos por tipo de cambio."
+    fuente_url: https://aws.amazon.com/certification/certified-ai-practitioner/
+  duracion: "90 minutos, 65 preguntas"
+  vigencia_meses: 36
+  no_caduca: false
+  renovacion: "Presentar la versión vigente del examen u obtener AWS Certified Machine Learning Engineer – Associate."
+  idioma_es: true
+  vias_ahorro: [opo-aws-descuento-siguiente-examen]
+  preparacion: [prep-aws-educate, prep-generation-aws-restart]
+  fuente_url: https://aws.amazon.com/certification/certified-ai-practitioner/
+  fecha_verificacion: 2026-10-24
+
+# ===================== fam-ciberseguridad =====================
+- id: cert-isc2-cc
+  nombre: "ISC2 Certified in Cybersecurity (CC)"
+  organizacion: org-isc2
+  tipo: examen
+  familias: [fam-ciberseguridad]
+  nivel_escalera: 1
+  costo:
+    monto: 199
+    moneda: USD
+    verificado: true
+    nota: "Más cuota anual de mantenimiento (AMF) de USD 50. El paquete en español de USD 199 incluye curso autodirigido, voucher, dos intentos y exención de la primera AMF."
+    fuente_url: https://www.isc2.org/landing/1mcc
+  vigencia_meses: null
+  no_caduca: false
+  renovacion: "Pago anual de USD 50 (AMF) en el aniversario de la certificación, más créditos de educación continua; el ciclo y el número de créditos no se confirmaron en la fuente."
+  idioma_es: true
+  vias_ahorro: [opo-isc2-cc-paquete-es, opo-isc2-1mcc]
+  advertencia: "El programa gratuito One Million Certified in Cybersecurity cerró inscripciones el 20-may-2026. Quien ya tenga código debe presentar el examen antes del 31-dic-2026."
+  fuente_url: https://www.isc2.org/landing/1mcc
+  fecha_verificacion: 2026-10-24
+
+- id: cert-cisco-ccst-cybersecurity
+  nombre: "Cisco Certified Support Technician (CCST) Cybersecurity"
+  organizacion: org-cisco
+  tipo: examen
+  familias: [fam-ciberseguridad]
+  nivel_escalera: 1
+  costo:
+    monto: 125
+    moneda: USD
+    verificado: true
+    fuente_url: https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html
+  duracion: "50 minutos"
+  vigencia_meses: 60
+  no_caduca: false
+  renovacion: "Las CCST obtenidas desde el 15-jul-2025 valen 5 años y se renuevan sólo aprobando otro examen Cisco. La FAQ de Cisco se contradice en un punto (dice también que son vitalicias); confirmar antes de mostrar."
+  idioma_es: true
+  preparacion: [prep-cisco-junior-cybersecurity-analyst]
+  evidencia: "Apta para bachillerato: Cisco incluye a estudiantes de los últimos grados de preparatoria en su público objetivo y no exige requisitos previos."
+  fuente_url: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html
+  fecha_verificacion: 2026-10-24
+
+- id: cert-comptia-security-plus
+  nombre: "CompTIA Security+"
+  organizacion: org-comptia
+  tipo: examen
+  familias: [fam-ciberseguridad]
+  nivel_escalera: 2
+  costo:
+    monto: null
+    moneda: USD
+    verificado: false
+    nota: "La página oficial no publica el precio sin entrar a la tienda. El paso 1 citó USD 439 con una fuente secundaria; no se confirmó."
+    fuente_url: https://www.comptia.org/en-gb/certifications/security/v7/
+  vigencia_meses: null
+  no_caduca: false
+  renovacion: "No confirmada en la página oficial consultada."
+  idioma_es: true
+  advertencia: "La versión V8 se lanzará alrededor del 17-nov-2026; la versión en español del V7 (SY0-701) se retira el 13-ago-2027. El descuento académico de CompTIA sólo aplica a estudiantes de EE. UU. y Canadá."
+  fuente_url: https://www.comptia.org/en-gb/certifications/security/v7/
+  fecha_verificacion: 2026-10-24
+
+# ===================== fam-software-nube =====================
+- id: cert-aws-clf-c02
+  nombre: "AWS Certified Cloud Practitioner (CLF-C02)"
+  organizacion: org-aws
+  tipo: examen
+  familias: [fam-software-nube]
+  nivel_escalera: 1
+  costo:
+    monto: 100
+    moneda: USD
+    verificado: true
+    nota: "Más posibles cargos por tipo de cambio."
+    fuente_url: https://aws.amazon.com/certification/certified-cloud-practitioner/
+  duracion: "90 minutos"
+  vigencia_meses: 36
+  no_caduca: false
+  renovacion: "Presentar la versión vigente del examen, aprobar un examen Associate o Professional, o completar el curso AWS Cloud Quest: Recertify Cloud Practitioner."
+  idioma_es: true
+  vias_ahorro: [opo-aws-descuento-siguiente-examen]
+  preparacion: [prep-aws-educate, prep-generation-aws-restart]
+  fuente_url: https://aws.amazon.com/certification/certified-cloud-practitioner/
+  fecha_verificacion: 2026-10-24
+
+- id: cert-microsoft-az-900
+  nombre: "Microsoft Certified: Azure Fundamentals (AZ-900)"
+  organizacion: org-microsoft
+  tipo: examen
+  familias: [fam-software-nube]
+  nivel_escalera: 1
+  costo:
+    monto: 99
+    moneda: USD
+    verificado: false
+    nota: "Monto de fuente secundaria (paso 1). La página oficial calcula el precio por país al agendar."
+    fuente_url: https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/
+  vigencia_meses: null
+  no_caduca: true
+  renovacion: "Las certificaciones Fundamentals de Microsoft no caducan."
+  idioma_es: null
+  vias_ahorro: [opo-ms-virtual-training-day-az900, opo-ms-descuento-estudiantes]
+  advertencia: "Corrección al paso 1: los Virtual Training Days dan 50% de descuento, no un voucher gratuito. Microsoft no tiene ofertas de 100% para AZ-900 vigentes ni planeadas (moderador de Microsoft Q&A, 28-jun-2026)."
+  fuente_url: https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/
+  fecha_verificacion: 2026-10-24
+
+- id: cert-google-cloud-digital-leader
+  nombre: "Google Cloud Certified · Cloud Digital Leader"
+  organizacion: org-google
+  tipo: examen
+  familias: [fam-software-nube]
+  nivel_escalera: 1
+  costo:
+    monto: 99
+    moneda: USD
+    verificado: true
+    nota: "Más impuestos cuando aplique. Examen de renovación: USD 60."
+    fuente_url: https://cloud.google.com/learn/certification/cloud-digital-leader
+  duracion: "90 minutos"
+  vigencia_meses: 36
+  no_caduca: false
+  renovacion: "Examen estándar, examen de renovación (USD 60, 45 min, sólo inglés o japonés) o cursos e insignias designados en Google Skills (extiende 1 año)."
+  idioma_es: true
+  fuente_url: https://cloud.google.com/learn/certification/cloud-digital-leader
+  fecha_verificacion: 2026-10-24
+
+# ===================== fam-soporte-ti-redes =====================
+- id: cert-cisco-ccna
+  nombre: "Cisco Certified Network Associate (CCNA 200-301)"
+  organizacion: org-cisco
+  tipo: examen
+  familias: [fam-soporte-ti-redes]
+  nivel_escalera: 2
+  costo:
+    monto: 300
+    moneda: USD
+    verificado: true
+    fuente_url: https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html
+  duracion: "120 minutos"
+  vigencia_meses: null
+  no_caduca: false
+  renovacion: "La página oficial consultada no indica la vigencia; pendiente de confirmar en la política de recertificación de Cisco."
+  idioma_es: false
+  advertencia: "El examen sólo se ofrece en inglés y japonés: requiere inglés técnico intermedio o avanzado (pregunta B13 del cuestionario)."
+  fuente_url: https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html
+  fecha_verificacion: 2026-10-24
+
+# ===================== fam-manufactura-avanzada =====================
+- id: cert-solidworks-cswa
+  nombre: "SOLIDWORKS Design Associate (CSWA)"
+  organizacion: org-solidworks
+  tipo: examen
+  familias: [fam-manufactura-avanzada]
+  nivel_escalera: 1
+  costo:
+    monto: 99
+    moneda: USD
+    verificado: true
+    nota: "Precio de Norteamérica por un intento. Voucher gratuito para estudiantes cuya escuela participa en el programa académico o que compran la versión estudiantil."
+    fuente_url: https://www.solidworks.com/solidworks-certification-program
+  vigencia_meses: null
+  no_caduca: false
+  renovacion: "La página oficial no indica si caduca; pendiente."
+  idioma_es: true
+  vias_ahorro: [opo-solidworks-voucher-academico]
+  fuente_url: https://www.solidworks.com/solidworks-certification-program
+  fecha_verificacion: 2026-10-24
+
+- id: cert-autodesk-autocad-professional
+  nombre: "Autodesk Certified Professional in AutoCAD for Design and Drafting"
+  organizacion: org-autodesk
+  tipo: examen
+  familias: [fam-manufactura-avanzada, fam-energia-ambiente]
+  nivel_escalera: 2
+  costo:
+    monto: 200
+    moneda: USD
+    verificado: true
+    fuente_url: https://www.autodesk.com/certification/all-certifications/autocad-design-drafting-professional
+  vigencia_meses: 36
+  no_caduca: false
+  renovacion: "Volver a presentar el examen."
+  idioma_es: false
+  requisitos: "Se recomiendan de 400 a 1,200 horas de experiencia real con AutoCAD."
+  preparacion: [prep-autodesk-autocad-cert-prep]
+  advertencia: "Sólo en inglés y con experiencia previa considerable: no es primera certificación para estudiantes."
+  fuente_url: https://www.autodesk.com/certification/all-certifications/autocad-design-drafting-professional
+  fecha_verificacion: 2026-10-24
+
+- id: cert-asq-cssgb
+  nombre: "ASQ Certified Six Sigma Green Belt (CSSGB)"
+  organizacion: org-asq
+  tipo: examen
+  familias: [fam-manufactura-avanzada]
+  nivel_escalera: 3
+  costo:
+    monto: 483
+    moneda: USD
+    verificado: true
+    nota: "Precio para no miembros; los miembros de ASQ ahorran USD 100 en el examen inicial."
+    fuente_url: https://www.asq.org/cert/six-sigma-green-belt
+  vigencia_meses: null
+  no_caduca: false
+  renovacion: "La página consultada remite a la política de recertificación; pendiente."
+  idioma_es: false
+  requisitos: "Tres años de experiencia laboral remunerada de tiempo completo en el cuerpo de conocimiento; sin dispensa por estudios."
+  advertencia: "Sólo para la ruta B con experiencia en manufactura o calidad. Existen muchas credenciales 'Green Belt' de proveedores sin estándar común: recomendar sólo emisores reconocidos."
+  fuente_url: https://www.asq.org/cert/six-sigma-green-belt
+  fecha_verificacion: 2026-10-24
+
+# ===================== fam-energia-ambiente =====================
+- id: cert-nabcep-pv-associate
+  nombre: "NABCEP PV Associate (PVA)"
+  organizacion: org-nabcep
+  tipo: examen
+  familias: [fam-energia-ambiente]
+  nivel_escalera: 1
+  costo:
+    monto: 225
+    moneda: USD
+    verificado: true
+    nota: "Desglose desde México: examen USD 125 + solicitud USD 25 + recargo internacional USD 75 (exámenes fuera de EE. UU. y Canadá). Renovación: USD 150."
+    fuente_url: https://www.nabcep.org/certifications/nabcep-fees/
+  vigencia_meses: null
+  no_caduca: false
+  renovacion: "Cuota de USD 150; periodo de vigencia no indicado en la página de cuotas (consultar el Associate Handbook)."
+  idioma_es: null
+  advertencia: "Credencial de referencia en Norteamérica; para instalación en México conviene complementarla con el estándar de competencia CONOCER correspondiente (pendiente de investigar)."
+  fuente_url: https://www.nabcep.org/certifications/nabcep-fees/
+  fecha_verificacion: 2026-10-24
+
+# ===================== fam-gestion-proyectos =====================
+- id: cert-pmi-capm
+  nombre: "PMI Certified Associate in Project Management (CAPM)"
+  organizacion: org-pmi
+  tipo: examen
+  familias: [fam-gestion-proyectos]
+  nivel_escalera: 1
+  costo:
+    monto: null
+    moneda: USD
+    verificado: false
+    nota: "PMI no publica el monto en las páginas consultadas; depende de membresía y región."
+    fuente_url: https://www.pmi.org/certifications/certified-associate-capm
+  duracion: "150 preguntas en 180 minutos"
+  vigencia_meses: 36
+  no_caduca: false
+  renovacion: "15 PDU (horas de desarrollo profesional) cada ciclo de 3 años."
+  idioma_es: true
+  requisitos: "Bachillerato terminado y 23 horas de formación en gestión de proyectos."
+  fuente_url: https://www.pmi.org/certifications/certified-associate-capm
+  fecha_verificacion: 2026-10-24

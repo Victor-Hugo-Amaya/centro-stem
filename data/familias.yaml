@@ -1,0 +1,158 @@
+# Familias ocupacionales STEM, ordenadas por nivel de demanda.
+# Criterio de `nivel_demanda` (docs/05-catalogo.md §2):
+#   muy_alta (90): crecimiento neto ≥ 40% en el perfil México del WEF, o rol en el top global del WEF
+#                  con una señal de escasez en México (IMCO, Coursera).
+#   alta (75):     rol en la lista de mayor crecimiento global del WEF o habilidad de uso creciente ≥ 70%
+#                  en México, más al menos una señal nacional.
+#   media (55):    señales mixtas o sólo indirectas.
+#   descenso (30): el WEF proyecta caída neta del rol en México.
+# El puntaje alimenta el componente `demanda` del motor (docs/02 §7). Es una hipótesis inicial:
+# el loop semanal (paso 3) debe sustituirlo por frecuencia observada en vacantes.
+
+- id: fam-datos-ia
+  nombre: "Datos e inteligencia artificial"
+  nivel_demanda: muy_alta
+  puntaje_demanda: 90
+  roles_ejemplo: ["analista de datos", "científico de datos", "especialista en IA y aprendizaje automático", "ingeniero de datos"]
+  senales:
+    - dato: "Analistas y científicos de datos: +47% de crecimiento neto proyectado en México 2025-2030; especialistas en IA y ML: +46%"
+      fuente: wef-foj-2025
+    - dato: "IA y big data: 93% de las empresas en México espera mayor uso de esta habilidad hacia 2030"
+      fuente: wef-foj-2025
+    - dato: "Demanda de empleadores por IA y aprendizaje automático en México: +338%"
+      fuente: coursera-gsr-2025
+    - dato: "TI y análisis de datos son las vacantes más difíciles de cubrir (26%, Manpower 2025)"
+      fuente: imco-cc-2025
+  fuente_url: https://www.weforum.org/publications/the-future-of-jobs-report-2025
+  fecha_verificacion: 2026-10-24
+
+- id: fam-ciberseguridad
+  nombre: "Ciberseguridad"
+  nivel_demanda: muy_alta
+  puntaje_demanda: 90
+  roles_ejemplo: ["analista de seguridad de la información", "analista SOC", "especialista en gestión de seguridad"]
+  senales:
+    - dato: "Especialistas en gestión de seguridad y analistas de seguridad de la información están en la lista de mayor crecimiento global"
+      fuente: wef-foj-2025
+    - dato: "Redes y ciberseguridad: 73% de las empresas en México espera mayor uso hacia 2030"
+      fuente: wef-foj-2025
+    - dato: "Déficit regional de 1.3 millones de profesionales de ciberseguridad; inscripciones en ciberseguridad +94% en México"
+      fuente: coursera-gsr-2025
+  fuente_url: https://www.weforum.org/publications/the-future-of-jobs-report-2025
+  fecha_verificacion: 2026-10-24
+
+- id: fam-software-nube
+  nombre: "Desarrollo de software y nube"
+  nivel_demanda: alta
+  puntaje_demanda: 75
+  roles_ejemplo: ["desarrollador de software", "ingeniero DevOps", "ingeniero de nube", "ingeniero FinTech"]
+  senales:
+    - dato: "Desarrolladores de software, ingenieros DevOps e ingenieros FinTech en la lista de mayor crecimiento global"
+      fuente: wef-foj-2025
+    - dato: "Desarrollo de software: +10.8% de primer ingreso entre los ciclos 2023-24 y 2024-25"
+      fuente: imco-cc-2025
+  advertencia: "Los puestos de entrada en México pasaron de crecer cerca de 9% anual (2021) a menos de 3% (2023-2025). Sin portafolio, la competencia para el primer empleo es alta."
+  fuente_url: https://www.weforum.org/publications/the-future-of-jobs-report-2025
+  fecha_verificacion: 2026-10-24
+
+- id: fam-manufactura-avanzada
+  nombre: "Manufactura avanzada, automatización y mecatrónica"
+  nivel_demanda: alta
+  puntaje_demanda: 75
+  roles_ejemplo: ["técnico en automatización", "ingeniero mecatrónico", "técnico de mantenimiento industrial", "ingeniero de calidad"]
+  senales:
+    - dato: "82% de las empresas en México acelerará la automatización y 63% usará más robótica"
+      fuente: wef-foj-2025
+    - dato: "México perderá alrededor de 300 mil técnicos hacia 2050 si se mantiene la tendencia"
+      fuente: imco-cc-2025
+    - dato: "Electrónica, automatización y mecánica-eléctrica: ingreso promedio de $25,953 y desempleo de 3.3%"
+      fuente: imco-cc-plataforma
+  fuente_url: https://imco.org.mx/compara-carreras-2025/
+  fecha_verificacion: 2026-10-24
+
+- id: fam-energia-ambiente
+  nombre: "Energía y gestión ambiental"
+  nivel_demanda: alta
+  puntaje_demanda: 75
+  roles_ejemplo: ["ingeniero en energías renovables", "ingeniero ambiental", "técnico electricista", "instalador fotovoltaico"]
+  senales:
+    - dato: "Ingenieros en energías renovables e ingenieros ambientales en la lista de mayor crecimiento global"
+      fuente: wef-foj-2025
+    - dato: "Gestión ambiental: 69% de las empresas en México espera mayor uso hacia 2030"
+      fuente: wef-foj-2025
+    - dato: "232 proyectos registrados por Banobras demandarán perfiles de energía, mantenimiento y gestión ambiental"
+      fuente: imco-tendencias
+  advertencia: "La carrera 'Tecnología para la protección del medio ambiente' está entre las 10 de mayor riesgo de informalidad o desempleo (31.8%) y tiene 8.9% de desempleo. La demanda existe en ingeniería y oficios técnicos, no en cualquier programa con nombre ambiental."
+  fuente_url: https://www.weforum.org/publications/the-future-of-jobs-report-2025
+  fecha_verificacion: 2026-10-24
+
+- id: fam-soporte-ti-redes
+  nombre: "Soporte de TI y redes"
+  nivel_demanda: media
+  puntaje_demanda: 55
+  roles_ejemplo: ["especialista en soporte (HelpDesk)", "técnico de redes", "administrador de sistemas jr."]
+  senales:
+    - dato: "TI es una de las áreas de vacantes más difíciles de cubrir en México"
+      fuente: imco-cc-2025
+    - dato: "Redes y ciberseguridad: 73% de las empresas en México espera mayor uso hacia 2030"
+      fuente: wef-foj-2025
+  advertencia: "Es puerta de entrada, no destino. El soporte de primer nivel es tarea con exposición creciente a la automatización; conviene planear el paso a redes, nube o ciberseguridad."
+  fuente_url: https://imco.org.mx/compara-carreras-2025/
+  fecha_verificacion: 2026-10-24
+
+- id: fam-salud-biotecnologia
+  nombre: "Salud y biotecnología"
+  nivel_demanda: media
+  puntaje_demanda: 55
+  roles_ejemplo: ["médico general", "enfermería", "técnico en diagnóstico", "técnico de laboratorio"]
+  senales:
+    - dato: "Hacia 2050, salud, tecnología e industria concentrarán la mayor parte del empleo juvenil con licenciatura"
+      fuente: imco-cc-2025
+    - dato: "Medicina general: mayor vinculación laboral (80.7% trabaja en su campo) y desempleo de 1.6%"
+      fuente: imco-cc-plataforma
+  advertencia: "El catálogo aún no tiene certificaciones de esta familia: las credenciales relevantes son regulatorias (cédula, COFEPRIS, CONOCER) y requieren otra investigación."
+  fuente_url: https://imco.org.mx/compara-carreras-2025/
+  fecha_verificacion: 2026-10-24
+
+- id: fam-gestion-proyectos
+  nombre: "Gestión de proyectos técnicos"
+  nivel_demanda: media
+  puntaje_demanda: 55
+  roles_ejemplo: ["coordinador de proyectos", "analista PMO", "scrum master jr."]
+  senales:
+    - dato: "Google Project Management es el certificado profesional más tomado en México"
+      fuente: coursera-gsr-2025
+    - dato: "Liderazgo e influencia social: 70% de las empresas en México espera mayor uso hacia 2030"
+      fuente: wef-foj-2025
+  advertencia: "Popularidad de inscripción no es demanda de contratación. Sin experiencia técnica previa, una credencial de gestión de proyectos rara vez basta para el primer empleo."
+  fuente_url: https://www.coursera.org/skills-reports/global/get-report
+  fecha_verificacion: 2026-10-24
+
+- id: fam-ux-diseno
+  nombre: "Diseño de experiencia de usuario (UX/UI)"
+  nivel_demanda: media
+  puntaje_demanda: 55
+  roles_ejemplo: ["diseñador UX/UI", "investigador UX"]
+  senales:
+    - dato: "Diseñadores UI/UX en la lista de mayor crecimiento global"
+      fuente: wef-foj-2025
+    - dato: "UX Design entre los cinco certificados profesionales más tomados en la región"
+      fuente: coursera-gsr-2025
+  fuente_url: https://www.weforum.org/publications/the-future-of-jobs-report-2025
+  fecha_verificacion: 2026-10-24
+
+- id: fam-administracion-contabilidad
+  nombre: "Administración, contabilidad y apoyo de oficina"
+  nivel_demanda: descenso
+  puntaje_demanda: 30
+  roles_ejemplo: ["auxiliar contable", "asistente administrativo", "capturista"]
+  senales:
+    - dato: "Auxiliares de contabilidad y nómina: −20%; asistentes administrativos: −25% de crecimiento neto en México"
+      fuente: wef-foj-2025
+    - dato: "El trabajo administrativo es el único grupo con exposición alta a la IA generativa (24% de sus tareas)"
+      fuente: oit-wp96
+    - dato: "Contabilidad y fiscalización: desempleo de 1.9% y 1.27 millones de profesionistas"
+      fuente: imco-cc-plataforma
+  advertencia: "Hoy la carrera tiene empleo; lo que cae es la demanda de tareas rutinarias. La recomendación es complementar (datos, fintech, auditoría de sistemas), no abandonar."
+  fuente_url: https://www.weforum.org/publications/the-future-of-jobs-report-2025
+  fecha_verificacion: 2026-10-24

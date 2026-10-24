@@ -1,0 +1,140 @@
+# Organizaciones: socios prioritarios, certificadores y programas públicos.
+# `prioridad: socio` marca a los socios que Victor pidió priorizar.
+# `estado: pendiente` significa que no hay enlace oficial verificado: no se muestra al usuario.
+
+# --- Socios prioritarios ---
+- id: org-ja-mexico
+  nombre: "Junior Achievement México (JA México)"
+  tipo: ong
+  prioridad: socio
+  descripcion: "Programas de emprendimiento, empleabilidad y finanzas personales. El sitio declara que 98% de sus programas son gratuitos gracias a sus aliados, en modalidad presencial y en línea."
+  contacto: "WhatsApp 55 5211 9444; https://www.jamexico.org.mx/contacto"
+  fuente_url: https://www.jamexico.org.mx/programasmx
+  fecha_verificacion: 2026-10-24
+
+- id: org-ja-americas
+  nombre: "Junior Achievement Americas (JA Americas)"
+  tipo: ong
+  prioridad: socio
+  descripcion: "Oficina regional de JA. Opera iniciativas regionales de empleabilidad (Mujer Digital, Pasaporte al empleo, Job Shadow), finanzas y emprendimiento, en varios casos junto con JA México."
+  contacto: "info@jaamericas.org"
+  fuente_url: https://jaamericas.org/programs
+  fecha_verificacion: 2026-10-24
+
+- id: org-generation-mexico
+  nombre: "Generation México"
+  tipo: ong
+  prioridad: socio
+  descripcion: "Bootcamps gratuitos de tiempo completo con acompañamiento de empleabilidad de 12 semanas, para personas de 18 a 29 años que buscan empleo."
+  fuente_url: https://mexico.generation.org/encuentra-una-carrera/
+  fecha_verificacion: 2026-10-24
+
+- id: org-biociencia-wild
+  nombre: "BioCiencia Wild"
+  tipo: colectivo
+  prioridad: socio
+  estado: en_espera
+  descripcion: "Colectivo de divulgación STEM indicado por Victor. Sólo tiene cuenta de Instagram, sin sitio web; en espera por decisión de Victor (24-oct-2026)."
+  fuente_url: null
+  fecha_verificacion: 2026-10-24
+
+- id: org-regeni
+  nombre: "Regeni"
+  tipo: colectivo
+  prioridad: socio
+  estado: en_espera
+  descripcion: "Colectivo de divulgación STEM indicado por Victor. Sólo tiene cuenta de Instagram, sin sitio web; en espera por decisión de Victor (24-oct-2026)."
+  fuente_url: null
+  fecha_verificacion: 2026-10-24
+
+# --- Certificadores y plataformas ---
+- id: org-aws
+  nombre: "Amazon Web Services (AWS) Training and Certification"
+  tipo: certificador
+  fuente_url: https://aws.amazon.com/certification/
+  fecha_verificacion: 2026-10-24
+
+- id: org-microsoft
+  nombre: "Microsoft Learn · Credentials"
+  tipo: certificador
+  fuente_url: https://learn.microsoft.com/en-us/credentials/
+  fecha_verificacion: 2026-10-24
+
+- id: org-google
+  nombre: "Google (Google Cloud y Google Career Certificates)"
+  tipo: certificador
+  fuente_url: https://cloud.google.com/learn/certification
+  fecha_verificacion: 2026-10-24
+
+- id: org-isc2
+  nombre: "ISC2"
+  tipo: certificador
+  fuente_url: https://www.isc2.org/certifications/cc
+  fecha_verificacion: 2026-10-24
+
+- id: org-comptia
+  nombre: "CompTIA"
+  tipo: certificador
+  fuente_url: https://www.comptia.org/
+  fecha_verificacion: 2026-10-24
+
+- id: org-cisco
+  nombre: "Cisco (certificaciones y Networking Academy)"
+  tipo: certificador
+  fuente_url: https://www.netacad.com/
+  fecha_verificacion: 2026-10-24
+
+- id: org-pmi
+  nombre: "Project Management Institute (PMI)"
+  tipo: certificador
+  fuente_url: https://www.pmi.org/certifications/certified-associate-capm
+  fecha_verificacion: 2026-10-24
+
+- id: org-asq
+  nombre: "American Society for Quality (ASQ)"
+  tipo: certificador
+  fuente_url: https://www.asq.org/cert/six-sigma-green-belt
+  fecha_verificacion: 2026-10-24
+
+- id: org-solidworks
+  nombre: "Dassault Systèmes · SOLIDWORKS"
+  tipo: certificador
+  fuente_url: https://www.solidworks.com/solidworks-certification-program
+  fecha_verificacion: 2026-10-24
+
+- id: org-autodesk
+  nombre: "Autodesk"
+  tipo: certificador
+  fuente_url: https://www.autodesk.com/certification/overview
+  fecha_verificacion: 2026-10-24
+
+- id: org-nabcep
+  nombre: "North American Board of Certified Energy Practitioners (NABCEP)"
+  tipo: certificador
+  fuente_url: https://www.nabcep.org/certifications/nabcep-fees/
+  fecha_verificacion: 2026-10-24
+
+- id: org-coursera
+  nombre: "Coursera"
+  tipo: plataforma
+  fuente_url: https://www.coursera.org/
+  fecha_verificacion: 2026-10-24
+
+# --- Sector público y retos ---
+- id: org-stps
+  nombre: "Secretaría del Trabajo y Previsión Social (STPS)"
+  tipo: gobierno
+  fuente_url: https://www.programasparaelbienestar.gob.mx/programas/jovenes/jovenes-construyendo-el-futuro/
+  fecha_verificacion: 2026-10-24
+
+- id: org-nasa
+  nombre: "NASA · Space Apps Challenge"
+  tipo: reto
+  fuente_url: https://www.spaceappschallenge.org/
+  fecha_verificacion: 2026-10-24
+
+- id: org-technovation
+  nombre: "Technovation"
+  tipo: ong
+  fuente_url: https://www.technovation.org/
+  fecha_verificacion: 2026-10-24
