@@ -28,7 +28,7 @@ bolsas:
       - https://mx.computrabajo.com/trabajo-de-soporte-tecnico
       - https://mx.computrabajo.com/trabajo-de-tecnico-en-automatizacion
     consultas: ['site:mx.computrabajo.com {palabra}']
-    nota: "career-ops sólo midió el sitio de Colombia; el de México se asume igual (sin verificar). Tope del proveedor: 15 vacantes por URL."
+    nota: "Funciona con el proveedor de career-ops: primera ejecución en GitHub Actions el 24-oct-2026, 15 vacantes por URL (tope del proveedor; cada búsqueda tenía más resultados)."
   - nombre: "LinkedIn Empleos"
     metodo: busqueda_web
     estado: activa

@@ -35,7 +35,7 @@ Hora de México (CDMX, UTC−6). La fase B corre antes para que su resultado est
 | Fuente | Método | Por qué |
 |---|---|---|
 | OCC Mundial | Búsqueda web (`site:occ.com.mx`) | Bloquea servidores fuera de México (Cloudflare con alcance geográfico, documentado por career-ops y confirmado aquí). |
-| Computrabajo México | Escáner (fase B) y búsqueda web como respaldo | No tiene API; career-ops lo lee con un tope de 15 vacantes por URL. Sólo se midió el sitio de Colombia. |
+| Computrabajo México | Escáner (fase B) y búsqueda web como respaldo | No tiene API; career-ops lo lee con un tope de 15 vacantes por URL. Verificado en México el 24-oct-2026. |
 | LinkedIn e Indeed | Sólo búsqueda web | Sus términos prohíben la extracción automática. Se consulta lo que un buscador ya indexó. |
 | Get on Board | Escáner (fase B) | API pública; bolsa tecnológica de LatAm. |
 | Empresas con ATS (Greenhouse, Lever, Ashby, Workable) | Escáner (fase B) | API pública y estable. Lista inicial: Nubank, Clara, Wiz, Platzi, Deuna, Cobre, Yuno. |
@@ -71,6 +71,7 @@ Autorizada por Victor el 24-oct-2026. Reutiliza los proveedores de career-ops (l
 - **Flujo:** `scripts/semanal.py --entradas-escaner` traduce `data/portales.yaml` a entradas de proveedor; [`scripts/escanear.mjs`](../scripts/escanear.mjs) las lee y produce `{fuentes, vacantes}`; una fuente que falla no detiene las demás y queda registrada.
 - **Entrega:** la Action publica el resultado en la rama `datos-escaner` (`escaner/ultimo.json` y una copia con fecha) y un resumen en la página de la ejecución. La revisión semanal lo toma de ahí. En un PR la Action sólo prueba, no publica.
 - **Cobertura conservadora:** Computrabajo se lee con una página por búsqueda (tope del proveedor: 15 vacantes); las vacantes remotas sin país explícito se descartan, porque no se puede saber si aceptan candidatos en México.
+- **Primera ejecución (24-oct-2026, en este PR):** 13 de 13 fuentes respondieron y se leyeron 1,097 vacantes antes de filtrar por ubicación (Get on Board 592, Clara 149, Wiz 123, Nubank 97, Computrabajo 75, resto 61). Get on Board y los ATS aportan volumen, pero gran parte es de otros países; el filtro de México y LatAm lo reduce.
 - **OCC directo** sólo sería posible con un ejecutor en México (por ejemplo, una computadora de Victor con GitHub Actions *self-hosted*). No lo recomiendo por ahora: exige mantener un equipo encendido y la búsqueda web ya cubre OCC con menor precisión.
 
 ## 7. Revisión mensual de reportes
