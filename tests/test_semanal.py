@@ -107,6 +107,15 @@ class Requisitos(unittest.TestCase):
         self.assertIn("https://s", [v["url"] for v in muestra])
 
 
+    def test_reporte_avisa_si_la_muestra_es_pequena(self):
+        datos = (semanal.leer("oportunidades.yaml"), semanal.leer("preparacion.yaml"), semanal.leer("portales.yaml"), BUSQUEDA)
+        lecturas = [{"titulo": "Becario de nube", "requisitos": "AWS"}]
+        texto = semanal.reporte(dt.date(2026, 10, 26), datos, None,
+                                (lecturas, semanal.resumir_requisitos(lecturas, BUSQUEDA, NIVELES)))
+        self.assertIn("tomar sólo como indicio", texto)
+        self.assertIn("| `cert-aws-clf-c02` | 0 | 1 |", texto)
+
+
 class Agenda(unittest.TestCase):
     def test_vencidos_y_cierres(self):
         hoy = dt.date(2026, 11, 1)

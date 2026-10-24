@@ -203,6 +203,7 @@ def analizar_vacantes(vacantes, busqueda):
 # ---------------------------------------------------------------- requisitos
 
 TAMANO_MUESTRA = 20
+MINIMO_SEMANAL = 10  # vacantes leídas; por debajo, el resultado es indicio (docs/07 §5 bis)
 MAX_POR_EMPRESA = 3
 PRIORIDAD_TIPO = {"practicas": 0, "vacante_entrada": 1, "otra": 2}
 
@@ -323,7 +324,7 @@ def reporte(hoy, datos, analisis=None, requisitos=None):
         l.append("")
         muestra = muestra_para_leer(filtradas)
         l += ["## 6. Muestra para leer requisitos", "",
-              "La mayoría de las fuentes no entrega la descripción. Abrir cada vacante, copiar en "
+              f"La mayoría de las fuentes no entrega la descripción. Leer al menos {MINIMO_SEMANAL} vacantes. Abrir cada una, copiar en "
               f"`reportes/semanal/{hoy.isoformat()}-requisitos.yaml` los requisitos y los años de experiencia, "
               "y volver a generar el reporte con `--requisitos`.", "",
               "| Vacante | Empresa | Familia | Tipo |", "|---|---|---|---|"]
@@ -333,10 +334,12 @@ def reporte(hoy, datos, analisis=None, requisitos=None):
 
     if requisitos is not None:
         lecturas, resumen = requisitos
+        aviso = "" if len(lecturas) >= MINIMO_SEMANAL else f" **Menos de {MINIMO_SEMANAL}: tomar sólo como indicio.**"
         l += ["## 7. Certificaciones según los requisitos leídos", "",
-              f"{len(lecturas)} vacantes leídas. *Pedidas* = la vacante nombra la certificación. "
-              "*Recomendadas* = el catálogo la sugiere por la tecnología y la experiencia que pide la vacante.", "",
-              "| Certificación | Pedidas | Recomendadas |", "|---|---|---|"]
+              f"{len(lecturas)} vacantes leídas.{aviso} *Pedidas* = la vacante nombra la certificación (dato del mercado). "
+              "*Para destacar* = recomendación nuestra: la certificación del catálogo que mejor posiciona al perfil "
+              "según la tecnología y la experiencia que pide la vacante.", "",
+              "| Certificación | Pedidas | Para destacar |", "|---|---|---|"]
         certs = sorted(set(resumen["explicitas"]) | set(resumen["sugeridas"]),
                        key=lambda c: -(resumen["explicitas"].get(c, 0) + resumen["sugeridas"].get(c, 0)))
         l += [f"| `{c}` | {resumen['explicitas'].get(c, 0)} | {resumen['sugeridas'].get(c, 0)} |" for c in certs]

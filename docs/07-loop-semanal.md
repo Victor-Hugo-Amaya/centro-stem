@@ -64,7 +64,7 @@ Todavía no hay respuestas reales del cuestionario, así que [`data/busqueda.yam
 
 ### 5 bis. De los requisitos a las certificaciones recomendadas
 
-Aprobado por Victor el 24-oct-2026. La primera ejecución del escáner mostró que la mayoría de las fuentes no entrega la descripción de la vacante, así que el conteo automático de certificaciones dio cero. Por eso la revisión semanal **lee una muestra de hasta 20 vacantes** (sin puestos senior, rotando familias, máximo tres por empresa) y registra sus requisitos. `scripts/semanal.py --requisitos` los traduce así:
+Aprobado por Victor el 24-oct-2026. La primera ejecución del escáner mostró que la mayoría de las fuentes no entrega la descripción de la vacante, así que el conteo automático de certificaciones dio cero. Por eso la revisión semanal **lee una muestra de hasta 20 vacantes, con un mínimo de 10** (sin puestos senior, rotando familias, máximo tres por empresa) y registra sus requisitos. Mínimo mensual: 40 vacantes leídas; por debajo de esos umbrales el resultado se presenta como indicio, no como evidencia (criterio aprobado por Victor el 24-oct-2026). `scripts/semanal.py --requisitos` los traduce así:
 
 | La vacante pide | Experiencia | Recomendación |
 |---|---|---|
@@ -73,7 +73,7 @@ Aprobado por Victor el 24-oct-2026. La primera ejecución del escáner mostró q
 | Analista SOC con SIEM | Sin experiencia → con 1 año | `cert-isc2-cc` → `cert-comptia-security-plus` |
 | Nombra una certificación (por ejemplo, CCNA) | Cualquiera | Se cuenta como **pedida**, separada de las recomendadas |
 
-La tabla completa de tecnologías está en `tecnologias` de [`data/busqueda.yaml`](../data/busqueda.yaml). Se separan las certificaciones **pedidas** (dato del mercado) de las **recomendadas** (inferencia del catálogo) para no confundir evidencia con criterio propio. La revisión mensual suma estos resultados, investiga en las fuentes oficiales las rutas de certificación de las tecnologías más pedidas y propone qué agregar o priorizar en el catálogo.
+La tabla completa de tecnologías está en `tecnologias` de [`data/busqueda.yaml`](../data/busqueda.yaml). Se separan las certificaciones **pedidas** (dato del mercado) de las **recomendadas para destacar** (criterio nuestro: lo que mejor posiciona y diferencia al perfil) para no confundir evidencia con recomendación. La revisión mensual suma estos resultados, investiga en las fuentes oficiales las rutas de certificación de las tecnologías más pedidas y propone qué agregar o priorizar en el catálogo.
 
 ## 6. Fase B: escáner con career-ops
 
