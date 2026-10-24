@@ -1,0 +1,78 @@
+# Fuentes que recorre el loop semanal de oportunidades (docs/07-loop-semanal.md §3).
+#
+# metodo:
+#   escaner      -> lectura automática con los proveedores de career-ops (fase B, GitHub Actions).
+#   busqueda_web -> la sesión semanal busca con `consultas` (operador site:) y abre los resultados.
+#   oficial      -> la sesión semanal abre `url` y verifica directamente.
+# estado: activa | inactiva (con `motivo`).
+# alcance: qué tipo de oportunidad aporta la fuente.
+# Términos de uso: sólo páginas públicas, sin iniciar sesión, a ritmo humano. LinkedIn e Indeed
+# prohíben la extracción automática; se consultan únicamente a través de un buscador web.
+
+bolsas:
+  - nombre: "OCC Mundial"
+    metodo: busqueda_web
+    estado: activa
+    alcance: [vacante, practicas]
+    consultas: ['site:occ.com.mx/empleos {palabra}']
+    nota: "El acceso directo devuelve 403 fuera de México (Cloudflare con alcance geográfico). El proveedor `occ` de career-ops sólo funcionaría con un ejecutor en México; ver docs/07 §6."
+  - nombre: "Computrabajo México"
+    metodo: escaner
+    metodo_respaldo: busqueda_web
+    estado: activa
+    alcance: [vacante, practicas]
+    urls:
+      - https://mx.computrabajo.com/trabajo-de-becario-ingenieria
+      - https://mx.computrabajo.com/trabajo-de-practicante-sistemas
+      - https://mx.computrabajo.com/trabajo-de-analista-de-datos
+      - https://mx.computrabajo.com/trabajo-de-soporte-tecnico
+      - https://mx.computrabajo.com/trabajo-de-tecnico-en-automatizacion
+    consultas: ['site:mx.computrabajo.com {palabra}']
+    nota: "career-ops sólo midió el sitio de Colombia; el de México se asume igual (sin verificar). Tope del proveedor: 15 vacantes por URL."
+  - nombre: "LinkedIn Empleos"
+    metodo: busqueda_web
+    estado: activa
+    alcance: [vacante, practicas]
+    consultas: ['site:mx.linkedin.com/jobs {palabra}']
+    nota: "Sin extracción directa (términos de uso)."
+  - nombre: "Indeed México"
+    metodo: busqueda_web
+    estado: activa
+    alcance: [vacante, practicas]
+    consultas: ['site:mx.indeed.com {palabra}']
+    nota: "Sin extracción directa (términos de uso)."
+  - nombre: "Get on Board"
+    metodo: escaner
+    estado: activa
+    alcance: [vacante]
+    categorias: [programming, data-science-analytics, sysadmin-devops-qa, cybersecurity, design-ux]
+    nota: "Bolsa tecnológica de LatAm con API pública. Filtrar por país México o remoto LatAm."
+
+# Empresas con portal ATS de API pública. Lista inicial tomada de los ejemplos de LatAm de
+# career-ops (templates/portals.example.yml, commit b564412); la sesión semanal agrega empresas
+# industriales con sede en México conforme confirme su portal oficial.
+empresas:
+  - {nombre: "Nubank", url: "https://jobs.ashbyhq.com/nubank", metodo: escaner, estado: activa, familias: [fam-software-nube, fam-datos-ia]}
+  - {nombre: "Clara", url: "https://job-boards.greenhouse.io/clara", metodo: escaner, estado: activa, familias: [fam-software-nube, fam-datos-ia]}
+  - {nombre: "Wiz", url: "https://job-boards.greenhouse.io/wizinc", metodo: escaner, estado: activa, familias: [fam-ciberseguridad]}
+  - {nombre: "Platzi", url: "https://apply.workable.com/platzi", metodo: escaner, estado: activa, familias: [fam-software-nube]}
+  - {nombre: "Deuna", url: "https://jobs.lever.co/deuna", metodo: escaner, estado: activa, familias: [fam-software-nube]}
+  - {nombre: "Cobre", url: "https://job-boards.greenhouse.io/cobre", metodo: escaner, estado: activa, familias: [fam-software-nube]}
+  - {nombre: "Yuno", url: "https://jobs.lever.co/yuno", metodo: escaner, estado: activa, familias: [fam-software-nube]}
+  # Pendientes: empleadores industriales y de energía con operación en México (manufactura
+  # avanzada y energía son la mayor parte del empleo STEM no digital). Se agregan cuando la sesión
+  # semanal confirme la URL oficial de su portal de empleo.
+  - {nombre: "Bosch México", url: null, metodo: busqueda_web, estado: inactiva, motivo: "Portal propio sin API pública confirmada", familias: [fam-manufactura-avanzada]}
+  - {nombre: "Intel Guadalajara", url: "https://jobs.intel.com", metodo: busqueda_web, estado: activa, consultas: ['site:jobs.intel.com Guadalajara intern OR becario'], familias: [fam-manufactura-avanzada, fam-software-nube]}
+
+# Fuentes oficiales de becas, vouchers, retos, eventos y voluntariados. Complementan los
+# registros de data/oportunidades.yaml: aquí se buscan oportunidades NUEVAS.
+convocatorias:
+  - {nombre: "JA México, programas", url: "https://www.jamexico.org.mx/programasmx", metodo: oficial, estado: activa, socio: org-ja-mexico}
+  - {nombre: "JA Americas, programas", url: "https://jaamericas.org/programs", metodo: oficial, estado: activa, socio: org-ja-americas}
+  - {nombre: "Generation México, carreras", url: "https://mexico.generation.org/encuentra-una-carrera/", metodo: oficial, estado: activa, socio: org-generation-mexico}
+  - {nombre: "Becas Benito Juárez y Jóvenes Construyendo el Futuro", metodo: busqueda_web, estado: activa, consultas: ['site:gob.mx becas convocatoria {mes} {anio}', 'site:jovenesconstruyendoelfuturo.stps.gob.mx']}
+  - {nombre: "Vouchers y descuentos de certificadores", metodo: busqueda_web, estado: activa, consultas: ['"free exam voucher" OR "voucher gratuito" certificacion {mes} {anio}', 'Microsoft Virtual Training Days AI Fundamentals {mes} {anio}', 'AWS Skills Centers OR "AWS Educate" voucher {anio}']}
+  - {nombre: "Eventos STEM en México", metodo: busqueda_web, estado: activa, consultas: ['hackathon México {mes} {anio} estudiantes', 'Mexico Tech Week {anio}']}
+  - {nombre: "BioCiencia Wild", estado: inactiva, motivo: "En espera por decisión de Victor (24-oct-2026): sólo Instagram, sin sitio web."}
+  - {nombre: "Regeni", estado: inactiva, motivo: "En espera por decisión de Victor (24-oct-2026): sólo Instagram, sin sitio web."}

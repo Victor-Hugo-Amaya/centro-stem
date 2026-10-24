@@ -1,0 +1,74 @@
+# Semillas del loop semanal de oportunidades (paso 3, docs/07-loop-semanal.md).
+#
+# Mientras no haya respuestas reales del cuestionario, estas semillas hacen las veces de
+# `semillas_busqueda` (docs/03 §2): una por familia y por ruta. Cuando el prototipo (paso 4)
+# reciba respuestas, el loop sumará las palabras clave y alertas agregadas de los usuarios.
+#
+# ruta_estudiante: lo que se busca para secundaria, prepa y universidad. Por la regla de
+#   menores (docs/03 §6) NUNCA incluye vacantes: sólo prácticas, becario, servicio social,
+#   retos, becas, eventos y voluntariados. Las prácticas se muestran sólo a mayores de 18.
+# ruta_cambio: vacantes de entrada (junior, trainee, técnico), bootcamps y vouchers.
+# certificaciones: patrones (minúsculas, sin acentos) para contar cuántas vacantes mencionan
+#   cada certificación del catálogo. Es la "demanda observada" que sustituirá poco a poco el
+#   puntaje inicial de familias.yaml.
+
+familias:
+  fam-datos-ia:
+    ruta_estudiante: ["becario análisis de datos", "practicante ciencia de datos", "hackathon inteligencia artificial"]
+    ruta_cambio: ["analista de datos junior", "data analyst junior", "analista BI Power BI", "científico de datos trainee"]
+  fam-ciberseguridad:
+    ruta_estudiante: ["becario ciberseguridad", "practicante seguridad informática", "CTF ciberseguridad estudiantes"]
+    ruta_cambio: ["analista SOC junior", "analista de ciberseguridad junior", "soc analyst trainee"]
+  fam-software-nube:
+    ruta_estudiante: ["becario desarrollo de software", "practicante programador", "hackathon estudiantes"]
+    ruta_cambio: ["desarrollador junior", "programador trainee", "ingeniero de nube junior", "devops junior"]
+  fam-manufactura-avanzada:
+    ruta_estudiante: ["becario ingeniería mecatrónica", "practicante automatización", "educación dual mecatrónica"]
+    ruta_cambio: ["técnico en automatización", "técnico mantenimiento industrial", "ingeniero de calidad junior", "técnico PLC"]
+  fam-energia-ambiente:
+    ruta_estudiante: ["becario energías renovables", "practicante ingeniería ambiental"]
+    ruta_cambio: ["técnico fotovoltaico", "instalador paneles solares", "ingeniero ambiental junior"]
+  fam-soporte-ti-redes:
+    ruta_estudiante: ["becario soporte técnico", "practicante sistemas"]
+    ruta_cambio: ["soporte técnico helpdesk", "técnico de redes junior", "mesa de ayuda"]
+  fam-salud-biotecnologia:
+    ruta_estudiante: ["becario laboratorio", "practicante biotecnología"]
+    ruta_cambio: ["técnico de laboratorio", "auxiliar laboratorio clínico"]
+  fam-gestion-proyectos:
+    ruta_estudiante: ["becario PMO", "practicante gestión de proyectos"]
+    ruta_cambio: ["coordinador de proyectos junior", "analista PMO", "scrum master junior"]
+  fam-ux-diseno:
+    ruta_estudiante: ["becario diseño UX", "practicante UX UI"]
+    ruta_cambio: ["diseñador UX UI junior", "ux researcher junior"]
+  # fam-administracion-contabilidad está en descenso: no se buscan vacantes del área; la ruta B
+  # la usa como origen (reconversión), no como destino.
+
+# Patrones por certificación. Se comparan contra título y descripción normalizados
+# (minúsculas, sin acentos). Un patrón corto y ambiguo ("cc", "pmp") va con espacios o signos.
+certificaciones:
+  cert-google-data-analytics: ["google data analytics"]
+  cert-microsoft-pl-300: ["pl-300", "power bi data analyst"]
+  cert-microsoft-ai-901: ["ai-901", "ai-900", "azure ai fundamentals"]
+  cert-aws-aif-c01: ["aif-c01", "aws certified ai practitioner"]
+  cert-isc2-cc: ["isc2 cc", "certified in cybersecurity"]
+  cert-cisco-ccst-cybersecurity: ["ccst"]
+  cert-comptia-security-plus: ["security+", "security plus", "sy0-701"]
+  cert-aws-clf-c02: ["clf-c02", "cloud practitioner"]
+  cert-microsoft-az-900: ["az-900", "azure fundamentals"]
+  cert-google-cloud-digital-leader: ["cloud digital leader"]
+  cert-cisco-ccna: ["ccna"]
+  cert-solidworks-cswa: ["cswa", "solidworks associate"]
+  cert-autodesk-autocad-professional: ["autocad certified", "autocad professional"]
+  cert-asq-cssgb: ["green belt", "cssgb"]
+  cert-nabcep-pv-associate: ["nabcep"]
+  cert-pmi-capm: ["capm"]
+
+# Términos que clasifican un resultado por tipo. El primero que coincide gana.
+tipos:
+  practicas: ["becario", "becaria", "practicante", "practicas profesionales", "intern", "internship", "servicio social", "estadia", "trainee"]
+  vacante_entrada: ["jr", "junior", "entry level", "auxiliar", "tecnico", "asociado"]
+
+# Ubicaciones aceptadas. "remoto" sólo cuenta si además menciona México o LatAm.
+ubicaciones:
+  mexico: ["mexico", "cdmx", "ciudad de mexico", "jalisco", "guadalajara", "nuevo leon", "monterrey", "queretaro", "puebla", "estado de mexico", "guanajuato", "leon", "chihuahua", "sonora", "baja california", "tijuana", "coahuila", "saltillo", "san luis potosi", "aguascalientes", "yucatan", "merida"]
+  remoto_latam: ["latam", "latin america", "america latina", "remote - mexico", "remoto mexico"]
