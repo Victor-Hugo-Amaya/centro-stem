@@ -84,7 +84,7 @@ def validar(registros, fuentes, hoy, estricto):
                 errores.append(f"{donde}: 'fecha_verificacion' está en el futuro")
 
             url = r.get("fuente_url")
-            pendiente_org = rid.startswith("org-") and r.get("estado") == "pendiente"
+            pendiente_org = rid.startswith("org-") and r.get("estado") in ("pendiente", "en_espera")
             if url is None and not pendiente_org:
                 errores.append(f"{donde}: falta 'fuente_url'")
             elif url is not None and not str(url).startswith(("http://", "https://")):
@@ -283,7 +283,7 @@ def generar(ids, fuentes, hoy):
                       f"{ids[o['organizacion']][1]['nombre']} | {o['beneficio']} | {edad} | {costo} | {estado} | "
                       f"{o['revisar_antes']} | {enlace(o['fuente_tipo'], o['fuente_url'])} |")
 
-    pendientes = [r for (_, r) in ids.values() if r.get("estado") == "pendiente" or r.get("pendiente")]
+    pendientes = [r for (_, r) in ids.values() if r.get("estado") in ("pendiente", "en_espera") or r.get("pendiente")]
     lineas += ["", "## Pendientes", ""]
     for r in pendientes:
         lineas.append(f"- `{r['id']}` · {r['nombre']}: {r.get('pendiente') or r.get('descripcion')}")

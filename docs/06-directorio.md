@@ -13,7 +13,7 @@
 | **Generation México** | Cuatro bootcamps STEM gratuitos (Java Full Stack, AWS re/Start con IA, HelpDesk, Unity), con edad, duración y requisitos. Java Full Stack tiene grupo con inicio el 2-nov-2026. | Buena. AWS re/Start muestra fechas incongruentes en su página. |
 | **JA Americas** | Mujer Digital: formación técnica becada para mujeres de 18 a 29 años en México, Brasil y Costa Rica. | Media. El sitio dice a la vez "lista de espera" y "convocatoria abierta". |
 | **JA México** | Desafío Innova, Yo puedo programar, Socios por un día, servicio social y prácticas, voluntariado. | Baja. Las fichas oficiales no publican edad, duración ni fechas; quedan como pendientes para confirmar por WhatsApp (55 5211 9444). |
-| **BioCiencia Wild** y **Regeni** | Registrados como `org-` con `estado: pendiente`. | Sin enlace oficial. No se muestran al usuario hasta que Victor comparta su fuente. |
+| **BioCiencia Wild** y **Regeni** | Registrados como `org-` con `estado: en_espera`. | Sólo tienen cuenta de Instagram, sin sitio web. En espera por decisión de Victor; no se muestran al usuario. |
 
 **Recomendación práctica:** el catálogo de JA México lista 28 programas, pero la información pública es insuficiente para recomendar con fecha. Conviene pedir a JA México su calendario 2027 y la edad por programa; una sola conversación resolvería la mitad de los pendientes del directorio.
 

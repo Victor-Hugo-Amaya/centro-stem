@@ -29,8 +29,8 @@ Orden: primero los socios prioritarios; después por estado (abierta, recurrente
 - `bach-tecnologico` · Bachillerato tecnológico (CBTIS, CETIS; CECyT del IPN): Listar especialidades por plantel con la oferta oficial de DGETI de cada estado.
 - `bach-tecnologico-mecatronica` · Bachillerato tecnológico, especialidad en Mecatrónica: Confirmar planteles que la ofrecen por estado.
 - `bach-profesional-tecnico-conalep` · Profesional Técnico Bachiller (CONALEP): El catálogo nacional de carreras 2025-2026 redirige al portal; obtener la lista por plantel.
-- `org-biociencia-wild` · BioCiencia Wild: Colectivo de divulgación STEM indicado por Victor. Sin enlace oficial verificable al 2026-10-24.
-- `org-regeni` · Regeni: Colectivo de divulgación STEM indicado por Victor. Sin enlace oficial verificable al 2026-10-24.
+- `org-biociencia-wild` · BioCiencia Wild: Colectivo de divulgación STEM indicado por Victor. Sólo tiene cuenta de Instagram, sin sitio web; en espera por decisión de Victor (24-oct-2026).
+- `org-regeni` · Regeni: Colectivo de divulgación STEM indicado por Victor. Sólo tiene cuenta de Instagram, sin sitio web; en espera por decisión de Victor (24-oct-2026).
 - `opo-ja-desafio-innova` · Desafío Innova: Confirmar fechas, sedes y si se requiere inscripción por escuela (WhatsApp 55 5211 9444).
 - `opo-ja-socios-por-un-dia` · Socios por un día (Job Shadow): Confirmar empresas participantes y si incluye perfiles STEM.
 - `opo-coursera-ayuda-financiera` · Ayuda financiera de Coursera: El centro de ayuda de Coursera no cargó; confirmar tiempos de revisión y límites.

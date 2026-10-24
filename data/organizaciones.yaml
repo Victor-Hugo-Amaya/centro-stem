@@ -33,8 +33,8 @@
   nombre: "BioCiencia Wild"
   tipo: colectivo
   prioridad: socio
-  estado: pendiente
-  descripcion: "Colectivo de divulgación STEM indicado por Victor. Sin enlace oficial verificable al 2026-10-24."
+  estado: en_espera
+  descripcion: "Colectivo de divulgación STEM indicado por Victor. Sólo tiene cuenta de Instagram, sin sitio web; en espera por decisión de Victor (24-oct-2026)."
   fuente_url: null
   fecha_verificacion: 2026-10-24
 
@@ -42,8 +42,8 @@
   nombre: "Regeni"
   tipo: colectivo
   prioridad: socio
-  estado: pendiente
-  descripcion: "Colectivo de divulgación STEM indicado por Victor. Sin enlace oficial verificable al 2026-10-24."
+  estado: en_espera
+  descripcion: "Colectivo de divulgación STEM indicado por Victor. Sólo tiene cuenta de Instagram, sin sitio web; en espera por decisión de Victor (24-oct-2026)."
   fuente_url: null
   fecha_verificacion: 2026-10-24
 

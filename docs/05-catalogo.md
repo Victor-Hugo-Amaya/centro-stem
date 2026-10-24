@@ -10,7 +10,7 @@
 | [`data/carreras.yaml`](../data/carreras.yaml) | Carreras de licenciatura y TSU (`car-`) con cifras del IMCO; bachilleratos (`bach-`) | 14 + 3 |
 | [`data/certificaciones.yaml`](../data/certificaciones.yaml) | Certificaciones (`cert-`) con costo, vigencia, renovación, idioma y vías de ahorro | 16 |
 | [`data/preparacion.yaml`](../data/preparacion.yaml) | Cursos y bootcamps (`prep-`) | 7 |
-| [`data/organizaciones.yaml`](../data/organizaciones.yaml) | Socios, certificadores y programas públicos (`org-`) | 20 |
+| [`data/organizaciones.yaml`](../data/organizaciones.yaml) | Socios, certificadores y programas públicos (`org-`); BioCiencia Wild y Regeni en espera | 20 |
 | [`data/fuentes.yaml`](../data/fuentes.yaml) | Reportes citados por las señales de demanda | 6 |
 
 Todos los registros cumplen el contrato de [03-modelo-de-salida.md](03-modelo-de-salida.md): prefijo de ID, `fuente_url` y `fecha_verificacion`. Los tres `id_catalogo` usados como ejemplo en ese contrato existen.
