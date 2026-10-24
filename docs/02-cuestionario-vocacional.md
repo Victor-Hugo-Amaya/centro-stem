@@ -143,7 +143,7 @@ Para cada rol objetivo, el sistema entrega una **escalera de 2 o 3 certificacion
 
 | Rol | Certificación | Costo del examen | Vigencia y renovación | Vía de ahorro |
 |---|---|---|---|---|
-| Nube | Microsoft Azure Fundamentals (AZ-900) | USD 99 (precio en moneda local varía) | No caduca | Voucher gratuito al completar un *Microsoft Virtual Training Day* |
+| Nube | Microsoft Azure Fundamentals (AZ-900) | USD 99 (precio en moneda local varía) | No caduca | Descuento de 50% en el examen (vigencia de 90 días) al completar un *Microsoft Virtual Training Day*; corregido con la verificación del paso 2 |
 | Nube | AWS Certified Cloud Practitioner (CLF-C02) | USD 100 | 3 años | Al aprobar, voucher de 50% para el siguiente examen AWS; AWS re/Start gratuito vía Generation México |
 | IA | AWS Certified AI Practitioner (AIF-C01) | USD 100 | 3 años | Igual que la anterior |
 | Ciberseguridad | ISC2 Certified in Cybersecurity (CC) | USD 199 + cuota anual de USD 50 | Anual con cuota | **El programa gratuito *One Million Certified* cerró inscripciones**; los códigos emitidos valen hasta el 31-dic-2026 |
