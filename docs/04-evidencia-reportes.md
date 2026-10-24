@@ -88,3 +88,21 @@
 - Costo AZ-900 y vouchers (fuente secundaria): <https://www.examcert.app/blog/az-900-exam-cost-2026/>
 
 Las fuentes secundarias de costos deben reemplazarse por la página oficial de cada certificador en el paso 2.
+
+## 7. Cómo incorporar nuevos reportes
+
+Este documento es un registro vivo. Cada reporte nuevo (por ejemplo, una nueva edición del WEF, LinkedIn *Economic Graph*, ManpowerGroup, OCDE, INEGI-ENOE o la siguiente edición de *Compara Carreras*) se integra con este procedimiento:
+
+1. **Guardar el original** en la carpeta de conocimiento del proyecto, con el nombre del emisor y el año.
+2. **Agregar una sección numerada** con el formato `Emisor · Título (año)` y, debajo, sólo cifras con página o sección de origen.
+3. **Priorizar los datos de México**, después los de América Latina y al final los globales.
+4. **Comparar con la edición anterior.** Cuando una cifra cambie (por ejemplo, la inestabilidad de habilidades del WEF: 57% en 2020, 44% en 2023 y 39% en 2025), conservar la serie en lugar de sobrescribirla.
+5. **Señalar conflictos.** Si dos fuentes discrepan, registrar ambas y explicar la diferencia de metodología (como los 54 de cada 100 del IMCO, que equivalen a 31 + 23 del perfil México del WEF).
+6. **Revisar el impacto en el motor.** Si una cifra cambia la demanda de un rol, actualizar el componente `demanda` y la `fecha_verificacion` de las recomendaciones afectadas ([03-modelo-de-salida.md](03-modelo-de-salida.md)).
+7. **Registrar el cambio** en la bitácora siguiente.
+
+### Bitácora de actualizaciones
+
+| Fecha | Reporte agregado o actualizado | Cambios relevantes |
+|---|---|---|
+| 2026-10-24 | WEF 2025, Coursera 2025, IMCO 2025 (dos documentos), OIT 2023 | Versión inicial |
