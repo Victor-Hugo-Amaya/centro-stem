@@ -7,6 +7,7 @@ Uso:
     python3 scripts/semanal.py --escribir            # guarda reportes/semanal/AAAA-MM-DD.md
     python3 scripts/semanal.py --vacantes v.json     # agrega el análisis de vacantes escaneadas
     python3 scripts/semanal.py --entradas-escaner    # fuentes que lee el escáner (fase B), en JSON
+    python3 scripts/semanal.py --requisitos r.yaml   # agrega la lectura de requisitos de la muestra
 
 La agenda contiene:
   1. Registros del directorio cuyo `revisar_antes` vence en los próximos 7 días (o ya venció).
@@ -18,7 +19,12 @@ La agenda contiene:
 `--vacantes` recibe una lista JSON de vacantes con la forma `Job` de career-ops
 (title, url, company, location, description opcional). Se filtran a México o remoto
 LatAm, se clasifican (prácticas o vacante de entrada), se asignan a una familia y se
-cuentan las certificaciones del catálogo que mencionan (demanda observada).
+cuentan las certificaciones del catálogo que mencionan (demanda observada). Además se
+elige una muestra de vacantes para que la sesión semanal lea sus requisitos.
+
+`--requisitos` recibe esa lectura (YAML: url, titulo, empresa, anios_experiencia,
+requisitos) y la traduce en certificaciones pedidas explícitamente y certificaciones
+recomendadas por tecnología y experiencia (`tecnologias` en data/busqueda.yaml).
 """
 import argparse
 import datetime as dt
@@ -194,13 +200,70 @@ def analizar_vacantes(vacantes, busqueda):
     return filtradas, dict(sorted(demanda.items(), key=lambda kv: (-kv[1], kv[0])))
 
 
+# ---------------------------------------------------------------- requisitos
+
+TAMANO_MUESTRA = 20
+MAX_POR_EMPRESA = 3
+PRIORIDAD_TIPO = {"practicas": 0, "vacante_entrada": 1, "otra": 2}
+
+
+def muestra_para_leer(filtradas, n=TAMANO_MUESTRA):
+    """Vacantes cuya página leerá la sesión semanal: rota entre familias, prioriza prácticas
+    y vacantes de entrada, y limita cuántas vienen de una misma empresa."""
+    grupos = {}
+    for v in sorted((v for v in filtradas if v["tipo"] != "senior"), key=lambda v: (PRIORIDAD_TIPO.get(v["tipo"], 3), v["url"])):
+        grupos.setdefault(v["familia"], []).append(v)
+    familias = sorted(grupos, key=lambda f: (f is None, f or ""))
+    elegidas, por_empresa = [], {}
+    while len(elegidas) < n and any(grupos.values()):
+        for fam in familias:
+            while grupos[fam]:
+                v = grupos[fam].pop(0)
+                if por_empresa.get(v["company"], 0) < MAX_POR_EMPRESA:
+                    por_empresa[v["company"]] = por_empresa.get(v["company"], 0) + 1
+                    elegidas.append(v)
+                    break
+            if len(elegidas) == n:
+                break
+    return elegidas
+
+
+def recomendar(lectura, busqueda, niveles):
+    """Traduce los requisitos leídos de una vacante en certificaciones del catálogo."""
+    texto = normalizar(f"{lectura.get('titulo', '')} {lectura.get('requisitos', '')}")
+    explicitas = certificaciones_mencionadas({"title": texto}, busqueda)
+    nivel_pedido = 2 if (lectura.get("anios_experiencia") or 0) >= 1 else 1
+    sugeridas, tecnologias, faltantes = set(), [], []
+    for clave, tec in busqueda["tecnologias"].items():
+        if not any(contiene(texto, p) for p in tec["patrones"]):
+            continue
+        tecnologias.append(clave)
+        certs = sorted(tec["certificaciones"], key=lambda c: niveles[c])
+        # Con experiencia, la de mayor nivel disponible; sin ella, la de entrada.
+        sugeridas.add(certs[-1] if nivel_pedido >= 2 else certs[0])
+        falta = tec.get("falta_en_catalogo")
+        if falta and falta["nivel"] == nivel_pedido and all(niveles[c] != nivel_pedido for c in certs):
+            faltantes.append(falta["nombre"])
+    return {"explicitas": explicitas, "sugeridas": sorted(sugeridas - set(explicitas)),
+            "tecnologias": tecnologias, "faltantes": faltantes}
+
+
+def resumir_requisitos(lecturas, busqueda, niveles):
+    conteo = {"explicitas": {}, "sugeridas": {}, "tecnologias": {}, "faltantes": {}}
+    for lectura in lecturas:
+        for clave, valores in recomendar(lectura, busqueda, niveles).items():
+            for v in valores:
+                conteo[clave][v] = conteo[clave].get(v, 0) + 1
+    return {k: dict(sorted(v.items(), key=lambda kv: (-kv[1], kv[0]))) for k, v in conteo.items()}
+
+
 # ---------------------------------------------------------------- reporte
 
 def fila_opo(o, campo):
     return f"| `{o['id']}` | {o['nombre']} | {o.get('estado')} | {o.get(campo)} | <{o['fuente_url']}> |"
 
 
-def reporte(hoy, datos, analisis=None):
+def reporte(hoy, datos, analisis=None, requisitos=None):
     oportunidades, preparacion, portales, busqueda = datos
     por_revisar, por_cerrar, vigilancia, prep = agenda_directorio(oportunidades, preparacion, hoy)
     familias, consultas = consultas_de_la_semana(portales, busqueda, hoy)
@@ -258,6 +321,30 @@ def reporte(hoy, datos, analisis=None):
         l += ["", "**Demanda observada de certificaciones** (vacantes que la mencionan):", ""]
         l += [f"- `{cid}`: {n}" for cid, n in demanda.items()] or ["- Ninguna mención esta semana."]
         l.append("")
+        muestra = muestra_para_leer(filtradas)
+        l += ["## 6. Muestra para leer requisitos", "",
+              "La mayoría de las fuentes no entrega la descripción. Abrir cada vacante, copiar en "
+              f"`reportes/semanal/{hoy.isoformat()}-requisitos.yaml` los requisitos y los años de experiencia, "
+              "y volver a generar el reporte con `--requisitos`.", "",
+              "| Vacante | Empresa | Familia | Tipo |", "|---|---|---|---|"]
+        l += [f"| [{v['title'].replace('|', '/')}]({v['url']}) | {v['company'].replace('|', '/')} | {v['familia'] or 'sin familia'} | {v['tipo']} |"
+              for v in muestra]
+        l.append("")
+
+    if requisitos is not None:
+        lecturas, resumen = requisitos
+        l += ["## 7. Certificaciones según los requisitos leídos", "",
+              f"{len(lecturas)} vacantes leídas. *Pedidas* = la vacante nombra la certificación. "
+              "*Recomendadas* = el catálogo la sugiere por la tecnología y la experiencia que pide la vacante.", "",
+              "| Certificación | Pedidas | Recomendadas |", "|---|---|---|"]
+        certs = sorted(set(resumen["explicitas"]) | set(resumen["sugeridas"]),
+                       key=lambda c: -(resumen["explicitas"].get(c, 0) + resumen["sugeridas"].get(c, 0)))
+        l += [f"| `{c}` | {resumen['explicitas'].get(c, 0)} | {resumen['sugeridas'].get(c, 0)} |" for c in certs]
+        l += ["", "**Tecnologías pedidas:** " + (", ".join(f"{t} ({n})" for t, n in resumen["tecnologias"].items()) or "ninguna"), ""]
+        if resumen["faltantes"]:
+            l += ["**Certificaciones que pidió el mercado y faltan en el catálogo** (para la revisión mensual):", ""]
+            l += [f"- {nombre}: {n}" for nombre, n in resumen["faltantes"].items()]
+            l.append("")
 
     l += ["## Hallazgos nuevos", "", "*Por completar.* Oportunidades agregadas a `data/oportunidades.yaml` "
           "con id, fuente oficial y `revisar_antes`.", "",
@@ -271,6 +358,7 @@ def main():
     parser.add_argument("--hoy", type=dt.date.fromisoformat, default=dt.date.today())
     parser.add_argument("--vacantes", type=Path, help="JSON con vacantes en forma Job de career-ops")
     parser.add_argument("--escribir", action="store_true", help="guarda el reporte en reportes/semanal/")
+    parser.add_argument("--requisitos", type=Path, help="YAML con los requisitos leídos de la muestra")
     parser.add_argument("--entradas-escaner", action="store_true",
                         help="imprime en JSON las fuentes que lee el escáner (fase B) y termina")
     args = parser.parse_args()
@@ -287,7 +375,12 @@ def main():
         vacantes = contenido["vacantes"] if isinstance(contenido, dict) else contenido
         fuentes = contenido.get("fuentes", []) if isinstance(contenido, dict) else []
         analisis = (*analizar_vacantes(vacantes, busqueda), fuentes)
-    texto = reporte(args.hoy, datos, analisis)
+    requisitos = None
+    if args.requisitos:
+        lecturas = yaml.safe_load(args.requisitos.read_text(encoding="utf-8")) or []
+        niveles = {c["id"]: c["nivel_escalera"] for c in leer("certificaciones.yaml")}
+        requisitos = (lecturas, resumir_requisitos(lecturas, busqueda, niveles))
+    texto = reporte(args.hoy, datos, analisis, requisitos)
     if args.escribir:
         REPORTES.mkdir(parents=True, exist_ok=True)
         destino = REPORTES / f"{args.hoy.isoformat()}.md"

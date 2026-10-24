@@ -27,7 +27,8 @@ class Vacantes(unittest.TestCase):
     def test_clasifica_tipo(self):
         self.assertEqual(semanal.clasificar(vacante("Becario de Ingeniería"), BUSQUEDA), "practicas")
         self.assertEqual(semanal.clasificar(vacante("Data Analyst Jr"), BUSQUEDA), "vacante_entrada")
-        self.assertEqual(semanal.clasificar(vacante("Senior Staff Engineer"), BUSQUEDA), "otra")
+        self.assertEqual(semanal.clasificar(vacante("Senior Staff Engineer"), BUSQUEDA), "senior")
+        self.assertEqual(semanal.clasificar(vacante("Ingeniero de procesos"), BUSQUEDA), "otra")
 
     def test_asigna_familia(self):
         self.assertEqual(semanal.familia_de(vacante("Analista de Ciberseguridad"), BUSQUEDA), "fam-ciberseguridad")
@@ -65,6 +66,45 @@ class Escaner(unittest.TestCase):
                                 (filtradas, demanda, [{"nombre": "Get on Board", "ok": False, "error": "HTTP 503"}]))
         self.assertIn("Get on Board: HTTP 503", texto)
         self.assertIn("`cert-cisco-ccna`: 1", texto)
+
+
+NIVELES = {c["id"]: c["nivel_escalera"] for c in semanal.leer("certificaciones.yaml")}
+
+
+class Requisitos(unittest.TestCase):
+    def test_aws_sin_experiencia_recomienda_cloud_practitioner(self):
+        r = semanal.recomendar({"titulo": "Becario de nube", "requisitos": "Conocimientos en AWS"}, BUSQUEDA, NIVELES)
+        self.assertEqual(r["sugeridas"], ["cert-aws-clf-c02"])
+        self.assertEqual(r["faltantes"], [])
+
+    def test_gcp_con_experiencia_reporta_certificacion_faltante(self):
+        r = semanal.recomendar({"titulo": "Cloud Engineer", "requisitos": "Más de 1 año en GCP",
+                                "anios_experiencia": 2}, BUSQUEDA, NIVELES)
+        self.assertEqual(r["sugeridas"], ["cert-google-cloud-digital-leader"])
+        self.assertEqual(r["faltantes"], ["Google Cloud Associate Cloud Engineer"])
+
+    def test_experiencia_sube_de_nivel(self):
+        lectura = {"titulo": "Analista SOC", "requisitos": "Monitoreo SIEM"}
+        self.assertEqual(semanal.recomendar(lectura, BUSQUEDA, NIVELES)["sugeridas"], ["cert-isc2-cc"])
+        lectura["anios_experiencia"] = 1
+        self.assertEqual(semanal.recomendar(lectura, BUSQUEDA, NIVELES)["sugeridas"], ["cert-comptia-security-plus"])
+
+    def test_pedida_explicita_no_se_duplica_como_recomendada(self):
+        r = semanal.recomendar({"titulo": "Soporte", "requisitos": "AWS Cloud Practitioner deseable"}, BUSQUEDA, NIVELES)
+        self.assertEqual(r["explicitas"], ["cert-aws-clf-c02"])
+        self.assertEqual(r["sugeridas"], [])
+
+    def test_tecnologias_existen_en_catalogo(self):
+        for tec in BUSQUEDA["tecnologias"].values():
+            self.assertLessEqual(set(tec["certificaciones"]), set(NIVELES))
+
+    def test_muestra_limita_empresa_y_rota_familias(self):
+        lote = [{**vacante(f"Analista de datos {i}", url=f"https://d{i}"), "company": "Una", "tipo": "otra",
+                 "familia": "fam-datos-ia"} for i in range(10)]
+        lote += [{**vacante("Becario soporte técnico", url="https://s"), "tipo": "practicas", "familia": "fam-soporte-ti-redes"}]
+        muestra = semanal.muestra_para_leer(lote, n=5)
+        self.assertEqual(sum(v["company"] == "Una" for v in muestra), semanal.MAX_POR_EMPRESA)
+        self.assertIn("https://s", [v["url"] for v in muestra])
 
 
 class Agenda(unittest.TestCase):

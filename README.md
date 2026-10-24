@@ -7,7 +7,7 @@ Proyecto que recopila y centraliza oportunidades STEM y crea comunidad para los 
 |---|---|---|
 | 1 | Diagnóstico de career-ops y cuestionario vocacional de dos rutas | Terminado |
 | 2 | Base de conocimiento: catálogo de carreras y certificaciones; directorio de becas, vouchers y voluntariados (con fuente y fecha de verificación) | Terminado |
-| 3 | Búsqueda de oportunidades como loop semanal de revisión, más revisión mensual de reportes | En revisión |
+| 3 | Búsqueda de oportunidades como loop semanal de revisión, más revisión mensual de reportes | Terminado (en operación desde el 26-oct-2026) |
 | 4 | Prototipo web | Pendiente |
 
 ## Documentación del paso 1

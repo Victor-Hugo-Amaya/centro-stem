@@ -63,12 +63,60 @@ certificaciones:
   cert-nabcep-pv-associate: ["nabcep"]
   cert-pmi-capm: ["capm"]
 
-# Términos que clasifican un resultado por tipo. El primero que coincide gana.
+# Términos que clasifican un resultado por tipo. El primero que coincide gana. `senior` queda fuera
+# de la muestra de lectura: el público del proyecto busca su primer empleo o un cambio de carrera.
 tipos:
   practicas: ["becario", "becaria", "practicante", "practicas profesionales", "intern", "internship", "servicio social", "estadia", "trainee"]
-  vacante_entrada: ["jr", "junior", "entry level", "auxiliar", "tecnico", "asociado"]
+  senior: ["senior", "sr", "lead", "lider", "manager", "gerente", "director", "staff", "principal", "head"]
+  vacante_entrada: ["jr", "junior", "entry level", "early career", "auxiliar", "tecnico", "asociado", "associate"]
 
 # Ubicaciones aceptadas. "remoto" sólo cuenta si además menciona México o LatAm.
 ubicaciones:
   mexico: ["mexico", "cdmx", "ciudad de mexico", "jalisco", "guadalajara", "nuevo leon", "monterrey", "queretaro", "puebla", "estado de mexico", "guanajuato", "leon", "chihuahua", "sonora", "baja california", "tijuana", "coahuila", "saltillo", "san luis potosi", "aguascalientes", "yucatan", "merida"]
   remoto_latam: ["latam", "latin america", "america latina", "remote - mexico", "remoto mexico"]
+
+# Requisitos -> certificaciones recomendadas (lectura de la muestra semanal, docs/07 §5 bis).
+# Cuando una vacante pide una tecnología o habilidad, se recomiendan las certificaciones del
+# catálogo de esa ruta. La experiencia pedida decide el nivel (`nivel_escalera` de
+# certificaciones.yaml): prácticas o menos de 1 año -> nivel 1; 1 año o más -> la de mayor nivel
+# disponible. `falta_en_catalogo` nombra la certificación de rol del nivel indicado que todavía no
+# está en el catálogo; se reporta cuando una vacante pide ese nivel y la revisión mensual decide
+# si se agrega.
+tecnologias:
+  aws:
+    patrones: ["aws", "amazon web services", "ec2", "lambda", "s3"]
+    certificaciones: [cert-aws-clf-c02, cert-aws-aif-c01]
+    falta_en_catalogo: {nombre: "AWS Certified Solutions Architect – Associate", nivel: 2}
+  azure:
+    patrones: ["azure", "microsoft cloud"]
+    certificaciones: [cert-microsoft-az-900]
+    falta_en_catalogo: {nombre: "Microsoft AZ-104 Azure Administrator Associate", nivel: 2}
+  gcp:
+    patrones: ["gcp", "google cloud", "bigquery"]
+    certificaciones: [cert-google-cloud-digital-leader]
+    falta_en_catalogo: {nombre: "Google Cloud Associate Cloud Engineer", nivel: 2}
+  analisis_datos:
+    patrones: ["power bi", "tableau", "sql", "analisis de datos", "data analysis", "excel avanzado"]
+    certificaciones: [cert-google-data-analytics, cert-microsoft-pl-300]
+  inteligencia_artificial:
+    patrones: ["machine learning", "aprendizaje automatico", "inteligencia artificial", "genai", "ia generativa", "llm"]
+    certificaciones: [cert-microsoft-ai-901, cert-aws-aif-c01]
+  ciberseguridad:
+    patrones: ["ciberseguridad", "cybersecurity", "seguridad de la informacion", "soc", "siem", "pentesting"]
+    certificaciones: [cert-isc2-cc, cert-cisco-ccst-cybersecurity, cert-comptia-security-plus]
+  redes:
+    patrones: ["redes", "networking", "cisco", "tcp/ip", "switching", "routing"]
+    certificaciones: [cert-cisco-ccna]
+    falta_en_catalogo: {nombre: "Cisco CCST Networking", nivel: 1}
+  gestion_proyectos:
+    patrones: ["pmo", "gestion de proyectos", "project management", "scrum", "agile"]
+    certificaciones: [cert-pmi-capm]
+  cad_diseno:
+    patrones: ["autocad", "solidworks", "cad", "diseno mecanico"]
+    certificaciones: [cert-solidworks-cswa, cert-autodesk-autocad-professional]
+  calidad_manufactura:
+    patrones: ["six sigma", "lean", "calidad", "mejora continua", "kaizen"]
+    certificaciones: [cert-asq-cssgb]
+  energia_solar:
+    patrones: ["fotovoltaico", "paneles solares", "energia solar", "photovoltaic"]
+    certificaciones: [cert-nabcep-pv-associate]

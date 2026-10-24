@@ -62,6 +62,19 @@ Todavía no hay respuestas reales del cuestionario, así que [`data/busqueda.yam
 5. **Toda oportunidad nueva lleva** `fuente_url`, `fuente_tipo`, `fecha_verificacion` y `revisar_antes` (por defecto, cuatro semanas; una semana antes del cierre si lo hay).
 6. **Vacantes individuales no entran al directorio.** Cambian a diario y caducan rápido. Se resumen en el reporte (sección 5) como demanda observada; al directorio sólo entran programas de prácticas, becas, vouchers, retos, eventos y voluntariados.
 
+### 5 bis. De los requisitos a las certificaciones recomendadas
+
+Aprobado por Victor el 24-oct-2026. La primera ejecución del escáner mostró que la mayoría de las fuentes no entrega la descripción de la vacante, así que el conteo automático de certificaciones dio cero. Por eso la revisión semanal **lee una muestra de hasta 20 vacantes** (sin puestos senior, rotando familias, máximo tres por empresa) y registra sus requisitos. `scripts/semanal.py --requisitos` los traduce así:
+
+| La vacante pide | Experiencia | Recomendación |
+|---|---|---|
+| Conocimientos de AWS | Prácticas o menos de 1 año | `cert-aws-clf-c02` (Cloud Practitioner) |
+| Cloud Engineer con más de 1 año en GCP | 1 año o más | `cert-google-cloud-digital-leader` y aviso: falta *Associate Cloud Engineer* en el catálogo |
+| Analista SOC con SIEM | Sin experiencia → con 1 año | `cert-isc2-cc` → `cert-comptia-security-plus` |
+| Nombra una certificación (por ejemplo, CCNA) | Cualquiera | Se cuenta como **pedida**, separada de las recomendadas |
+
+La tabla completa de tecnologías está en `tecnologias` de [`data/busqueda.yaml`](../data/busqueda.yaml). Se separan las certificaciones **pedidas** (dato del mercado) de las **recomendadas** (inferencia del catálogo) para no confundir evidencia con criterio propio. La revisión mensual suma estos resultados, investiga en las fuentes oficiales las rutas de certificación de las tecnologías más pedidas y propone qué agregar o priorizar en el catálogo.
+
 ## 6. Fase B: escáner con career-ops
 
 Autorizada por Victor el 24-oct-2026. Reutiliza los proveedores de career-ops (licencia MIT) para Greenhouse, Lever, Ashby, Workable, Computrabajo y Get on Board.
