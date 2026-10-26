@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-26T13:43:31.695Z",
+ "generado": "2026-10-26T17:13:43.280Z",
  "fuentes": [
   {
    "nombre": "Computrabajo México",
@@ -35,7 +35,7 @@
    "nombre": "Get on Board",
    "proveedor": "getonbrd",
    "ok": true,
-   "total": 593
+   "total": 592
   },
   {
    "nombre": "Nubank",
@@ -322,6 +322,14 @@
    "fuente": "Computrabajo México"
   },
   {
+   "title": "Analista de Inventarios y análisis de datos",
+   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-de-inventarios-y-analisis-de-datos-en-cuautitlan-izcalli-2864D7670389C9CB61373E686DCF3405",
+   "company": "?",
+   "location": "Cuautitlán Izcalli, Estado de México",
+   "description": "",
+   "fuente": "Computrabajo México"
+  },
+  {
    "title": "Analista de Datos",
    "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-de-datos-en-culiacan-651EE40A375118DB61373E686DCF3405",
    "company": "Valenzo Consultores",
@@ -434,10 +442,42 @@
    "fuente": "Computrabajo México"
   },
   {
-   "title": "Analista de datos",
-   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-de-datos-comercial-en-guadalajara-1BD3D3CFC2836D0861373E686DCF3405",
-   "company": "Cotidiano",
-   "location": "Guadalajara, Jalisco, México",
+   "title": "Auxiliar de Soporte Técnico",
+   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-de-soporte-tecnico-area-comercial-tecnologia-en-hermosillo-15DE1CC13360A81061373E686DCF3405",
+   "company": "?",
+   "location": "Hermosillo, Sonora, México",
+   "description": "",
+   "fuente": "Computrabajo México"
+  },
+  {
+   "title": "Soporte Técnico en activaciones call center",
+   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-soporte-tecnico-en-activaciones-call-center-en-benito-juarez-B08AE8F041FF8E8B61373E686DCF3405",
+   "company": "ADT México",
+   "location": "Benito Juárez, Ciudad de México DF",
+   "description": "",
+   "fuente": "Computrabajo México"
+  },
+  {
+   "title": "analista de soporte tecnico",
+   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-de-soporte-tecnico-apoyo-en-el-area-comercial-en-toluca-3BF16FA1604BA10861373E686DCF3405",
+   "company": "TSC SEGURIDAD PRIVADA",
+   "location": "Toluca, Estado de México",
+   "description": "",
+   "fuente": "Computrabajo México"
+  },
+  {
+   "title": "Soporte técnico",
+   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-soporte-tecnico-santa-feparque-la-mexicana-en-alvaro-obregon-873F6A459EB96BEB61373E686DCF3405",
+   "company": "ASAE CONSULTORES",
+   "location": "Álvaro Obregón, Ciudad de México DF",
+   "description": "",
+   "fuente": "Computrabajo México"
+  },
+  {
+   "title": "Soporte Técnico con conocimientos en Datacor",
+   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-soporte-tecnico-con-conocimientos-en-datacor-bosques-de-las-lomas-cdmx-en-cuajimalpa-de-morelos-E4B374BFC82D2D6D61373E686DCF3405",
+   "company": "LUZA",
+   "location": "Cuajimalpa de Morelos, Ciudad de México DF",
    "description": "",
    "fuente": "Computrabajo México"
   },
@@ -522,46 +562,6 @@
    "fuente": "Computrabajo México"
   },
   {
-   "title": "Soporte Tecnico MacStore",
-   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-soporte-tecnico-macstore-galerias-celaya-en-celaya-110D78F741377B8B61373E686DCF3405",
-   "company": "MacStore",
-   "location": "Celaya, Guanajuato, México",
-   "description": "",
-   "fuente": "Computrabajo México"
-  },
-  {
-   "title": "Practicante de Sistemas",
-   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-practicante-de-sistemas-soporte-tecnico-en-culiacan-21A6BAD97C9A458061373E686DCF3405",
-   "company": "IZEL RH EMPRESARIAL S.A DE C.V",
-   "location": "Culiacán, Sinaloa, México",
-   "description": "",
-   "fuente": "Computrabajo México"
-  },
-  {
-   "title": "Soporte Técnico en sitio",
-   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-soporte-tecnico-en-sitio-en-iztapalapa-7FA44E204CD7C1E261373E686DCF3405",
-   "company": "Multicont",
-   "location": "Iztapalapa, Ciudad de México DF",
-   "description": "",
-   "fuente": "Computrabajo México"
-  },
-  {
-   "title": "Técnico soporte",
-   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-soporte-por-dia-en-emiliano-zapata-B7FC0889C153FB8361373E686DCF3405",
-   "company": "SERVIPUMPS S.A. DE C.V.",
-   "location": "Emiliano Zapata, Tabasco, México",
-   "description": "",
-   "fuente": "Computrabajo México"
-  },
-  {
-   "title": "Soporte técnico",
-   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-soporte-tecnico-cableado-redes-instalaciones-en-benito-juarez-4C0A46CB08522EC361373E686DCF3405",
-   "company": "KODE IT",
-   "location": "Benito Juárez, Ciudad de México DF",
-   "description": "",
-   "fuente": "Computrabajo México"
-  },
-  {
    "title": "Técnico en automatización",
    "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-en-automatizacion-en-cuautitlan-izcalli-DB48CB5FDDB4515561373E686DCF3405",
    "company": "SALCHICHAS Y JAMONES DE MEXICO",
@@ -634,14 +634,6 @@
    "fuente": "Computrabajo México"
   },
   {
-   "title": "Asesor técnico, Ing. Mecatrónica, Electromecánico, Automatización",
-   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-asesor-tecnico-ing-mecatronica-electromecanico-automatizacion-venta-de-equipo-tecnico-en-puebla-7BF17DF966E7ECB161373E686DCF3405",
-   "company": "SMC CORPORATION MEXICO, S.A. DE C.V.",
-   "location": "Puebla, Puebla, México",
-   "description": "",
-   "fuente": "Computrabajo México"
-  },
-  {
    "title": "Técnico en Automatización de Proyectos",
    "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-en-automatizacion-de-proyectos-zona-aeropuerto-en-toluca-99E630F068FBE0AC61373E686DCF3405",
    "company": "?",
@@ -682,6 +674,14 @@
    "fuente": "Computrabajo México"
   },
   {
+   "title": "Técnico de Soporte en Automatización",
+   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-de-soporte-en-automatizacion-sensores-automotrices-en-benito-juarez-1D795207FF0E458D61373E686DCF3405",
+   "company": "Adecco",
+   "location": "Benito Juárez, Ciudad de México DF",
+   "description": "",
+   "fuente": "Computrabajo México"
+  },
+  {
    "title": "Senior Software Engineer",
    "url": "https://www.getonbrd.com/jobs/senior-software-engineer-vetclaims-ai-remote",
    "company": "Vetclaims.ai",
@@ -718,6 +718,24 @@
    "postedAt": 1792512807000
   },
   {
+   "title": "Dev Full-Stack RoR/React + API RESTful",
+   "url": "https://www.getonbrd.com/jobs/dev-fullstack-ror-react-integraciones-rankmi-santiago",
+   "company": "Rankmi",
+   "location": "Chile",
+   "description": "",
+   "fuente": "Get on Board",
+   "postedAt": 1793028107000
+  },
+  {
+   "title": "Full-Stack Developer",
+   "url": "https://www.getonbrd.com/jobs/fullstack-developer-tcit-santiago",
+   "company": "TCIT",
+   "location": "Chile",
+   "description": "",
+   "fuente": "Get on Board",
+   "postedAt": 1793024551000
+  },
+  {
    "title": "Senior Software Engineer – Serverless Workflow",
    "url": "https://www.getonbrd.com/jobs/senior-software-engineer-serverless-workflow-hyqoo-remote",
    "company": "Hyqoo",
@@ -743,15 +761,6 @@
    "description": "",
    "fuente": "Get on Board",
    "postedAt": 1792775284000
-  },
-  {
-   "title": "Dev Full-Stack RoR/React + API RESTful",
-   "url": "https://www.getonbrd.com/jobs/dev-fullstack-ror-react-integraciones-rankmi-santiago",
-   "company": "Rankmi",
-   "location": "Chile",
-   "description": "",
-   "fuente": "Get on Board",
-   "postedAt": 1792772608000
   },
   {
    "title": "Back-end Developer (Java/Spring Boot/apigee)",
@@ -3373,13 +3382,22 @@
    "postedAt": 1770756819000
   },
   {
-   "title": "Programador Back-end Python",
-   "url": "https://www.getonbrd.com/jobs/programador-backend-phyton-guinea-mobile-sac-cuy-movil-remote",
-   "company": "Guinea Mobile SAC (Cuy Móvil)",
+   "title": "Snowflake Data Engineer",
+   "url": "https://www.getonbrd.com/jobs/snowflake-data-engineer-crest-it-resources-llc-remote",
+   "company": "Crest IT Resources LLC",
    "location": "Remote",
    "description": "",
    "fuente": "Get on Board",
-   "postedAt": 1770696446000
+   "postedAt": 1793030439000
+  },
+  {
+   "title": "Business Analyst (Portugués)",
+   "url": "https://www.getonbrd.com/jobs/business-analyst-sr-portugues-agile-witi-montevideo-santiago",
+   "company": "WiTi",
+   "location": "Chile, Uruguay",
+   "description": "",
+   "fuente": "Get on Board",
+   "postedAt": 1793022744000
   },
   {
    "title": "Power BI Developer SSIS",
@@ -3542,15 +3560,6 @@
    "description": "",
    "fuente": "Get on Board",
    "postedAt": 1791991651000
-  },
-  {
-   "title": "Business Analyst (Portugués)",
-   "url": "https://www.getonbrd.com/jobs/business-analyst-sr-portugues-agile-witi-montevideo-santiago",
-   "company": "WiTi",
-   "location": "Chile, Uruguay",
-   "description": "",
-   "fuente": "Get on Board",
-   "postedAt": 1793019736000
   },
   {
    "title": "Data Governance GCP",
@@ -4894,15 +4903,6 @@
    "postedAt": 1791290462000
   },
   {
-   "title": "SAP MM/Wm",
-   "url": "https://www.getonbrd.com/jobs/sap-mm-wm-crest-it-resources-llc-remote",
-   "company": "Crest IT Resources LLC",
-   "location": "Remote",
-   "description": "",
-   "fuente": "Get on Board",
-   "postedAt": 1791210370000
-  },
-  {
    "title": "Analista Calidad Faenadora San Vicente",
    "url": "https://www.getonbrd.com/jobs/analista-calidad-faenadora-san-vicente-agrosuper-san-vicente",
    "company": "Agrosuper",
@@ -5045,15 +5045,6 @@
    "description": "",
    "fuente": "Get on Board",
    "postedAt": 1788993676000
-  },
-  {
-   "title": "Field Validation Engineer",
-   "url": "https://www.getonbrd.com/jobs/field-validation-engineer-jooycar-remote",
-   "company": "Jooycar",
-   "location": "Remote",
-   "description": "",
-   "fuente": "Get on Board",
-   "postedAt": 1788809326000
   },
   {
    "title": "Ingeniero Cloud AWS",
@@ -6784,7 +6775,7 @@
    "postedAt": 1792434340923
   },
   {
-   "title": "Senior Product Marketing Manager",
+   "title": "Senior Marketing Manager - US Product",
    "url": "https://jobs.ashbyhq.com/nubank/aba54654-42b4-4eda-a2e7-8180e0767e2f",
    "company": "Nubank",
    "location": "Miami · United States",
