@@ -19,7 +19,7 @@
   familias: [fam-gestion-proyectos]
   fuente_url: https://www.jamexico.org.mx/programasmx/desaf%C3%ADo-innova
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-24
+  fecha_verificacion: 2026-10-26
   revisar_antes: 2026-11-30
   pendiente: "Confirmar fechas, sedes y si se requiere inscripción por escuela (WhatsApp 55 5211 9444)."
 
@@ -32,10 +32,10 @@
   costo_participante: null
   estado: cerrada
   familias: [fam-software-nube]
-  nota: "Sesiones el 6, 9, 13, 16, 23 y 27 de noviembre (año no indicado); la página muestra 'RSVP cerrada'."
+  nota: "Sesiones el 6, 9, 13, 16, 23 y 27 de noviembre (año no indicado); la página muestra 'RSVP cerrada' (confirmado de nuevo el 26-oct-2026)."
   fuente_url: https://www.jamexico.org.mx/programasmx/yo-puedo-programar
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-24
+  fecha_verificacion: 2026-10-26
   revisar_antes: 2027-01-31
 
 - id: opo-ja-mujer-digital
@@ -98,6 +98,51 @@
   revisar_antes: 2027-01-31
 
 # ===================== Vouchers y descuentos de certificadores =====================
+- id: opo-ja-ibm-skillsbuild
+  nombre: "IBM SkillsBuild con JA México"
+  tipo: programa
+  organizacion: org-ja-mexico
+  beneficio: "Cursos en línea y autogestionables sobre inteligencia artificial, automatización y machine learning, con credenciales digitales avaladas por IBM."
+  publico: {edad_min: 16, edad_max: 25, nota: "Estudiantes; nivel no especificado."}
+  costo_participante: 0
+  estado: permanente
+  familias: [fam-datos-ia]
+  nota: "Registro abierto sin fecha de cierre (26-oct-2026). Las credenciales son insignias de IBM, no certificaciones del catálogo."
+  fuente_url: https://www.jamexico.org.mx/programasmx/ibm-skillbuild
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-26
+  revisar_antes: 2026-11-23
+
+- id: opo-ja-discover-data
+  nombre: "Discover Data"
+  tipo: programa
+  organizacion: org-ja-mexico
+  beneficio: "Desarrollar una solución basada en tecnología para un problema social o ambiental."
+  publico: {nota: "Jóvenes con perfil técnico en informática y administración; edad no publicada."}
+  costo_participante: null
+  estado: por_confirmar
+  familias: [fam-datos-ia]
+  pendiente: "Confirmar edad, modalidad, fechas y costo (PDF del programa o WhatsApp 55 5211 9444)."
+  fuente_url: https://www.jamexico.org.mx/programasmx/discover-data
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-26
+  revisar_antes: 2026-11-23
+
+- id: opo-ja-p-tech
+  nombre: "P-Tech (JA México con IBM)"
+  tipo: programa
+  organizacion: org-ja-mexico
+  beneficio: "Modelo de cinco años que une preparatoria y universidad con mentoría de IBM, 11 materias con certificado y un proyecto tecnológico sustentable desde el tercer semestre."
+  publico: {nivel: [bachillerato, universidad], nota: "Edad no publicada; opera a través de escuelas participantes."}
+  costo_participante: null
+  estado: por_confirmar
+  familias: [fam-software-nube, fam-datos-ia]
+  pendiente: "Confirmar qué escuelas participan y cómo se ingresa (WhatsApp 55 5211 9444)."
+  fuente_url: https://www.jamexico.org.mx/programasmx/p-tech
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-26
+  revisar_antes: 2026-11-23
+
 - id: opo-ms-virtual-training-day-az900
   nombre: "Microsoft Virtual Training Days: 50% de descuento en examen"
   tipo: descuento
@@ -142,6 +187,22 @@
   fecha_verificacion: 2026-10-24
   revisar_antes: 2027-01-31
 
+- id: opo-aws-student-rewards
+  nombre: "AWS Student Rewards"
+  tipo: voucher
+  organizacion: org-aws
+  beneficio: "Un año de AWS Skill Builder; USD 10 y USD 20 en créditos AWS con 7 y 14 insignias; voucher de USD 100 para un examen de certificación AWS con 21 insignias (las insignias se ganan publicando y participando en AWS Builder Center)."
+  publico: {edad_min: 18, nivel: [universidad], nota: "Estudiantes de una institución de educación superior acreditada, verificados con SheerID. La edad mínima viene del anuncio de Amazon del 20-ago-2026."}
+  costo_participante: 0
+  estado: por_confirmar
+  aplica_a: [cert-aws-clf-c02, cert-aws-aif-c01]
+  familias: [fam-software-nube, fam-datos-ia]
+  nota: "Ni la página del programa ni el anuncio nombran los países elegibles; falta confirmar que aplica en México (FAQ y términos de AWS Builder)."
+  fuente_url: https://builder.aws.com/student-rewards
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-10-26
+  revisar_antes: 2026-11-02
+
 - id: opo-isc2-cc-paquete-es
   nombre: "ISC2 CC en español: curso + examen + dos intentos"
   tipo: descuento
@@ -170,7 +231,7 @@
   nota: "Inscripciones cerradas el 20-may-2026. Los códigos emitidos deben usarse antes del 31-dic-2026."
   fuente_url: https://www.isc2.org/landing/1mcc
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-24
+  fecha_verificacion: 2026-10-26
   revisar_antes: 2026-12-31
 
 - id: opo-solidworks-voucher-academico
@@ -231,7 +292,7 @@
   nota: "Próximas postulaciones 'por anunciar'. Útil para buscar centros de trabajo STEM (manufactura, TI, energía) en el estado de la persona."
   fuente_url: https://www.programasparaelbienestar.gob.mx/programas/jovenes/jovenes-construyendo-el-futuro/
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-24
+  fecha_verificacion: 2026-10-26
   revisar_antes: 2026-12-31
 
 # ===================== Retos y comunidad =====================
@@ -248,7 +309,7 @@
   nota: "Hackatón el 14 y 15 de noviembre de 2026; el registro cierra el 15 de noviembre."
   fuente_url: https://www.spaceappschallenge.org/2026/
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-24
+  fecha_verificacion: 2026-10-26
   revisar_antes: 2026-11-10
 
 - id: opo-technovation-girls
@@ -260,8 +321,8 @@
   costo_participante: null
   estado: por_confirmar
   familias: [fam-software-nube, fam-datos-ia]
-  nota: "La página consultada describe la temporada 2021-2022; confirmar el calendario vigente."
-  fuente_url: https://www.technovation.org/blogs/updates-to-technovation-programs
+  nota: "Al 26-oct-2026 el registro de estudiantes está cerrado; la página aún muestra la temporada 2025-2026 (registro del 13-ago-2025 al 18-mar-2026) y ofrece aviso para la temporada 2026-2027. Gratuito."
+  fuente_url: https://technovationchallenge.org/get-involved/students
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-24
+  fecha_verificacion: 2026-10-26
   revisar_antes: 2026-11-30

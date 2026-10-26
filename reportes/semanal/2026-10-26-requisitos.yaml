@@ -1,0 +1,109 @@
+# Lectura de requisitos de la muestra semanal (docs/prompts/loop-semanal.md, paso 6).
+# Fecha de lectura: 2026-10-26. Las vacantes de Computrabajo de la muestra no se pudieron abrir
+# (su robots.txt prohíbe la lectura automática); se sustituyeron por vacantes de Get on Board y ATS.
+# anios_experiencia: null cuando la vacante no indica años (no se infiere).
+- url: https://job-boards.greenhouse.io/clara/jobs/5236274007
+  titulo: Security Engineer (Early Career)
+  empresa: Clara
+  anios_experiencia: 1
+  requisitos:
+    - "1 a 2 años en seguridad, TI o ingeniería de software (cuentan prácticas, CTF, bug bounty)"
+    - "AWS o GCP: IAM, grupos de seguridad, reglas de firewall de VPC, cuentas de servicio"
+    - "bash; lectura de JSON y logs; leer Python, JavaScript o Go"
+    - "Consultas de logs SPL o KQL; OAuth, SSO, MFA"
+    - "IA generativa en contextos técnicos"
+    - "Español e inglés escritos"
+    - "Deseables: Security+, AWS Cloud Practitioner, Google Cloud Digital Leader o Associate Cloud Engineer; SIEM o EDR"
+- url: https://job-boards.greenhouse.io/clara/jobs/5204916007
+  titulo: Fullstack Software Engineer
+  empresa: Clara
+  anios_experiencia: 3
+  requisitos:
+    - "3 a 5 años de backend con Java y Spring Boot"
+    - "React, TypeScript, PostgreSQL, sistemas distribuidos"
+    - "CI/CD, Docker, Git; nube, de preferencia AWS"
+    - "Uso diario de herramientas de IA para programar"
+    - "Inglés y español; deseables Kafka o RabbitMQ y Kubernetes"
+- url: https://job-boards.greenhouse.io/clara/jobs/5230243007
+  titulo: Product Designer Associate
+  empresa: Clara
+  anios_experiencia: 4
+  requisitos:
+    - "4 o más años en diseño de producto, UX o interacción"
+    - "Investigación de usuarios y pruebas de usabilidad"
+    - "Uso diario de herramientas de IA para prototipar software funcional"
+    - "Inglés profesional; deseables conocimientos de frontend y sistemas de diseño"
+- url: https://job-boards.greenhouse.io/cobre/jobs/4068737009
+  titulo: Junior Business Architect - BA Program
+  empresa: Cobre
+  anios_experiencia: 0
+  requisitos:
+    - "0 a 2 años en roles analíticos"
+    - "SQL básico y Excel o Google Sheets"
+    - "Uso de LLM para investigación y análisis"
+    - "Español e inglés"
+    - "Deseables: Looker, Tableau, Sigma o Metabase; Python básico; n8n o Make"
+- url: https://www.getonbrd.com/jobs/desarrollador-c-net-y-angular-mexico-bc-tecnologia-mexicali
+  titulo: Desarrollador C#/.NET y Angular
+  empresa: BC Tecnología
+  anios_experiencia: 5
+  requisitos:
+    - "Ingeniería de sistemas, informática o afín"
+    - "5 años de desarrollo; 3 con C#/.NET; 2 con Angular"
+    - "APIs REST, SQL Server, Entity Framework, TypeScript, Git, Scrum o Kanban"
+    - "Deseables: Azure (App Services, Functions, DevOps), Docker, CI/CD; certificaciones Microsoft como Azure Developer Associate"
+- url: https://www.getonbrd.com/jobs/data-engineer-artefact-latam-ciudad-de-mexico-lima-bogota-santiago
+  titulo: Data Engineer
+  empresa: Artefact LatAm
+  anios_experiencia: null
+  requisitos:
+    - "Nivel semi senior; no indica años"
+    - "Python o PySpark avanzado; bases relacionales (SQL Server, Oracle, PostgreSQL, MySQL)"
+    - "Data warehouse, data lake o lakehouse; metodologías ágiles"
+    - "Inglés profesional"
+    - "Deseables: Power BI o Tableau; Talend, Alteryx o SAP Data Services; certificación cloud sin especificar"
+- url: https://www.getonbrd.com/jobs/business-analyst-decision-point-latam-ciudad-de-mexico-santiago-b624
+  titulo: Business Analyst
+  empresa: Decision Point Latam
+  anios_experiencia: null
+  requisitos:
+    - "Nivel junior; no indica años"
+    - "SQL, Power BI, Excel sólido, Python para análisis exploratorio, PowerPoint"
+    - "Inglés avanzado"
+- url: https://jobs.ashbyhq.com/nubank/a010560d-b6b7-402b-987a-3b8164b44780
+  titulo: Data Analytics - Regulatory Solutions
+  empresa: Nubank
+  anios_experiencia: null
+  requisitos:
+    - "La página lo titula Sr Analyst; no indica años"
+    - "SQL y Python o Scala; QuickSight y BigQuery"
+    - "Data mart, data lake, data warehouse; GenAI y LLM aplicados al análisis"
+    - "Inglés y español"
+- url: https://jobs.lever.co/deuna/a1d9d480-6b02-448e-99a1-0e72e36b31d0
+  titulo: Backend Engineer
+  empresa: Deuna
+  anios_experiencia: 5
+  requisitos:
+    - "5 o más años en backend"
+    - "Golang o Python; APIs REST o GraphQL; sistemas distribuidos y orientados a eventos"
+    - "AWS o nube similar; SQL y NoSQL; Redis; mensajería"
+    - "Inglés deseable"
+- url: https://jobs.lever.co/yuno/615b33e6-e166-4c89-8153-293d466b513e
+  titulo: Solutions Engineer
+  empresa: Yuno
+  anios_experiencia: 4
+  requisitos:
+    - "4 o más años en solutions o sales engineering o integraciones"
+    - "APIs REST, webhooks, JSON, SQL; Datadog o Grafana"
+    - "Conocimiento de pagos (PSP, 3DS, tokenización)"
+    - "Inglés fluido"
+- url: https://jobs.lever.co/yuno/2919c9d5-3740-4772-9b43-c014732cf257
+  titulo: Security Compliance Engineer
+  empresa: Yuno
+  anios_experiencia: null
+  requisitos:
+    - "No indica años; experiencia en fintech o entornos regulados"
+    - "Python; AWS o GCP (WAF, GuardDuty, Security Hub)"
+    - "Auditorías ISO; SOC 2 o PCI DSS"
+    - "Deseables: Kubernetes, Terraform o CloudFormation"
+    - "Inglés fluido"
