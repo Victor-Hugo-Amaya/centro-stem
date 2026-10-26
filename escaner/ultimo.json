@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-24T21:51:27.082Z",
+ "generado": "2026-10-26T13:43:31.695Z",
  "fuentes": [
   {
    "nombre": "Computrabajo México",
@@ -35,13 +35,13 @@
    "nombre": "Get on Board",
    "proveedor": "getonbrd",
    "ok": true,
-   "total": 592
+   "total": 593
   },
   {
    "nombre": "Nubank",
    "proveedor": "ashby",
    "ok": true,
-   "total": 97
+   "total": 95
   },
   {
    "nombre": "Clara",
@@ -442,6 +442,14 @@
    "fuente": "Computrabajo México"
   },
   {
+   "title": "Analista soporte técnico / Equipos de cómputo/ Impresoras multifuncionales/ $9,500 netos mensuales",
+   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-soporte-tecnico-equipos-de-computo-impresoras-multifuncionales-9500-netos-mensuales-en-cuernavaca-15E835A3EF5E0E2461373E686DCF3405",
+   "company": "E-Contact",
+   "location": "Cuernavaca, Morelos, México",
+   "description": "",
+   "fuente": "Computrabajo México"
+  },
+  {
    "title": "Soporte tecnico",
    "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-soporte-tecnico-en-san-pedro-tlaquepaque-4836B734150E1E7161373E686DCF3405",
    "company": "?",
@@ -502,14 +510,6 @@
    "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-encargado-de-soporte-tecnico-trabajo-en-el-centro-de-9-a-6-en-cuauhtemoc-05D15AA6BD6E0E5261373E686DCF3405",
    "company": "COAL Solutions",
    "location": "Cuauhtémoc, Ciudad de México DF",
-   "description": "",
-   "fuente": "Computrabajo México"
-  },
-  {
-   "title": "Analista soporte técnico / Equipos de cómputo/ Impresoras multifuncionales/ $10,00 netos mensuales",
-   "url": "https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-soporte-tecnico-equipos-de-computo-impresoras-multifuncionales-1000-netos-mensuales-en-zamora-18797663EEA982D561373E686DCF3405",
-   "company": "E-Contact",
-   "location": "Zamora, Michoacán, México",
    "description": "",
    "fuente": "Computrabajo México"
   },
@@ -718,6 +718,24 @@
    "postedAt": 1792512807000
   },
   {
+   "title": "Senior Software Engineer – Serverless Workflow",
+   "url": "https://www.getonbrd.com/jobs/senior-software-engineer-serverless-workflow-hyqoo-remote",
+   "company": "Hyqoo",
+   "location": "Remote",
+   "description": "",
+   "fuente": "Get on Board",
+   "postedAt": 1793021808000
+  },
+  {
+   "title": "Founding GTM Engineer",
+   "url": "https://www.getonbrd.com/jobs/founding-gtm-engineer-hostop-remote",
+   "company": "Hostop",
+   "location": "Remote",
+   "description": "",
+   "fuente": "Get on Board",
+   "postedAt": 1792969722000
+  },
+  {
    "title": "Desarrollador Go y Node.js",
    "url": "https://www.getonbrd.com/jobs/desarrollador-go-y-node-js-itsmart-santiago",
    "company": "ITSMART",
@@ -889,6 +907,15 @@
    "postedAt": 1792443768000
   },
   {
+   "title": "Back-end Developer – AWS",
+   "url": "https://www.getonbrd.com/jobs/backend-developer-pci-aws-hf-solutions-santiago",
+   "company": "HF Solutions",
+   "location": "Chile",
+   "description": "",
+   "fuente": "Get on Board",
+   "postedAt": 1792431440000
+  },
+  {
    "title": "Desarrollador Full-Stack (Web/Foco Back-end)",
    "url": "https://www.getonbrd.com/jobs/desarrollador-full-stack-web-foco-backend-witi-santiago",
    "company": "WiTi",
@@ -1006,6 +1033,24 @@
    "postedAt": 1791901338000
   },
   {
+   "title": "Líder Técnico",
+   "url": "https://www.getonbrd.com/jobs/lider-tecnico-3it-santiago-179f",
+   "company": "3IT",
+   "location": "Chile",
+   "description": "",
+   "fuente": "Get on Board",
+   "postedAt": 1793018897000
+  },
+  {
+   "title": "Back-end Developer Java Semi Senior Cl",
+   "url": "https://www.getonbrd.com/jobs/backend-developer-java-semi-senior-cl-imagemaker-remote",
+   "company": "Imagemaker",
+   "location": "Remote",
+   "description": "",
+   "fuente": "Get on Board",
+   "postedAt": 1793017699000
+  },
+  {
    "title": "Back-end Developer Java Semi Senior",
    "url": "https://www.getonbrd.com/jobs/desarrollador-backend-java-semi-senior-imagemaker-santiago",
    "company": "Imagemaker",
@@ -1031,15 +1076,6 @@
    "description": "",
    "fuente": "Get on Board",
    "postedAt": 1792703748000
-  },
-  {
-   "title": "Senior Software Engineer – Serverless Workflow",
-   "url": "https://www.getonbrd.com/jobs/senior-software-engineer-serverless-workflow-hyqoo-remote",
-   "company": "Hyqoo",
-   "location": "Remote",
-   "description": "",
-   "fuente": "Get on Board",
-   "postedAt": 1792702567000
   },
   {
    "title": "Desarrollador/a Full-Stack",
@@ -3346,40 +3382,13 @@
    "postedAt": 1770696446000
   },
   {
-   "title": "Back-end Java JBoss",
-   "url": "https://www.getonbrd.com/jobs/backend-java-jboss-bc-tecnologia-santiago",
-   "company": "BC Tecnología",
-   "location": "Chile",
-   "description": "",
-   "fuente": "Get on Board",
-   "postedAt": 1770400288000
-  },
-  {
-   "title": "Especialista Desarrollador",
-   "url": "https://www.getonbrd.com/jobs/especialista-desarrollador-bc-tecnologia-santiago-2b52",
-   "company": "BC Tecnología",
-   "location": "Chile",
-   "description": "",
-   "fuente": "Get on Board",
-   "postedAt": 1770208460000
-  },
-  {
-   "title": "Analista/Programador Angular",
-   "url": "https://www.getonbrd.com/jobs/analista-programador-angular-bc-tecnologia-remote",
-   "company": "BC Tecnología",
+   "title": "Power BI Developer SSIS",
+   "url": "https://www.getonbrd.com/jobs/power-bi-developer-ssis-hyqoo-remote",
+   "company": "Hyqoo",
    "location": "Remote",
    "description": "",
    "fuente": "Get on Board",
-   "postedAt": 1769553515000
-  },
-  {
-   "title": "Analista Programador",
-   "url": "https://www.getonbrd.com/jobs/analista-programador-bc-tecnologia-santiago",
-   "company": "BC Tecnología",
-   "location": "Chile",
-   "description": "",
-   "fuente": "Get on Board",
-   "postedAt": 1769099323000
+   "postedAt": 1793021802000
   },
   {
    "title": "Data Engineer (GCP/Bigquery)",
@@ -3535,6 +3544,15 @@
    "postedAt": 1791991651000
   },
   {
+   "title": "Business Analyst (Portugués)",
+   "url": "https://www.getonbrd.com/jobs/business-analyst-sr-portugues-agile-witi-montevideo-santiago",
+   "company": "WiTi",
+   "location": "Chile, Uruguay",
+   "description": "",
+   "fuente": "Get on Board",
+   "postedAt": 1793019736000
+  },
+  {
    "title": "Data Governance GCP",
    "url": "https://www.getonbrd.com/jobs/data-governance-gcp-dsac-chile-remote",
    "company": "DSAC Chile",
@@ -3551,15 +3569,6 @@
    "description": "",
    "fuente": "Get on Board",
    "postedAt": 1792778410000
-  },
-  {
-   "title": "Power BI Developer SSIS",
-   "url": "https://www.getonbrd.com/jobs/power-bi-developer-ssis-hyqoo-remote",
-   "company": "Hyqoo",
-   "location": "Remote",
-   "description": "",
-   "fuente": "Get on Board",
-   "postedAt": 1792702753000
   },
   {
    "title": "SSIS Data Migration Engineer",
@@ -4513,7 +4522,7 @@
    "location": "Chile",
    "description": "",
    "fuente": "Get on Board",
-   "postedAt": 1792761825000
+   "postedAt": 1793016576000
   },
   {
    "title": "Senior Cloud Engineer",
@@ -6115,7 +6124,7 @@
    "location": "Ciudad de México · Mexico City",
    "description": "ABOUT NU\n\nNu serves more than 140 million customers, guided by a mission to fight complexity and empower people. The company has been leading an industry transformation through innovative products and human-centered services.\n\n \n\nProprietary technology and data at scale power Nu’s digital platform, built to promote financial access, advancement, and transparency. Its business model thrives on customer love and lower costs, feeding a flywheel of growth and profitability.\n\nVisit our Institutional Page https://www.nu.com/2026-en\n\n\nBusiness Analysts at Nubank\n\nAs a company at the forefront of the financial revolution in Brazil, Nubank has experienced exponential growth since its inception. To keep your growth path healthy, numerous critical decisions constantly need to be made. Business Analysts are fundamental in the decision process because they must not only be able to deal with large amounts of information and data, but also always think of ways to improve our clients' experience.\n\nIt is BA's responsibility to structure the data, analyze it and use the results to test different solutions with the aim of improving Nubank's efficiency.\n\nWe are looking for people who are independent and who are not afraid to take the initiative to identify and solve problems that are not necessarily obvious.\n\nYou can read more about it in our blog https://building.nubank.com.br and get some insights into how we work.\n\n \n\nAs a Business Analyst, you’re expected to:\n\n - Do a lot of investigative work, focused on deciding which data makes the most sense to use in which situation. If you don't have the data, it's your job to think about what tests can be done or how to extract the information you need to answer your questions;\n\n - Support your team in making data-based decisions by monitoring analysis and decisions, ensuring the flow of projects and making the process of taking risks comfortable despite the uncertainties;\n\n - Learning how to work with a large volume of data to build a solid foundation for decision making with calculated risks - even knowing that not all the answers are in the data and/or that not all the data you would like is available; Use tools like SQL, Python, Databricks and Scala - taught during your first weeks with us - for data extraction;\n\n - Understand our products and interactions with other areas;\n\n - Take advantage of opportunities to grow and learn from a well-prepared and highly qualified team;\n\n - Opportunity to work in a complex, dynamic and diverse environment, participating in projects that will impact a large number of clients.\n\n What are we looking for?\n\n - Analytical capacity: ease with numbers and calculations, having the ability to solve problems mathematically;\n\n - Business basics: dynamics between risks and opportunities, as well as interaction between business areas and technical areas (products/engineering);\n\n - Problem solving: ease and creativity to seek solutions to day-to-day challenges and achieve the best results;\n\n - Ability to understand how your decisions and work impact our customers' experience, seeking results that align with our purpose;\n\n - Willingness and ease of learning, especially for tools;\n\n - Openness to receive feedback and incorporate it into your daily life and development;\n\n - Adaptability to the multifunctional environment;\n\n - Profiles that add value to Nubank's culture.\n\nCore Benefits\n\n - Chance of earning equity at Nu\n\n - Extended maternity and paternity leaves\n\n - Health and life insurance\n\n - NuCare - Our mental health and wellness assistance program\n\n - Nucleo - Our learning platform of courses\n\n - NuLanguage - Our language learning program\n\n - Vacations of 17 workdays with 25% vacation bonus\n\n - Gym partnership\n\n - Dental and Vision Insurance\n\n - Holiday Bonus (\"Aguinaldo\") of 30 days of pay per year\n\n - Food card\n\n - Work-from-home Allowance\n\n - Parental Consultancy\n\n - Relocation Assistance Package, if applicable\n\nRole Location\n\nMexico City, MX\n\n\n\n\nWORK MODEL FOR THIS ROL",
    "fuente": "Nubank",
-   "postedAt": 1792787830246
+   "postedAt": 1793017420449
   },
   {
    "title": "Pessoa Engenheira de Software Sênior - exclusiva para Pessoas com Deficiência",
@@ -6703,15 +6712,6 @@
    "postedAt": 1790768458910
   },
   {
-   "title": "Senior Software Engineer (Cloud Network)",
-   "url": "https://jobs.ashbyhq.com/nubank/c9bdbd55-d7b9-4646-b7cf-ae2a71684255",
-   "company": "Nubank",
-   "location": "São Paulo · Brazil",
-   "description": "ABOUT NU\n\nNu serves more than 140 million customers, guided by a mission to fight complexity and empower people. The company has been leading an industry transformation through innovative products and human-centered services.\n\n \n\nProprietary technology and data at scale power Nu’s digital platform, built to promote financial access, advancement, and transparency. Its business model thrives on customer love and lower costs, feeding a flywheel of growth and profitability.\n\nVisit our Institutional Page https://www.nu.com/2026-en\n\n\nABOUT THE ROLE\n\nEvery transaction at Nubank travels across a network before it reaches a customer. As we grow across countries, accounts, regions and hybrid environments, the connectivity layer underneath has to stay fast, segmented, auditable and cheap to run — while never becoming the thing that takes the platform down.\n\nAs a Senior Software Engineer on a Cloud Network platform engineering team, you set and evolve the technical direction for how Nubank connects its cloud, hybrid and on-premises environments. You own problems whose scope spreads across several teams and business units, and you are expected to bring structure to ambiguity rather than wait for it to be resolved for you.\n\n\n\n\nYOU'LL BE RESPONSIBLE FOR\n\n - Setting and evolving the technical direction of the cloud network platform owned by your team, aligning with Nubank's canonical approaches and contributing back to the broader technical community.\n\n - Support complex network projects and processes end to end — working independently, coordinating across subjects and stakeholders, and escalating for managerial support in a timely way rather than reactively.\n\n - Proactively reducing long-term complexity through simplification, consolidation, deprecation and paved roads, explicitly balancing scalability, maintainability and cost, and considering both human and AI interaction with the platform.\n\n - Owning the operational health of the network platform in your team's scope: leading complex incident response (diagnosis, coordination, resolution), driving complex postmortems, and owning the short- and long-term tech debt strategy that comes out of them.\n\n - Promoting a culture of safe change — feature flags, gradual rollout, monitoring, fast rollback — applied to network changes, and driving simplification and cost optimization across the topology.\n\n - Setting and enforcing quality standards for the team's automation and infrastructure code: testing practices, code review bar, reusable modules, and anticipation of quality and maintainability needs coming from business strategy.\n\n - Defining observability for the platform — robust monitoring, controls and SLAs that surface issues proactively rather than after customer impact.\n\n - Bringing a strong end-to-end domain understanding: tracing a business process from product through the transactional path down to the network and data layers, and understanding how network design choices propagate through it.\n\n - Owning the network security posture of your scope, including PCI DSS or equivalent standards, segmentation, and controls that hold up under audit.\n\n - Evaluating buy vs. build options and new products and technologies, being data-driven about stability, reliability, scalability and cost before committing to a solution.\n\n - Participating in hiring as a core part of the role, contributing to function-wide taskforces and initiatives, and documenting decisions so that knowledge travels across teams, not just within yours.\n   \n   \n\n\nWE ARE LOOKING FOR A PERSON WHO HAS\n\n• Strong software engineering foundations and solid coding skills (Python, Go, Java, .NET etc.), with experience building and maintaining production-grade systems..\n\n• Solid hands-on experience with cloud computing (AWS preferred) in production environments, including core services such as VPC, IAM, load balancing, DNS and managed connectivity services..\n\n• Hands-on experience with infrastructure as code and automation (Terraform, Cloud",
-   "fuente": "Nubank",
-   "postedAt": 1790869300335
-  },
-  {
    "title": "Chief of Staff to the CLO",
    "url": "https://jobs.ashbyhq.com/nubank/105b7340-6f22-47c4-bffa-d840693d673c",
    "company": "Nubank",
@@ -6800,15 +6800,6 @@
    "description": "ABOUT NU\n\nNu serves more than 140 million customers, guided by a mission to fight complexity and empower people. The company has been leading an industry transformation through innovative products and human-centered services.\n\n \n\nProprietary technology and data at scale power Nu’s digital platform, built to promote financial access, advancement, and transparency. Its business model thrives on customer love and lower costs, feeding a flywheel of growth and profitability.\n\nVisit our Institutional Page https://www.nu.com/2026-en\n\nChief of Staff, Credit Card\n\n\n\n\nABOUT THE ROLE\n\nThe Chief of Staff to the General Manager of Credit Card is the operational and strategic backbone of the Credit Card Business Unit. This person owns the team's reporting and operating rhythm, drives short-cycle strategic initiatives, and improves how the team works and communicates. They act as a trusted partner to the General Manager and a credible counterpart to senior stakeholders across Nubank.\n\nThis is a broad role, It combines governance, strategic planning and business analysis, and it is designed as an entry point to other roles in the organization. Candidates are evaluated both for the Chief of Staff role itself and for their potential to take on broader responsibilities over time.\n\nIt is a role built on ownership. We expect someone who anticipates needs, moves work forward without being pushed, operates and influences independently and knows when to ask for help, and brings structure to ambiguity.\n\n\n\nYOU'LL BE RESPONSIBLE FOR\n\n - Owning recurring reporting end to end. Run the weekly, monthly and quarterly reports and business reviews for the General Manager and stakeholders. Gather inputs across the Credit Card teams, align early, flag gaps proactively, and leave enough time for review before release;\n\n - Focusing reporting on what matters. Apply business judgment to prioritize the teams and initiatives that drive the results, and flag when inputs are missing;\n\n - Leading short-cycle strategic projects. Pick up topics such as headcount planning, AI initiatives and ad-hoc leadership priorities. Get up to speed quickly, clarify the problem and deliver in weeks, not months;\n\n - Partnering with People & Culture on people topics, to keep the health of the organization;\n\n - Partnering with other Chiefs of Staff and senior leaders, building trust and speaking their language;\n\n - Partnering with Internal Communications to position Credit Card & Debt Resolution inside and outside Nubank. Drive the cadence of the division's internal communication and help build its external presence (e.g. LinkedIn);\n\n - Improving team routines and governance. Evolve forums, rituals and agendas so the team stays focused on what matters;\n\n - Diagnosing performance and opportunities. Track how the business is doing against budget and targets, identify the gaps and the levers available, and challenge targets when they don't look adequate. Be a demanding partner to the areas we depend on, and follow improvements through to the end;\n\n - Prioritizing autonomously across competing demands, escalating trade-offs when needed.\n\n\nWE ARE LOOKING FOR A PERSON WHO HAS\n\n\nPROFESSIONAL EXPERIENCE & EDUCATION\n\n - Previous experience in management consulting, strategy, business operations or an executive-adjacent role in a large, complex organization;\n\n - Business analyst capabilities, with strong structured problem-solving and diagnostic skills;\n\n - Experience operating alongside and influencing senior leaders;\n\n - Track record of running reporting, planning or governance cycles independently;\n\n - Product sense is a plus;\n\n - Familiarity with credit card, lending or financial services businesses is an advantage;\n\n - Exceptional written and verbal communication, able to frame complex material for executive decision-making;\n\n - Advanced Excel and PowerPoint (or equivalent);\n\n - Fluent English; Spanish or Portuguese is an advantage.\n\n\nCOMPETENCES & ATTRIBUTES\n\n - High proactivity and ownership:",
    "fuente": "Nubank",
    "postedAt": 1791985912655
-  },
-  {
-   "title": "Influence Marketing Specialist",
-   "url": "https://jobs.ashbyhq.com/nubank/de41c7e6-ff64-4e5e-8841-f042dbc2c607",
-   "company": "Nubank",
-   "location": "São Paulo · Brazil",
-   "description": "ABOUT NU\n\nNu serves more than 140 million customers, guided by a mission to fight complexity and empower people. The company has been leading an industry transformation through innovative products and human-centered services.\n\n \n\nProprietary technology and data at scale power Nu’s digital platform, built to promote financial access, advancement, and transparency. Its business model thrives on customer love and lower costs, feeding a flywheel of growth and profitability.\n\nVisit our Institutional Page https://www.nu.com/2026-en\n\n\nABOUT THE ROLE \n\nYou will manage the influencer strategy for select segments at Nubank. You will serve as the main bridge between Nubank, our influencer partner agency, and the internal Marketing team.\n\n\n\nYOU’LL BE RESPONSIBLE FOR \n\n - Approve influencer selections/shortlists and validate background checks with the Defense team.\n\n - Manage demands and internal approvals with the Marketing and Content teams.\n\n - Approve scripts and guide creative direction, suggesting strategic improvements.\n\n - Organize topics, the editorial calendar, and other tactical processes for influencer deliverables.\n\n - Build influencer performance reports with a strategic focus on results.\n\n - Manage relationships with influencers, including sending gifts on special occasions and attending events.\n\n - Manage the budget and report on expenses.\n\n \n\n\nWHAT WE'RE LOOKING FOR SOMEONE WHO HAS\n\nRequired\n\n - Experience with influencer marketing, preferably in agency or partner management.\n\n - Strong creative and strategic vision, with the ability to review scripts and provide constructive feedback.\n\n - Organizational skills and the ability to manage multiple demands and stakeholders simultaneously.\n\n - Analytical mindset to interpret metrics and turn results into actionable insights.\n\n - Experience with budget management.\n\n - Clear communication and comfort working with diverse teams.\n\n - Intermediate English\n\nNice to Have\n\n - Experience with compliance and reputation risk management when working with content creators.\n\n - Creative background/experience to participate in co-creation processes.\n\nLocation\n\nSão Paulo, Brazil\n\nWork model\n\nHybrid\n\nOffice requirement\n\n2-3 days per week at the office.\n\n \n\n\nOUR BENEFITS \n\n - Chance of earning equity at Nubank\n\n - Food/ Meal Card (Vale-Refeição and/or Vale Alimentação)\n\n - Public Transportation Commuting Benefit (Vale-Transporte)\n\n - NuCare – Psychological, Financial and Legal Assistance Program\n\n - Life Insurance\n\n - Medical Plan\n\n - Dental Plan\n\n - NuLanguage – Language Course Program\n\n - Nucleo - Our learning platform of courses\n\n - Extended Parental Leave\n\n - Daycare Allowance\n\n - Parental Consultancy\n\n - Work-from-home Allowance\n\n - Gym Partnerships\n\n - 30 days of paid vacation\n\n - Relocation Assistance Package, if applicable\n\nOur recruitment process may involve the use of artificial intelligence–enabled tools, such as automated interview transcription and analysis, to support the evaluation process. Artificial intelligence is not used to make final hiring decisions; all decisions are made by human reviewers.\n\nTo maintain a consistent and fair process for every candidate, Nu does not provide individualized technical feedback. See how our policy works here https://script.google.com/a/macros/nubank.com.br/s/AKfycbwvrewE58oGSbRWIVv8CyCWN68GLxpPVsfYYXv-ZHg94QFsTJmi82rF1x0yt-OTs2W0DQ/exec",
-   "fuente": "Nubank",
-   "postedAt": 1792513297973
   },
   {
    "title": "Staff Security Engineer (IAM)",
