@@ -16,7 +16,7 @@
   resultados: "Informe 2024: 74% empleado a 90 días y 90% a seis meses; ingreso promedio de $13,574 mensuales (2.79 veces el previo)."
   convocatoria: {estado: abierta, proxima_fecha: 2026-11-02, nota: "Grupos con inicio el 19-oct y el 2-nov listados en la página; la respuesta de selección tarda hasta 10 días."}
   fuente_url: https://mexico.generation.org/programs/java/
-  fecha_verificacion: 2026-10-24
+  fecha_verificacion: 2026-10-26
 
 - id: prep-generation-aws-restart
   nombre: "AWS re/Start con especialización en IA Foundational"
@@ -29,7 +29,7 @@
   prepara_para: [cert-aws-clf-c02, cert-aws-aif-c01]
   convocatoria: {estado: por_confirmar, nota: "La página muestra fechas incongruentes ('12 de octubre' y 'AWS02 - JUN 15'). No indica si incluye voucher de examen."}
   fuente_url: https://mexico.generation.org/programs/aws-cloud/
-  fecha_verificacion: 2026-10-24
+  fecha_verificacion: 2026-10-26
 
 - id: prep-generation-helpdesk
   nombre: "Especialista en Soporte de TI (HelpDesk)"
@@ -41,7 +41,7 @@
   publico: {edad_min: 18, edad_max: 29}
   convocatoria: {estado: por_confirmar}
   fuente_url: https://mexico.generation.org/encuentra-una-carrera/
-  fecha_verificacion: 2026-10-24
+  fecha_verificacion: 2026-10-26
 
 - id: prep-generation-unity
   nombre: "Desarrollador(a) Jr. en Unity"
@@ -51,9 +51,9 @@
   duracion: "14 semanas síncronas, más 12 semanas de empleabilidad"
   costo_participante: 0
   publico: {edad_min: 18, edad_max: 29, nota: "Requiere experiencia laboral, proyectos personales o formación previa en programación."}
-  convocatoria: {estado: por_confirmar}
+  convocatoria: {estado: por_confirmar, nota: "Al 26-oct-2026 la página pide registrar interés, cita un plazo de registro en marzo de 2026 e inicio el 14 de septiembre sin año, con horario de Colombia: parece desactualizada."}
   fuente_url: https://mexico.generation.org/programs/desarrolladora-jr-en-unity/
-  fecha_verificacion: 2026-10-24
+  fecha_verificacion: 2026-10-26
 
 # --- Gratuitos de certificadores ---
 - id: prep-aws-educate
