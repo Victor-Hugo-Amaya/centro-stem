@@ -9,7 +9,7 @@
   titulo: "Coursera · Global Skills Report 2025"
   fuente_url: https://www.coursera.org/skills-reports/global/get-report
   fecha_verificacion: 2026-10-24
-  nota: "Ya existe la edición 2026 (https://www.coursera.org/skills-reports/global); pendiente de incorporar con el procedimiento de docs/04 §7."
+  nota: "Serie: la edición 2026 (coursera-gsr-2026) cambió de metodología y de índice; no comparar posiciones entre ediciones."
 - clave: imco-cc-2025
   titulo: "IMCO · Compara Carreras 2025 (documento y plataforma)"
   fuente_url: https://imco.org.mx/compara-carreras-2025/
@@ -18,13 +18,49 @@
   titulo: "IMCO · Compara Carreras, ficha por carrera"
   fuente_url: https://comparacarreras.imco.org.mx/
   fecha_verificacion: 2026-10-24
-  nota: "Las fichas de la plataforma y las gráficas del documento PDF no coinciden exactamente (p. ej., Medicina general: $27,823 en la ficha y $25,732 en la gráfica del PDF). El catálogo usa la ficha y cita su URL."
+  nota: "Las fichas de la plataforma corresponden a la edición 2026 (coinciden con el documento imco-cc-2026: Medicina $27,823; Electrónica y mecánica $25,953). La diferencia con el PDF 2025 ($25,732 para Medicina) se explica por el cambio de edición, no por un error. El catálogo usa la ficha y cita su URL."
 - clave: imco-tendencias
-  titulo: "IMCO · Tendencias Educativas (comunicado e investigación)"
-  fuente_url: https://imco.org.mx/
-  fecha_verificacion: 2026-10-24
-  nota: "Original en la carpeta de conocimiento del proyecto; falta la URL exacta de la publicación."
+  titulo: "IMCO · Tendencias para el futuro de la educación y el empleo (comunicado e investigación, agosto de 2026)"
+  fuente_url: https://imco.org.mx/tendencias-educativas-y-del-empleo/
+  fecha_verificacion: 2026-11-02
+  nota: "URL tomada de la bibliografía de imco-cc-2026. Original en la carpeta de conocimiento del proyecto."
 - clave: oit-wp96
   titulo: "OIT · Generative AI and jobs (Working Paper 96)"
   fuente_url: https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and
   fecha_verificacion: 2026-10-24
+- clave: imco-cc-2026
+  titulo: "IMCO · Compara Carreras 2026 (documento, 26-ago-2026)"
+  fuente_url: https://imco.org.mx/wp-content/uploads/2026/08/Documento_Compara-Carreras_26082026.pdf
+  fecha_verificacion: 2026-11-02
+  nota: "Duodécima edición; 65 licenciaturas y 14 carreras técnicas. Mide por primera vez la vinculación entre carrera y ocupación (ENOE 2T2025 a 1T2026)."
+- clave: coursera-gsr-2026
+  titulo: "Coursera y Udemy · Global Skills Report 2026 (28-sep-2026)"
+  fuente_url: https://www.coursera.org/skills-reports/global
+  fecha_verificacion: 2026-11-02
+  nota: "El PDF completo exige formulario; las cifras de México aún no se registran. Sustituye el AI Maturity Index por el AI-Human Skills Synergy Index (98 países)."
+- clave: coursera-jsr-2026
+  titulo: "Coursera · Job Skills Report 2026, comunicado México (31-mar-2026)"
+  fuente_url: https://www.prnewswire.com/mx/comunicados-de-prensa/el-informe-de-habilidades-laborales-2026-de-coursera-revela-una-rapida-aceleracion-de-la-ia-en-mexico-con-un-aumento-del-886--en-el-aprendizaje-de-la-generacion-ia-302729486.html
+  fecha_verificacion: 2026-11-02
+  nota: "Comunicado del propio emisor distribuido por PR Newswire. Mide inscripciones de aprendices empresariales, no demanda de empleo."
+- clave: manpower-meos-4t2026
+  titulo: "ManpowerGroup · Encuesta de Expectativas de Empleo México 4T 2026 (8-sep-2026)"
+  fuente_url: https://blog.manpowergroup.com.mx/manpowergroup/eos4q2026
+  fecha_verificacion: 2026-11-02
+- clave: manpower-ti-3t2026
+  titulo: "ManpowerGroup Experis · Expectativas de contratación en el sector TI México 3T 2026 (25-jun-2026)"
+  fuente_url: https://blog.manpowergroup.com.mx/experis/etto3q-2026
+  fecha_verificacion: 2026-11-02
+- clave: inegi-ioe-2026-09
+  titulo: "INEGI · Indicadores de Ocupación y Empleo, septiembre de 2026 (boletín 634/26, 22-oct-2026)"
+  fuente_url: https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/iooe/IOE2026_10.pdf
+  fecha_verificacion: 2026-11-02
+- clave: oit-get-youth-2026
+  titulo: "OIT · Global Employment Trends for Youth 2026 (11-ago-2026)"
+  fuente_url: https://www.ilo.org/resource/news/youth-unemployment-rises-young-people-face-harder-road-decent-work
+  fecha_verificacion: 2026-11-02
+- clave: pwc-aijb-2026-mx
+  titulo: "PwC · Global AI Jobs Barometer 2026, análisis México"
+  fuente_url: https://www.pwc.com/gx/en/issues/artificial-intelligence/job-barometer/aijb-2026-mexico.pdf
+  fecha_verificacion: 2026-11-02
+  nota: "Empresa privada; analiza vacantes publicadas (no encuestas). Útil como señal de demanda de habilidades de IA."
