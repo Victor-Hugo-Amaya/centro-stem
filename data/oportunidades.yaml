@@ -19,7 +19,7 @@
   familias: [fam-gestion-proyectos]
   fuente_url: https://www.jamexico.org.mx/programasmx/desaf%C3%ADo-innova
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-26
+  fecha_verificacion: 2026-11-09
   revisar_antes: 2026-11-30
   pendiente: "Confirmar fechas, sedes y si se requiere inscripción por escuela (WhatsApp 55 5211 9444)."
 
@@ -32,10 +32,10 @@
   costo_participante: null
   estado: cerrada
   familias: [fam-software-nube]
-  nota: "Sesiones el 6, 9, 13, 16, 23 y 27 de noviembre (año no indicado); la página muestra 'RSVP cerrada' (confirmado de nuevo el 26-oct-2026)."
+  nota: "Sesiones el 6, 9, 13, 16, 23 y 27 de noviembre (año no indicado); la página muestra 'RSVP cerrada' (confirmado de nuevo el 2-nov-2026)."
   fuente_url: https://www.jamexico.org.mx/programasmx/yo-puedo-programar
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-26
+  fecha_verificacion: 2026-11-09
   revisar_antes: 2027-01-31
 
 - id: opo-ja-mujer-digital
@@ -197,11 +197,11 @@
   estado: por_confirmar
   aplica_a: [cert-aws-clf-c02, cert-aws-aif-c01]
   familias: [fam-software-nube, fam-datos-ia]
-  nota: "Ni la página del programa ni el anuncio nombran los países elegibles; falta confirmar que aplica en México (FAQ y términos de AWS Builder)."
+  nota: "El anuncio oficial en AWS Builder Center (confirmado el 2-nov-2026) dice '18 años o más' e instituciones acreditadas 'worldwide', pero ni la página ni el anuncio listan países; las condiciones remiten a los Builder Terms. Sigue sin confirmarse México."
   fuente_url: https://builder.aws.com/student-rewards
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-26
-  revisar_antes: 2026-11-02
+  fecha_verificacion: 2026-11-02
+  revisar_antes: 2026-11-30
 
 - id: opo-isc2-cc-paquete-es
   nombre: "ISC2 CC en español: curso + examen + dos intentos"
@@ -231,7 +231,7 @@
   nota: "Inscripciones cerradas el 20-may-2026. Los códigos emitidos deben usarse antes del 31-dic-2026."
   fuente_url: https://www.isc2.org/landing/1mcc
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-26
+  fecha_verificacion: 2026-11-09
   revisar_antes: 2026-12-31
 
 - id: opo-solidworks-voucher-academico
@@ -271,14 +271,14 @@
   beneficio: "Edición 2025: 30,000 becas para estudiantes y docentes en Ciberseguridad, Marketing digital, Soporte de TI, Gestión de proyectos, Análisis de datos, UX y Fundamentos de IA, en Coursera."
   publico: {region: "México", nota: "Nacionalidad o residencia mexicana."}
   costo_participante: 0
-  estado: cerrada
-  fecha_cierre: 2025-04-30
+  estado: por_confirmar
   aplica_a: [cert-google-data-analytics]
-  nota: "Vigilar si se repite. El registro se hizo en becas.inroads.org.mx."
+  nota: "Edición 2025 cerrada el 30-abr-2025 (registro en becas.inroads.org.mx). Expansión (23-abr-2026) informa una nueva fase 2026 con 40,000 becas para estudiantes de bachillerato, que agrega el Certificado Profesional de IA de Google; no publica fechas ni enlace de registro y no se encontró anuncio oficial de Google ni de la SEP. Puede asignarse por plantel y no por convocatoria abierta."
   fuente_url: https://www.unotv.com/tecnologia/google-abre-30-mil-becas-para-estudiantes-y-educadores-mexicanos-como-aplicar/
   fuente_tipo: secundaria
-  fecha_verificacion: 2026-10-24
-  revisar_antes: 2027-03-31
+  pendiente: "Confirmar con la SEP (Subsecretaría de Educación Media Superior) o Google México si la fase 2026 tiene registro abierto y para qué subsistemas."
+  fecha_verificacion: 2026-11-09
+  revisar_antes: 2026-12-07
 
 # ===================== Apoyos públicos =====================
 - id: opo-jovenes-construyendo-el-futuro
@@ -289,11 +289,43 @@
   publico: {edad_min: 18, edad_max: 29, nota: "No estudiar ni trabajar al postularse."}
   costo_participante: 0
   estado: recurrente
-  nota: "Próximas postulaciones 'por anunciar'. Útil para buscar centros de trabajo STEM (manufactura, TI, energía) en el estado de la persona."
+  nota: "Próximas postulaciones 'por anunciar' (confirmado el 2-nov-2026). Útil para buscar centros de trabajo STEM (manufactura, TI, energía) en el estado de la persona."
   fuente_url: https://www.programasparaelbienestar.gob.mx/programas/jovenes/jovenes-construyendo-el-futuro/
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-26
+  fecha_verificacion: 2026-11-09
   revisar_antes: 2026-12-31
+
+- id: opo-mexia-cpfia
+  nombre: "Centro Público de Formación en Inteligencia Artificial (MexIA)"
+  tipo: beca
+  organizacion: org-atdt
+  beneficio: "Formación gratuita en línea de cinco meses con certificaciones de empresas aliadas (Google Cloud, AWS, Microsoft, Cisco, Oracle, IBM, Meta, NVIDIA, Salesforce, entre otras) en IA, análisis de datos, nube, ciberseguridad y redes; incluye inglés técnico, tutorías y vinculación laboral. Segunda generación: 30,000 lugares en 2026."
+  publico: {edad_min: 18, region: "Nacional (en línea)", nota: "La edad mínima viene de la prensa (La Crónica, 26-may-2026); la página oficial no la publica. Ingreso con curso propedéutico aprobado."}
+  costo_participante: 0
+  estado: recurrente
+  familias: [fam-datos-ia, fam-ciberseguridad, fam-software-nube, fam-soporte-ti-redes]
+  nota: "Postulaciones de la segunda generación del 26-may al 5-jul-2026; capacitación de agosto a diciembre de 2026. La primera generación abrió el 6-nov-2025, así que la tercera podría abrir pronto: vigilar cada semana. Al 9-nov-2026 la página oficial sigue mostrando sólo la segunda generación; no hay tercera convocatoria. Algunas rutas tienen cupo limitado (por ejemplo, Network Technician de Cisco, 3,000 lugares)."
+  fuente_url: https://www.mexia.gob.mx/
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-11-09
+  revisar_antes: 2026-11-30
+  pendiente: "La página oficial bloquea la lectura directa desde la nube; se leyó con Firecrawl. Confirmar requisitos de escolaridad y si cada ruta incluye el examen pagado."
+
+- id: opo-aws-think-big-space-qro
+  nombre: "Amazon Think Big Space Querétaro: cursos STEM con certificado UNAM"
+  tipo: programa
+  organizacion: org-aws
+  beneficio: "Seis cursos STEM presenciales y gratuitos de 20 horas (120 horas en total) en BLOQUE, Querétaro; quien completa los seis recibe un certificado oficial de la UNAM. Meta de más de 1,200 estudiantes por año."
+  publico: {nivel: [bachillerato], region: "Querétaro (presencial)", nota: "Dirigido a estudiantes de nivel medio superior; edad no publicada."}
+  costo_participante: 0
+  estado: por_confirmar
+  familias: [fam-software-nube, fam-manufactura-avanzada]
+  nota: "Registro abierto desde junio de 2026 e inicio de cursos en septiembre de 2026 según el anuncio de Amazon (26-may-2026). La página de cursos de BLOQUE no muestra contenido a la lectura automática."
+  fuente_url: https://www.aboutamazon.mx/noticias/aws/el-primer-amazon-think-big-space-de-america-latina-abre-sus-puertas-en-queretaro-un-laboratorio-donde-jovenes-mexicanos-pueden-sonar-en-grande
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-11-02
+  revisar_antes: 2026-11-30
+  pendiente: "Confirmar en https://bloqueqro.municipiodequeretaro.gob.mx/cursos si hay grupos para 2027 y la edad mínima."
 
 # ===================== Retos y comunidad =====================
 - id: opo-nasa-space-apps-2026
@@ -306,11 +338,11 @@
   estado: abierta
   fecha_cierre: 2026-11-15
   familias: [fam-datos-ia, fam-software-nube]
-  nota: "Hackatón el 14 y 15 de noviembre de 2026; el registro cierra el 15 de noviembre."
+  nota: "Hackatón el 14 y 15 de noviembre de 2026; el registro cierra el 15 de noviembre. Al 9-nov-2026 hay sedes locales anunciadas en México (por ejemplo UDLAP en Puebla, Saltillo, Querétaro, Mérida, San Luis Potosí, Chihuahua y Tijuana) según prensa y agendas de eventos; elegir sede en la página oficial. Después del 15-nov pasa a cerrada y se vigila la edición 2027."
   fuente_url: https://www.spaceappschallenge.org/2026/
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-26
-  revisar_antes: 2026-11-10
+  fecha_verificacion: 2026-11-09
+  revisar_antes: 2026-11-16
 
 - id: opo-technovation-girls
   nombre: "Technovation Girls"

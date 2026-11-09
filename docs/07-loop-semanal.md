@@ -16,7 +16,7 @@ Hallazgo que condiciona el diseño: **desde la nube no hay acceso directo a las 
 ## 2. Ciclo semanal (lunes)
 
 ```
-05:00  (fase B) GitHub Actions escanea portales → rama datos-escaner, escaner/ultimo.json
+Dom 03:23  (fase B) GitHub Actions escanea portales → rama datos-escaner, escaner/ultimo.json
 07:41  Sesión semanal de Claude:
         1. python3 scripts/semanal.py --escribir --vacantes escaner/ultimo.json
         2. Verifica cada registro de la sección 1 de la agenda en su fuente oficial
@@ -106,7 +106,7 @@ Pendiente conocido para la primera revisión (noviembre de 2026): incorporar el 
 |---|---|---|
 | Revisión semanal de oportunidades | Lunes 07:41 | PR `Revisión semanal AAAA-MM-DD` con reporte y cambios al directorio |
 | Revisión mensual de reportes | Día 2 de cada mes, 08:43 | PR `Revisión mensual AAAA-MM` con cambios a docs/04 y, si aplica, a familias.yaml |
-| Escáner de vacantes (GitHub Actions) | Lunes 05:00 | `escaner/ultimo.json` en la rama `datos-escaner` |
+| Escáner de vacantes (GitHub Actions) | Domingo 03:23 (desde el 2-nov-2026; antes lunes 05:00, que GitHub retrasó u omitió) | `escaner/ultimo.json` en la rama `datos-escaner` |
 
 Cada ejecución inicia una sesión nueva con el repositorio recién clonado, de modo que el estado vive en git, no en la memoria de la sesión. Si una ejecución falla, la siguiente retoma lo vencido porque la agenda se calcula a partir de `revisar_antes`.
 
