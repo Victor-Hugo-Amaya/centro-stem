@@ -1,6 +1,6 @@
 # Catálogo de carreras y certificaciones (generado)
 
-> Archivo generado por `scripts/catalogo.py --generar` el 2026-11-02. No editar a mano: editar `data/*.yaml`.
+> Archivo generado por `scripts/catalogo.py --generar` el 2026-11-09. No editar a mano: editar `data/*.yaml`.
 
 ## Familias ocupacionales por demanda
 
@@ -83,7 +83,7 @@ Cifras de la ficha de cada carrera en IMCO Compara Carreras. Referencia: ingreso
 
 | Programa | Organización | Costo para la persona | Duración | Edad | Convocatoria |
 |---|---|---|---|---|---|
-| [Desarrollador/a Java Full Stack](https://mexico.generation.org/programs/java/) | Generation México | Gratuito | 13 semanas, lunes a viernes de 9:30 a 17:30, más 12 semanas de acompañamiento de empleabilidad | 18–29 | por confirmar |
+| [Desarrollador/a Java Full Stack](https://mexico.generation.org/programs/java/) | Generation México | Gratuito | 13 semanas, lunes a viernes de 9:30 a 17:30, más 12 semanas de acompañamiento de empleabilidad | 18–29 | abierta |
 | [AWS re/Start con especialización en IA Foundational](https://mexico.generation.org/programs/aws-cloud/) | Generation México | Gratuito | 15 semanas síncronas, lunes a viernes de 9:30 a 17:30, más 12 semanas de empleabilidad | 22–29 | por confirmar |
 | [Especialista en Soporte de TI (HelpDesk)](https://mexico.generation.org/encuentra-una-carrera/) | Generation México | Gratuito | 9 semanas (340 horas), síncrono | 18–29 | por confirmar |
 | [Desarrollador(a) Jr. en Unity](https://mexico.generation.org/programs/desarrolladora-jr-en-unity/) | Generation México | Gratuito | 14 semanas síncronas, más 12 semanas de empleabilidad | 18–29 | por confirmar |
