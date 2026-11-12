@@ -1,4 +1,5 @@
-# Certificaciones. Costos y vigencias consultados en la página oficial de cada certificador el 2026-10-24.
+# Certificaciones. Costos y vigencias consultados en la página oficial de cada certificador el 2026-10-24
+# (asociadas de AWS: 2026-11-12, por decisión de Victor).
 #
 # Reglas (docs/03 §6 y docs/05 §3):
 #   costo.verificado: true  -> el monto aparece en la página oficial citada en costo.fuente_url.
@@ -97,6 +98,52 @@
   preparacion: [prep-aws-educate, prep-generation-aws-restart]
   fuente_url: https://aws.amazon.com/certification/certified-ai-practitioner/
   fecha_verificacion: 2026-10-24
+
+- id: cert-aws-dea-c01
+  nombre: "AWS Certified Data Engineer – Associate (DEA-C01)"
+  organizacion: org-aws
+  tipo: examen
+  familias: [fam-datos-ia]
+  nivel_escalera: 2
+  costo:
+    monto: 150
+    moneda: USD
+    verificado: true
+    nota: "Más posibles cargos por tipo de cambio."
+    fuente_url: https://aws.amazon.com/certification/certified-data-engineer-associate/
+  duracion: "130 minutos"
+  vigencia_meses: 36
+  no_caduca: false
+  renovacion: "Presentar la versión vigente del examen."
+  idioma_es: false
+  vias_ahorro: [opo-aws-descuento-siguiente-examen]
+  preparacion: []  # Por investigar: la preparación gratuita de AWS (Skill Builder) para nivel asociado.
+  nota: "Sin examen en español (inglés, japonés, coreano y chino simplificado). AWS sugiere 2 a 3 años de experiencia en ingeniería de datos y 1 a 2 años con AWS: no es certificación de primer empleo."
+  fuente_url: https://aws.amazon.com/certification/certified-data-engineer-associate/
+  fecha_verificacion: 2026-11-12
+
+- id: cert-aws-mla
+  nombre: "AWS Certified Machine Learning Engineer – Associate (MLA-C01 / C02 beta)"
+  organizacion: org-aws
+  tipo: examen
+  familias: [fam-datos-ia]
+  nivel_escalera: 2
+  costo:
+    monto: 150
+    moneda: USD
+    verificado: true
+    nota: "USD 150 la versión MLA-C01; la versión C02 está en beta a USD 75 y sólo en inglés."
+    fuente_url: https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/
+  duracion: "130 minutos (MLA-C01); 170 minutos (C02 beta)"
+  vigencia_meses: 36
+  no_caduca: false
+  renovacion: "Presentar la versión vigente del examen."
+  idioma_es: false
+  vias_ahorro: [opo-aws-descuento-siguiente-examen]
+  preparacion: []  # Por investigar: la preparación gratuita de AWS (Skill Builder) para nivel asociado.
+  nota: "Sin examen en español; examen en transición de versión. AWS pide 1 año de experiencia en ML y 1 año con SageMaker o Bedrock. No se recomienda al público del proyecto hasta que la versión C02 salga de beta."
+  fuente_url: https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/
+  fecha_verificacion: 2026-11-12
 
 # ===================== fam-ciberseguridad =====================
 - id: cert-isc2-cc
@@ -224,6 +271,75 @@
   idioma_es: true
   fuente_url: https://cloud.google.com/learn/certification/cloud-digital-leader
   fecha_verificacion: 2026-10-24
+
+- id: cert-aws-saa-c03
+  nombre: "AWS Certified Solutions Architect – Associate (SAA-C03)"
+  organizacion: org-aws
+  tipo: examen
+  familias: [fam-software-nube]
+  nivel_escalera: 2
+  costo:
+    monto: 150
+    moneda: USD
+    verificado: true
+    nota: "Más posibles cargos por tipo de cambio."
+    fuente_url: https://aws.amazon.com/certification/certified-solutions-architect-associate/
+  duracion: "130 minutos, 65 preguntas"
+  vigencia_meses: 36
+  no_caduca: false
+  renovacion: "Presentar la versión vigente del examen u obtener AWS Certified Solutions Architect – Professional."
+  idioma_es: true
+  vias_ahorro: [opo-aws-descuento-siguiente-examen]
+  preparacion: []  # Por investigar: la preparación gratuita de AWS (Skill Builder) para nivel asociado.
+  nota: "AWS recomienda al menos 1 año de experiencia práctica; sin experiencia en TI, aconseja Cloud Practitioner antes. Es la certificación de AWS que más mencionaron las vacantes leídas en oct-nov de 2026."
+  fuente_url: https://aws.amazon.com/certification/certified-solutions-architect-associate/
+  fecha_verificacion: 2026-11-12
+
+- id: cert-aws-dva-c03
+  nombre: "AWS Certified Developer – Associate (DVA-C03)"
+  organizacion: org-aws
+  tipo: examen
+  familias: [fam-software-nube]
+  nivel_escalera: 2
+  costo:
+    monto: 150
+    moneda: USD
+    verificado: true
+    nota: "Más posibles cargos por tipo de cambio."
+    fuente_url: https://aws.amazon.com/certification/certified-developer-associate/
+  duracion: "130 minutos"
+  vigencia_meses: 36
+  no_caduca: false
+  renovacion: "Presentar la versión vigente del examen."
+  idioma_es: true
+  vias_ahorro: [opo-aws-descuento-siguiente-examen]
+  preparacion: []  # Por investigar: la preparación gratuita de AWS (Skill Builder) para nivel asociado.
+  nota: "AWS recomienda 1 año o más de experiencia desarrollando aplicaciones en AWS."
+  fuente_url: https://aws.amazon.com/certification/certified-developer-associate/
+  fecha_verificacion: 2026-11-12
+
+- id: cert-aws-soa-c03
+  nombre: "AWS Certified CloudOps Engineer – Associate (SOA-C03; antes SysOps Administrator)"
+  organizacion: org-aws
+  tipo: examen
+  familias: [fam-software-nube, fam-soporte-ti-redes]
+  nivel_escalera: 2
+  costo:
+    monto: 150
+    moneda: USD
+    verificado: true
+    nota: "Más posibles cargos por tipo de cambio."
+    fuente_url: https://aws.amazon.com/certification/certified-cloudops-engineer-associate/
+  duracion: "130 minutos"
+  vigencia_meses: 36
+  no_caduca: false
+  renovacion: "Presentar la versión vigente del examen."
+  idioma_es: false
+  vias_ahorro: [opo-aws-descuento-siguiente-examen]
+  preparacion: []  # Por investigar: la preparación gratuita de AWS (Skill Builder) para nivel asociado.
+  nota: "Sin examen en español (inglés, japonés, coreano y chino simplificado). AWS sugiere cerca de 1 año operando cargas en AWS. Siguiente paso natural desde soporte de TI hacia nube."
+  fuente_url: https://aws.amazon.com/certification/certified-cloudops-engineer-associate/
+  fecha_verificacion: 2026-11-12
 
 # ===================== fam-soporte-ti-redes =====================
 - id: cert-cisco-ccna
