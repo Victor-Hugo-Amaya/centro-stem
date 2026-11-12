@@ -1,6 +1,6 @@
 # Catálogo de carreras y certificaciones (generado)
 
-> Archivo generado por `scripts/catalogo.py --generar` el 2026-11-02. No editar a mano: editar `data/*.yaml`.
+> Archivo generado por `scripts/catalogo.py --generar` el 2026-11-12. No editar a mano: editar `data/*.yaml`.
 
 ## Familias ocupacionales por demanda
 
@@ -26,19 +26,24 @@ Orden: puntaje de demanda de la familia, luego nivel de la escalera (1 = fundame
 | 1 | [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics) (`cert-google-data-analytics`) | Datos e inteligencia artificial | 1 | USD 49/mes | No caduca | Sin confirmar | 2026-10-24 |
 | 2 | [AWS Certified AI Practitioner (AIF-C01)](https://aws.amazon.com/certification/certified-ai-practitioner/) (`cert-aws-aif-c01`) | Datos e inteligencia artificial | 1 | USD 100 | 3 años | Sí | 2026-10-24 |
 | 3 | [Microsoft Certified: Azure AI Fundamentals (examen AI-901)](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams) (`cert-microsoft-ai-901`) | Datos e inteligencia artificial | 1 | Sin confirmar | No caduca | Sin confirmar | 2026-10-24 |
-| 4 | [Microsoft Certified: Power BI Data Analyst Associate (PL-300)](https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/) (`cert-microsoft-pl-300`) | Datos e inteligencia artificial | 2 | USD 165 | 12 meses | Sin confirmar | 2026-10-24 |
-| 5 | [Cisco Certified Support Technician (CCST) Cybersecurity](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html) (`cert-cisco-ccst-cybersecurity`) | Ciberseguridad | 1 | USD 125 | 5 años | Sí | 2026-10-24 |
-| 6 | [ISC2 Certified in Cybersecurity (CC)](https://www.isc2.org/landing/1mcc) (`cert-isc2-cc`) | Ciberseguridad | 1 | USD 199 | Sin confirmar | Sí | 2026-10-24 |
-| 7 | [CompTIA Security+](https://www.comptia.org/en-gb/certifications/security/v7/) (`cert-comptia-security-plus`) | Ciberseguridad | 2 | Sin confirmar | Sin confirmar | Sí | 2026-10-24 |
-| 8 | [Microsoft Certified: Azure Fundamentals (AZ-900)](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/) (`cert-microsoft-az-900`) | Desarrollo de software y nube | 1 | USD 99 (no verificado) | No caduca | Sin confirmar | 2026-10-24 |
-| 9 | [Google Cloud Certified · Cloud Digital Leader](https://cloud.google.com/learn/certification/cloud-digital-leader) (`cert-google-cloud-digital-leader`) | Desarrollo de software y nube | 1 | USD 99 | 3 años | Sí | 2026-10-24 |
-| 10 | [AWS Certified Cloud Practitioner (CLF-C02)](https://aws.amazon.com/certification/certified-cloud-practitioner/) (`cert-aws-clf-c02`) | Desarrollo de software y nube | 1 | USD 100 | 3 años | Sí | 2026-10-24 |
-| 11 | [SOLIDWORKS Design Associate (CSWA)](https://www.solidworks.com/solidworks-certification-program) (`cert-solidworks-cswa`) | Manufactura avanzada, automatización y mecatrónica | 1 | USD 99 | Sin confirmar | Sí | 2026-10-24 |
-| 12 | [Autodesk Certified Professional in AutoCAD for Design and Drafting](https://www.autodesk.com/certification/all-certifications/autocad-design-drafting-professional) (`cert-autodesk-autocad-professional`) | Manufactura avanzada, automatización y mecatrónica | 2 | USD 200 | 3 años | No | 2026-10-24 |
-| 13 | [ASQ Certified Six Sigma Green Belt (CSSGB)](https://www.asq.org/cert/six-sigma-green-belt) (`cert-asq-cssgb`) | Manufactura avanzada, automatización y mecatrónica | 3 | USD 483 | Sin confirmar | No | 2026-10-24 |
-| 14 | [NABCEP PV Associate (PVA)](https://www.nabcep.org/certifications/nabcep-fees/) (`cert-nabcep-pv-associate`) | Energía y gestión ambiental | 1 | USD 225 | Sin confirmar | Sin confirmar | 2026-10-24 |
-| 15 | [Cisco Certified Network Associate (CCNA 200-301)](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html) (`cert-cisco-ccna`) | Soporte de TI y redes | 2 | USD 300 | Sin confirmar | No | 2026-10-24 |
-| 16 | [PMI Certified Associate in Project Management (CAPM)](https://www.pmi.org/certifications/certified-associate-capm) (`cert-pmi-capm`) | Gestión de proyectos técnicos | 1 | Sin confirmar | 3 años | Sí | 2026-10-24 |
+| 4 | [AWS Certified Data Engineer – Associate (DEA-C01)](https://aws.amazon.com/certification/certified-data-engineer-associate/) (`cert-aws-dea-c01`) | Datos e inteligencia artificial | 2 | USD 150 | 3 años | No | 2026-11-12 |
+| 5 | [AWS Certified Machine Learning Engineer – Associate (MLA-C01 / C02 beta)](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/) (`cert-aws-mla`) | Datos e inteligencia artificial | 2 | USD 150 | 3 años | No | 2026-11-12 |
+| 6 | [Microsoft Certified: Power BI Data Analyst Associate (PL-300)](https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/) (`cert-microsoft-pl-300`) | Datos e inteligencia artificial | 2 | USD 165 | 12 meses | Sin confirmar | 2026-10-24 |
+| 7 | [Cisco Certified Support Technician (CCST) Cybersecurity](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html) (`cert-cisco-ccst-cybersecurity`) | Ciberseguridad | 1 | USD 125 | 5 años | Sí | 2026-10-24 |
+| 8 | [ISC2 Certified in Cybersecurity (CC)](https://www.isc2.org/landing/1mcc) (`cert-isc2-cc`) | Ciberseguridad | 1 | USD 199 | Sin confirmar | Sí | 2026-10-24 |
+| 9 | [CompTIA Security+](https://www.comptia.org/en-gb/certifications/security/v7/) (`cert-comptia-security-plus`) | Ciberseguridad | 2 | Sin confirmar | Sin confirmar | Sí | 2026-10-24 |
+| 10 | [Microsoft Certified: Azure Fundamentals (AZ-900)](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/) (`cert-microsoft-az-900`) | Desarrollo de software y nube | 1 | USD 99 (no verificado) | No caduca | Sin confirmar | 2026-10-24 |
+| 11 | [Google Cloud Certified · Cloud Digital Leader](https://cloud.google.com/learn/certification/cloud-digital-leader) (`cert-google-cloud-digital-leader`) | Desarrollo de software y nube | 1 | USD 99 | 3 años | Sí | 2026-10-24 |
+| 12 | [AWS Certified Cloud Practitioner (CLF-C02)](https://aws.amazon.com/certification/certified-cloud-practitioner/) (`cert-aws-clf-c02`) | Desarrollo de software y nube | 1 | USD 100 | 3 años | Sí | 2026-10-24 |
+| 13 | [AWS Certified Solutions Architect – Associate (SAA-C03)](https://aws.amazon.com/certification/certified-solutions-architect-associate/) (`cert-aws-saa-c03`) | Desarrollo de software y nube | 2 | USD 150 | 3 años | Sí | 2026-11-12 |
+| 14 | [AWS Certified Developer – Associate (DVA-C03)](https://aws.amazon.com/certification/certified-developer-associate/) (`cert-aws-dva-c03`) | Desarrollo de software y nube | 2 | USD 150 | 3 años | Sí | 2026-11-12 |
+| 15 | [AWS Certified CloudOps Engineer – Associate (SOA-C03; antes SysOps Administrator)](https://aws.amazon.com/certification/certified-cloudops-engineer-associate/) (`cert-aws-soa-c03`) | Desarrollo de software y nube | 2 | USD 150 | 3 años | No | 2026-11-12 |
+| 16 | [SOLIDWORKS Design Associate (CSWA)](https://www.solidworks.com/solidworks-certification-program) (`cert-solidworks-cswa`) | Manufactura avanzada, automatización y mecatrónica | 1 | USD 99 | Sin confirmar | Sí | 2026-10-24 |
+| 17 | [Autodesk Certified Professional in AutoCAD for Design and Drafting](https://www.autodesk.com/certification/all-certifications/autocad-design-drafting-professional) (`cert-autodesk-autocad-professional`) | Manufactura avanzada, automatización y mecatrónica | 2 | USD 200 | 3 años | No | 2026-10-24 |
+| 18 | [ASQ Certified Six Sigma Green Belt (CSSGB)](https://www.asq.org/cert/six-sigma-green-belt) (`cert-asq-cssgb`) | Manufactura avanzada, automatización y mecatrónica | 3 | USD 483 | Sin confirmar | No | 2026-10-24 |
+| 19 | [NABCEP PV Associate (PVA)](https://www.nabcep.org/certifications/nabcep-fees/) (`cert-nabcep-pv-associate`) | Energía y gestión ambiental | 1 | USD 225 | Sin confirmar | Sin confirmar | 2026-10-24 |
+| 20 | [Cisco Certified Network Associate (CCNA 200-301)](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html) (`cert-cisco-ccna`) | Soporte de TI y redes | 2 | USD 300 | Sin confirmar | No | 2026-10-24 |
+| 21 | [PMI Certified Associate in Project Management (CAPM)](https://www.pmi.org/certifications/certified-associate-capm) (`cert-pmi-capm`) | Gestión de proyectos técnicos | 1 | Sin confirmar | 3 años | Sí | 2026-10-24 |
 
 ### Advertencias por certificación
 

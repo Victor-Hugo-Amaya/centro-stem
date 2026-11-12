@@ -127,7 +127,7 @@ Meses aproximados según ediciones anteriores; se confirman en cada revisión me
 | INEGI · Indicadores de Ocupación y Empleo (ENOE mensual) | Mensual | Cuarta semana de cada mes | Octubre: 26-nov-2026; noviembre: 24-dic-2026 |
 | OIT · *Global Employment Trends for Youth* | Bianual | Agosto | 2028 |
 | Coursera · *Job Skills Report* | Anual | Diciembre a marzo (el comunicado de México de 2026 salió el 31-mar) | Primer trimestre 2027 |
-| Coursera y Udemy · *Global Skills Report* | Anual | Junio en 2025; finales de septiembre en 2026 | Septiembre 2027 (por confirmar) |
+| Coursera y Udemy · *Global Skills Report* | Anual | Junio en 2025; finales de septiembre en 2026 | Septiembre 2027 (por confirmar). El PDF exige formulario: pedir a Victor la descarga. |
 | OCDE · *Employment Outlook* | Anual | Julio (2026: 7-jul) | Julio 2027 |
 | IMCO · *Compara Carreras* | Anual | Agosto en 2026 (noviembre en 2025) | Agosto a noviembre 2027 |
 | ManpowerGroup · Escasez de Talento | Anual | Primer semestre | 2027 |
@@ -139,7 +139,8 @@ Meses aproximados según ediciones anteriores; se confirman en cada revisión me
 |---|---|---|
 | 2026-10-24 | WEF 2025, Coursera 2025, IMCO 2025 (dos documentos), OIT 2023 | Versión inicial |
 | 2026-10-24 | IMCO Compara Carreras (fichas por carrera de la plataforma) | Ingreso, desempleo, informalidad y porcentaje de mujeres de 14 carreras en `data/carreras.yaml`. Las fichas no coinciden exactamente con las gráficas del PDF; se usa la ficha. Pendiente: Coursera *Global Skills Report 2026*, ya publicado. |
-| 2026-11-02 | IMCO Compara Carreras 2026; INEGI IOE septiembre 2026; ManpowerGroup 4T 2026 y TI 3T 2026; OIT jóvenes 2026; Coursera Job Skills 2026 y Global Skills 2026 (sólo titulares); PwC AI Jobs Barometer 2026 México | Secciones 8 a 13. Se confirma que las fichas de Compara Carreras del catálogo ya son la edición 2026. Nuevas señales en `data/familias.yaml` sin cambio de puntajes. Pendientes: cifras de México del Global Skills Report 2026 (PDF tras formulario) y nota de país de la OCDE 2026 (PDF no accesible). Revisión: [reportes/mensual/2026-11.md](../reportes/mensual/2026-11.md). |
+| 2026-11-02 | IMCO Compara Carreras 2026; INEGI IOE septiembre 2026; ManpowerGroup 4T 2026 y TI 3T 2026; OIT jóvenes 2026; Coursera Job Skills 2026 y Global Skills 2026 (sólo titulares); PwC AI Jobs Barometer 2026 México | Secciones 8 a 13. Se confirma que las fichas de Compara Carreras del catálogo ya son la edición 2026. Nuevas señales en `data/familias.yaml` sin cambio de puntajes. Pendiente: nota de país de la OCDE 2026 (PDF no accesible). Revisión: [reportes/mensual/2026-11.md](../reportes/mensual/2026-11.md). |
+| 2026-11-12 | Coursera *Global Skills Report 2026* (PDF completo) | México 88 de 98 en el índice de sinergia IA-humano (grupo rezagado); detalle en §12. Se agregan cinco certificaciones asociadas de AWS al catálogo por decisión de Victor. |
 
 ## 8. IMCO · *Compara Carreras 2026* (documento, 26-ago-2026)
 
@@ -229,7 +230,16 @@ Fuente: [comunicado de la OIT](https://www.ilo.org/resource/news/youth-unemploym
 - Sustituye el *AI Maturity Index* por el *AI-Human Skills Synergy Index*, que combina competencia, amplitud y traslape de habilidades de IA y humanas con el índice de preparación gubernamental en IA de Oxford Insights. Lideran Alemania y Francia; Estados Unidos es 8.º.
 - Global: más de 45 inscripciones por minuto en IA generativa (25 en 2025); pensamiento crítico +107%; microcredenciales +33%; microcredenciales de IA +122%.
 - **Conflicto de series con §2:** la posición de México en 2025 (79 de 109) no es comparable con el índice 2026, porque cambiaron la metodología, la base de datos y el número de países. Además, el +356% de 2025 (todas las personas usuarias) y el +886% de 2026 (sólo aprendices empresariales) miden poblaciones distintas.
-- **Pendiente:** las cifras de México del Global Skills Report 2026 están en el PDF, que exige llenar un formulario con datos personales. Se resuelve si Victor lo descarga y lo sube a la carpeta de conocimiento del proyecto.
+**Global Skills Report 2026, PDF completo (44 págs.; descargado por Victor el 12-nov-2026; copia en la carpeta de conocimiento como `Coursera_Global_Skills_Report_2026.pdf`)**
+
+- **México ocupa el lugar 88 de 98** en el *AI-Human Skills Synergy Index*, en el grupo "Lagging" (rezagado, lugares 76 a 98) (págs. 12-13). El índice pondera 60% el comportamiento de aprendizaje en Coursera (competencia, amplitud y traslape de habilidades de IA y humanas) y 40% el *Government AI Readiness Index 2025* de Oxford Insights (pág. 10).
+- América Latina: Puerto Rico 23, Brasil 45, Perú 49, Colombia 51, Uruguay 54, Chile 59, Costa Rica 62, Argentina 68, Ecuador 74; El Salvador 76, Bolivia 77, Panamá 79, República Dominicana 83, **México 88**, Guatemala 92, Honduras 95, Paraguay 96, Venezuela 97 (págs. 12-13). El reporte dice que América Latina y África subsahariana aparecen con más frecuencia en los grupos bajos (pág. 14).
+- El reporte no publica una ficha por país ni cifras de inscripción de México; sólo la posición.
+- Tendencias globales de inscripción, año contra año (pág. 14): microcredenciales de IA +122%, IA +67%, microcredenciales +33%; seguridad de IA +665%, flujos agénticos +546%, IA generativa +132%; resolución de problemas complejos +126%, pensamiento crítico +107%, innovación +74%.
+- Inscripciones en IA por nivel (pág. 28): principiante +77%, intermedio +46%, avanzado casi sin cambio.
+- Credenciales (págs. 31-32, con datos del *Micro-Credentials Impact Report 2026* de Coursera, encuesta propia): 95% de los empleadores encuestados dice que las microcredenciales distinguen a los candidatos y 92% que las contrataciones de entrada con microcredenciales rinden mejor el primer año. El reporte cita AWS Cloud Practitioner y CompTIA Security+ como ejemplos de credenciales ligadas a examen externo.
+
+**Lectura crítica.** (1) La posición 88 no es comparable con el lugar 79 de 109 de 2025: cambió la metodología y ahora 40% del puntaje es preparación gubernamental, no habilidades de las personas. Una parte de la caída refleja política pública, no sólo aprendizaje. (2) Aun así, México queda debajo de Colombia, Chile, Argentina y Perú, lo que refuerza la necesidad de rutas de formación accesibles que este proyecto busca ordenar. (3) Las cifras sobre empleadores y microcredenciales vienen de una encuesta del propio vendedor de microcredenciales; sirven como señal, no como prueba de valor en contratación. Coinciden con nuestra lectura de vacantes: la certificación distingue, pero casi nunca es requisito.
 
 ## 13. PwC · *Global AI Jobs Barometer 2026*, análisis México
 

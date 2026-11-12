@@ -1,6 +1,6 @@
 # Directorio de oportunidades (generado)
 
-> Archivo generado por `scripts/catalogo.py --generar` el 2026-11-02. No editar a mano: editar `data/*.yaml`.
+> Archivo generado por `scripts/catalogo.py --generar` el 2026-11-12. No editar a mano: editar `data/*.yaml`.
 
 Orden: primero los socios prioritarios; después por estado (abierta, recurrente, permanente, por confirmar, cerrada).
 
