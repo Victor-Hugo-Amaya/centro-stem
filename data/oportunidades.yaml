@@ -19,7 +19,7 @@
   familias: [fam-gestion-proyectos]
   fuente_url: https://www.jamexico.org.mx/programasmx/desaf%C3%ADo-innova
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-09
+  fecha_verificacion: 2026-11-16
   revisar_antes: 2026-11-30
   pendiente: "Confirmar fechas, sedes y si se requiere inscripción por escuela (WhatsApp 55 5211 9444)."
 
@@ -35,7 +35,7 @@
   nota: "Sesiones el 6, 9, 13, 16, 23 y 27 de noviembre (año no indicado); la página muestra 'RSVP cerrada' (confirmado de nuevo el 2-nov-2026)."
   fuente_url: https://www.jamexico.org.mx/programasmx/yo-puedo-programar
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-09
+  fecha_verificacion: 2026-11-16
   revisar_antes: 2027-01-31
 
 - id: opo-ja-mujer-digital
@@ -110,8 +110,8 @@
   nota: "Registro abierto sin fecha de cierre (26-oct-2026). Las credenciales son insignias de IBM, no certificaciones del catálogo."
   fuente_url: https://www.jamexico.org.mx/programasmx/ibm-skillbuild
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-26
-  revisar_antes: 2026-11-23
+  fecha_verificacion: 2026-11-16
+  revisar_antes: 2026-12-14
 
 - id: opo-ja-discover-data
   nombre: "Discover Data"
@@ -125,8 +125,8 @@
   pendiente: "Confirmar edad, modalidad, fechas y costo (PDF del programa o WhatsApp 55 5211 9444)."
   fuente_url: https://www.jamexico.org.mx/programasmx/discover-data
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-26
-  revisar_antes: 2026-11-23
+  fecha_verificacion: 2026-11-16
+  revisar_antes: 2026-12-14
 
 - id: opo-ja-p-tech
   nombre: "P-Tech (JA México con IBM)"
@@ -140,8 +140,8 @@
   pendiente: "Confirmar qué escuelas participan y cómo se ingresa (WhatsApp 55 5211 9444)."
   fuente_url: https://www.jamexico.org.mx/programasmx/p-tech
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-26
-  revisar_antes: 2026-11-23
+  fecha_verificacion: 2026-11-16
+  revisar_antes: 2026-12-14
 
 - id: opo-ms-virtual-training-day-az900
   nombre: "Microsoft Virtual Training Days: 50% de descuento en examen"
@@ -231,7 +231,7 @@
   nota: "Inscripciones cerradas el 20-may-2026. Los códigos emitidos deben usarse antes del 31-dic-2026."
   fuente_url: https://www.isc2.org/landing/1mcc
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-09
+  fecha_verificacion: 2026-11-16
   revisar_antes: 2026-12-31
 
 - id: opo-solidworks-voucher-academico
@@ -292,7 +292,7 @@
   nota: "Próximas postulaciones 'por anunciar' (confirmado el 2-nov-2026). Útil para buscar centros de trabajo STEM (manufactura, TI, energía) en el estado de la persona."
   fuente_url: https://www.programasparaelbienestar.gob.mx/programas/jovenes/jovenes-construyendo-el-futuro/
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-09
+  fecha_verificacion: 2026-11-16
   revisar_antes: 2026-12-31
 
 - id: opo-mexia-cpfia
@@ -304,10 +304,10 @@
   costo_participante: 0
   estado: recurrente
   familias: [fam-datos-ia, fam-ciberseguridad, fam-software-nube, fam-soporte-ti-redes]
-  nota: "Postulaciones de la segunda generación del 26-may al 5-jul-2026; capacitación de agosto a diciembre de 2026. La primera generación abrió el 6-nov-2025, así que la tercera podría abrir pronto: vigilar cada semana. Al 9-nov-2026 la página oficial sigue mostrando sólo la segunda generación; no hay tercera convocatoria. Algunas rutas tienen cupo limitado (por ejemplo, Network Technician de Cisco, 3,000 lugares)."
+  nota: "Postulaciones de la segunda generación del 26-may al 5-jul-2026; capacitación de agosto a diciembre de 2026. La primera generación abrió el 6-nov-2025, así que la tercera podría abrir pronto: vigilar cada semana. Al 16-nov-2026 la página oficial sigue mostrando sólo la segunda generación; no hay tercera convocatoria. Algunas rutas tienen cupo limitado (por ejemplo, Network Technician de Cisco, 3,000 lugares)."
   fuente_url: https://www.mexia.gob.mx/
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-09
+  fecha_verificacion: 2026-11-16
   revisar_antes: 2026-11-30
   pendiente: "La página oficial bloquea la lectura directa desde la nube; se leyó con Firecrawl. Confirmar requisitos de escolaridad y si cada ruta incluye el examen pagado."
 
@@ -335,14 +335,14 @@
   beneficio: "Hackatón internacional de 48 horas con datos abiertos de la NASA; eventos locales presenciales o virtuales, o el evento universal virtual."
   publico: {nota: "La página no indica edad mínima; revisar términos y condiciones antes de recomendar a menores."}
   costo_participante: 0
-  estado: abierta
+  estado: cerrada
   fecha_cierre: 2026-11-15
   familias: [fam-datos-ia, fam-software-nube]
-  nota: "Hackatón el 14 y 15 de noviembre de 2026; el registro cierra el 15 de noviembre. Al 9-nov-2026 hay sedes locales anunciadas en México (por ejemplo UDLAP en Puebla, Saltillo, Querétaro, Mérida, San Luis Potosí, Chihuahua y Tijuana) según prensa y agendas de eventos; elegir sede en la página oficial. Después del 15-nov pasa a cerrada y se vigila la edición 2027."
+  nota: "La edición 2026 fue el 14 y 15 de noviembre de 2026; el registro cerró el 15 de noviembre (página oficial, leída el 16-nov-2026). La encuesta de participantes vence el 30-nov. Vigilar la edición 2027, que suele anunciarse a mediados de año."
   fuente_url: https://www.spaceappschallenge.org/2026/
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-09
-  revisar_antes: 2026-11-16
+  fecha_verificacion: 2026-11-16
+  revisar_antes: 2027-06-30
 
 - id: opo-technovation-girls
   nombre: "Technovation Girls"
