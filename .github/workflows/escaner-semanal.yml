@@ -7,7 +7,8 @@ name: Escáner semanal de vacantes
 
 on:
   schedule:
-    - cron: "0 11 * * 1"   # lunes 05:00 en Ciudad de México (UTC-6)
+    - cron: "23 9 * * 0"   # domingo 03:23 en Ciudad de México (UTC-6). Se adelantó un día porque
+                           # GitHub retrasó (26-oct, 6 h) u omitió (2-nov) la ejecución del lunes 05:00.
   workflow_dispatch:
   pull_request:
     paths: ["scripts/escanear.mjs", ".github/workflows/escaner-semanal.yml", "data/portales.yaml"]

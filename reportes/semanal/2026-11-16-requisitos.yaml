@@ -1,0 +1,121 @@
+# Lectura de requisitos de la muestra semanal (docs/prompts/loop-semanal.md, paso 6).
+# Fecha de lectura: 2026-11-16. Las 15 vacantes de Computrabajo de la muestra no se abrieron
+# (su robots.txt prohíbe la lectura automática; se respetó, como en semanas anteriores).
+# De las 5 vacantes de ATS de la muestra, 2 ya se habían leído (Clara AI-Native New Grad y SDET);
+# además, Deuna DevOps, BC Tecnología C#/.NET, Artefact (2) y Decision Point, que se abrieron
+# esta semana, ya estaban en lecturas previas: siguen activas, pero no se registran de nuevo para
+# no contarlas dos veces. Para completar 10 vacantes nuevas se leyeron otras del mismo escáner
+# (Clara, Rankmi, Tuxpas, Cobre, Nubank, Platzi) y dos de Intel Guadalajara en su portal oficial
+# de Workday (intel.wd1.myworkdayjobs.com), que es nuevo: Intel dejó de publicar en jobs.intel.com.
+# Descartadas: tres vacantes de project manager de Get on Board (cerradas) y una de UX de Grupo
+# Coppel en un agregador (publicada en abril de 2026, sin enlace a la fuente). Fallaron: páginas
+# de ixdf.org (error del sitio) y Platzi y Nubank sin JavaScript (se leyeron con Firecrawl).
+# anios_experiencia: null cuando la vacante no indica años (no se infiere).
+- url: https://intel.wd1.myworkdayjobs.com/en-US/External/job/Mexico-Guadalajara/Signal-Integrity-Intern_JR0288518
+  titulo: Signal Integrity Intern
+  empresa: Intel
+  anios_experiencia: 0
+  requisitos:
+    - "Estudiante de licenciatura en Ingeniería Eléctrica, Mecánica o en Computación, con al menos un año restante"
+    - "6+ meses de experiencia práctica por prácticas, proyectos académicos, cursos o capacitación"
+    - "Fundamentos de circuitos eléctricos y principios de diseño"
+    - "Python y MATLAB para scripts y análisis de datos"
+    - "Equipo de laboratorio: osciloscopios, multímetros, hojas de datos de componentes"
+    - "Inglés intermedio"
+    - "Deseable: maestría sin experiencia profesional, conocimiento de prompts de IA, arquitectura de componentes de PC"
+- url: https://intel.wd1.myworkdayjobs.com/en-US/External/job/Mexico-Guadalajara/Lab-Engineering-Power-Technician--Temporary-position-_JR0288950
+  titulo: Lab Engineering Power Technician (temporal, 12 meses)
+  empresa: Intel
+  anios_experiencia: 0
+  requisitos:
+    - "Técnico superior universitario o licenciatura en Electrónica, Mecatrónica o similar"
+    - "6+ meses en retrabajo de tarjetas (soldadura y reemplazo de componentes)"
+    - "Uso avanzado de osciloscopios, puntas, multímetros y generadores de funciones"
+    - "Lectura de diagramas esquemáticos y bases de datos de diseño de tarjetas"
+    - "Mantenimiento de laboratorio y calibración de equipo"
+    - "Inglés intermedio (lectura y escritura de instrucciones técnicas)"
+    - "Deseable: pruebas de reguladores de voltaje, analizadores lógicos y de espectro, Excel, Python o C++"
+- url: https://job-boards.greenhouse.io/clara/jobs/5265722007
+  titulo: Product Designer, Design Systems
+  empresa: Clara
+  anios_experiencia: 5
+  requisitos:
+    - "5+ años en diseño de producto, incluido construir e impulsar un sistema de diseño"
+    - "Uso diario de herramientas de programación con IA para cambiar componentes y abrir pull requests"
+    - "Experiencia construyendo herramientas de IA: agentes, evaluaciones, flujos de varios pasos"
+    - "Human Interface Guidelines de Apple y Material Design"
+    - "Inglés profesional"
+    - "Deseable: Swift o Kotlin básico, CI, GitHub Actions, pruebas de regresión visual"
+- url: https://job-boards.greenhouse.io/clara/jobs/5219620007
+  titulo: Growth Designer (AI Focused)
+  empresa: Clara
+  anios_experiencia: 2
+  requisitos:
+    - "2+ años en diseño de crecimiento o de marketing de desempeño con impacto medible"
+    - "Portafolio obligatorio de anuncios, landing pages o trabajo de conversión"
+    - "Figma a nivel experto, incluido diseño de componentes y sistemas"
+    - "Uso diario de herramientas generativas de imagen y video y de LLM; redacción de prompts"
+    - "Métricas de conversión (CTR, CVR, CAC) y pruebas A/B"
+    - "Inglés (campo obligatorio de la solicitud)"
+    - "Deseable: motion design, Webflow o Framer, automatización con n8n, Make o Zapier, GA4 o Mixpanel, HTML y CSS básico"
+- url: https://job-boards.greenhouse.io/clara/jobs/5292949007
+  titulo: Legal Engineer - AI & Legal Automation
+  empresa: Clara
+  anios_experiencia: null
+  requisitos:
+    - "Licenciatura en Derecho"
+    - "Experiencia en derecho corporativo, financiero, regulatorio o fintech"
+    - "Experiencia o interés en herramientas de IA para automatizar flujos de trabajo (n8n)"
+    - "Redacción jurídica y de contratos"
+    - "Deseable: hojas de cálculo, SQL o Python; perfil activo en GitHub; APIs, LLM, RAG"
+- url: https://www.getonbrd.com/jobs/data-engineer-rankmi-ciudad-de-mexico-santiago-lima
+  titulo: Data Engineer
+  empresa: Rankmi
+  anios_experiencia: 2
+  requisitos:
+    - "2+ años como Data Engineer, Analytics Engineer, BI Engineer o similar"
+    - "SQL sólido: extracción, validación, modelado y optimización"
+    - "Pipelines de datos en la nube, de preferencia AWS; Redshift y data warehouse"
+    - "Data lakes, integración de fuentes y capas de transformación"
+    - "Airflow y dbt"
+    - "Herramientas de BI: Metabase, Luzmo, Superset, Tableau y Pentaho"
+- url: https://www.getonbrd.com/jobs/data-solutions-engineer-presales-project-delivery-tuxpas-mexicali
+  titulo: Data Solutions Engineer (Presales & Project Delivery)
+  empresa: Tuxpas
+  anios_experiencia: 3
+  requisitos:
+    - "Ingeniería de Sistemas, de Datos, Industrial, de Software o afines"
+    - "3 a 5 años en ingeniería de datos, implementación de software, consultoría o gestión de proyectos tecnológicos"
+    - "Coordinación de proyectos o implementaciones tecnológicas"
+    - "Analítica de datos, integraciones o automatización de procesos"
+    - "Conocimiento o interés en IA aplicada a negocios"
+    - "Postulación en inglés"
+- url: https://job-boards.greenhouse.io/cobre/jobs/4489037009
+  titulo: Analista de Operaciones
+  empresa: Cobre
+  anios_experiencia: 2
+  requisitos:
+    - "Licenciatura terminada en Contaduría, Finanzas, Economía, Administración o afín"
+    - "2+ años en análisis de operaciones, aclaraciones, conciliaciones o back office"
+    - "Excel o Google Sheets intermedio"
+    - "Deseable: atención a clientes y experiencia en fintech, banca o pagos"
+- url: https://jobs.ashbyhq.com/nubank/30994369-f227-4404-a0d2-1f49152f9779
+  titulo: Regulatory Solutions Analyst (Judicial Orders)
+  empresa: Nubank
+  anios_experiencia: null
+  requisitos:
+    - "Experiencia práctica comprobada (sin número de años) con el sistema SITI AA de la CNBV"
+    - "Excel, Google Sheets y Looker"
+    - "Español para responder a autoridades; inglés o portugués con equipos internos"
+    - "Deseable: SQL, Python y consultas a bases de datos; licenciatura en Derecho, Administración o afín"
+- url: https://apply.workable.com/platzi/j/28D7BEC272
+  titulo: Product Designer
+  empresa: Platzi
+  anios_experiencia: 4
+  requisitos:
+    - "4+ años en diseño de producto"
+    - "Figma y FigJam a nivel avanzado; portafolio con UI, razonamiento y resultados"
+    - "Desarrollo e implementación de sistemas de diseño"
+    - "Analítica y herramientas de retroalimentación de usuarios"
+    - "Diseño multiplataforma (escritorio, web y móvil); design sprints y design thinking"
+    - "Inglés y español fluidos"
