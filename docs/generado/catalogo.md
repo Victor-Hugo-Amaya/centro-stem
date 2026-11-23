@@ -1,6 +1,6 @@
 # Catálogo de carreras y certificaciones (generado)
 
-> Archivo generado por `scripts/catalogo.py --generar` el 2026-11-16. No editar a mano: editar `data/*.yaml`.
+> Archivo generado por `scripts/catalogo.py --generar` el 2026-11-23. No editar a mano: editar `data/*.yaml`.
 
 ## Familias ocupacionales por demanda
 
