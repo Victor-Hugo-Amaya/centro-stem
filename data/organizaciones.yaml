@@ -127,6 +127,12 @@
   fuente_url: https://www.programasparaelbienestar.gob.mx/programas/jovenes/jovenes-construyendo-el-futuro/
   fecha_verificacion: 2026-10-24
 
+- id: org-atdt
+  nombre: "Agencia de Transformación Digital y Telecomunicaciones (ATDT) con INFOTEC"
+  tipo: gobierno
+  fuente_url: https://www.mexia.gob.mx/
+  fecha_verificacion: 2026-11-02
+
 - id: org-nasa
   nombre: "NASA · Space Apps Challenge"
   tipo: reto
@@ -138,3 +144,10 @@
   tipo: ong
   fuente_url: https://www.technovation.org/
   fecha_verificacion: 2026-10-24
+
+- id: org-mexdc
+  nombre: "Asociación Mexicana de Data Centers (MEXDC)"
+  tipo: ong
+  descripcion: "Asociación de la industria de centros de datos en México. Junto con DCD>Academy otorga la Beca Talento Data Center."
+  fuente_url: https://asmexdc.com/beca-talento-dc/
+  fecha_verificacion: 2026-11-23
