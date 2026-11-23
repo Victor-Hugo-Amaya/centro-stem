@@ -98,7 +98,7 @@ Aplica el procedimiento de [04-evidencia-reportes.md §7](04-evidencia-reportes.
 
 Decisión pendiente para la revisión del 2 de diciembre de 2026 (con cuatro reportes semanales en la mano, por decisión de Victor del 24-oct-2026): comparar la cobertura de OCC, LinkedIn e Indeed obtenida con búsqueda web y proponer, con datos, si conviene probar una API de Google for Jobs.
 
-Pendiente conocido para la primera revisión (noviembre de 2026): incorporar el **Coursera *Global Skills Report 2026***, ya publicado, y el resultado de la ENOE del tercer trimestre de INEGI.
+Pendiente para la revisión de diciembre de 2026: la ENOE del tercer trimestre (INEGI, 25-nov-2026), las cifras de México del Coursera *Global Skills Report 2026* (PDF tras formulario) y la nota de país de la OCDE 2026. La revisión de noviembre quedó en [reportes/mensual/2026-11.md](../reportes/mensual/2026-11.md).
 
 ## 8. Tareas programadas
 

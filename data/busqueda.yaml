@@ -54,6 +54,11 @@ certificaciones:
   cert-cisco-ccst-cybersecurity: ["ccst"]
   cert-comptia-security-plus: ["security+", "security plus", "sy0-701"]
   cert-aws-clf-c02: ["clf-c02", "cloud practitioner"]
+  cert-aws-saa-c03: ["saa-c03", "solutions architect associate", "solutions architect - associate", "solutions architect – associate"]
+  cert-aws-dva-c03: ["dva-c02", "dva-c03", "aws developer associate", "developer - associate", "developer – associate"]
+  cert-aws-soa-c03: ["soa-c02", "soa-c03", "sysops administrator", "cloudops engineer"]
+  cert-aws-dea-c01: ["dea-c01", "aws data engineer associate", "data engineer - associate", "data engineer – associate"]
+  cert-aws-mla: ["mla-c01", "machine learning engineer associate", "machine learning engineer - associate", "machine learning engineer – associate"]
   cert-microsoft-az-900: ["az-900", "azure fundamentals"]
   cert-google-cloud-digital-leader: ["cloud digital leader"]
   cert-cisco-ccna: ["ccna"]
@@ -85,8 +90,8 @@ ubicaciones:
 tecnologias:
   aws:
     patrones: ["aws", "amazon web services", "ec2", "lambda", "s3"]
-    certificaciones: [cert-aws-clf-c02, cert-aws-aif-c01]
-    falta_en_catalogo: {nombre: "AWS Certified Solutions Architect – Associate", nivel: 2}
+    # Con 1 año o más de experiencia se sugiere la última de nivel 2 (Solutions Architect).
+    certificaciones: [cert-aws-clf-c02, cert-aws-aif-c01, cert-aws-saa-c03]
   azure:
     patrones: ["azure", "microsoft cloud"]
     certificaciones: [cert-microsoft-az-900]
