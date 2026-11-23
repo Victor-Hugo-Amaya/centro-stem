@@ -127,6 +127,12 @@
   fuente_url: https://www.programasparaelbienestar.gob.mx/programas/jovenes/jovenes-construyendo-el-futuro/
   fecha_verificacion: 2026-10-24
 
+- id: org-atdt
+  nombre: "Agencia de Transformación Digital y Telecomunicaciones (ATDT) con INFOTEC"
+  tipo: gobierno
+  fuente_url: https://www.mexia.gob.mx/
+  fecha_verificacion: 2026-11-02
+
 - id: org-nasa
   nombre: "NASA · Space Apps Challenge"
   tipo: reto

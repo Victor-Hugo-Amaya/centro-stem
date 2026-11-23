@@ -1,0 +1,108 @@
+# Lectura de requisitos de la muestra semanal (docs/prompts/loop-semanal.md, paso 6).
+# Fecha de lectura: 2026-11-02. Las 15 vacantes de Computrabajo de la muestra no se pudieron abrir
+# (su robots.txt prohíbe la lectura automática; se respetó). Se leyeron las 4 vacantes nuevas de ATS
+# y Get on Board de la muestra ampliada, 3 prácticas de Intel Guadalajara halladas por búsqueda web
+# (portal oficial jobs.intel.cn) y una vacante de entrada de Decathlon México (agregador jobleads).
+# Nubank y Platzi se leyeron con Firecrawl porque su página exige JavaScript.
+# anios_experiencia: null cuando la vacante no indica años (no se infiere).
+- url: https://job-boards.greenhouse.io/clara/jobs/5215613007
+  titulo: AI-Native Engineer, New Grad
+  empresa: Clara
+  anios_experiencia: 0
+  requisitos:
+    - "Base técnica en computación, ingeniería de software, matemáticas o física, o capacidad demostrable en código"
+    - "Portafolio de proyectos propios (GitHub, apps desplegadas, open source)"
+    - "Experiencia práctica construyendo con IA (agentes, RAG, evals, fine-tuning) y uso diario de IA al programar"
+    - "Estructuras de datos, algoritmos; se valoran ICPC, OMI, Codeforces, tesis o investigación"
+    - "Ruta producto: Java/Spring Boot, React, PostgreSQL, Redis, Kafka y AWS; ruta datos y ML: Python y SQL"
+    - "Inglés profesional; deseable portugués básico"
+- url: https://job-boards.greenhouse.io/clara/jobs/5205085007
+  titulo: Data Analyst (Analista de Datos)
+  empresa: Clara
+  anios_experiencia: null
+  requisitos:
+    - "Experiencia comprobada en análisis de datos (sin número de años)"
+    - "Licenciatura en ciencia de datos, estadística, matemáticas, economía o afín"
+    - "SQL sólido; estadística descriptiva y modelado exploratorio"
+    - "Herramientas de visualización: Metabase o plataformas BI similares"
+    - "Herramientas de IA para automatizar flujos de trabajo"
+    - "Inglés y español; deseables Databricks, ETL/ELT y Python"
+- url: https://job-boards.greenhouse.io/clara/jobs/5257408007
+  titulo: Software Engineer in Test (SDET)
+  empresa: Clara
+  anios_experiencia: 4
+  requisitos:
+    - "4 o más años de desarrollo backend o fullstack con automatización"
+    - "TypeScript/JavaScript con Playwright o equivalente; Java y Spring Boot cuando se requiera"
+    - "Automatización de pruebas web y de API; REST, bases de datos relacionales"
+    - "React/Next.js; CI/CD (GitHub Actions), Docker, Git"
+    - "Inglés; deseables Appium, n8n, herramientas de IA para generar pruebas, AWS y observabilidad"
+- url: https://www.getonbrd.com/jobs/data-engineer-decision-point-latam-ciudad-de-mexico-santiago-3614
+  titulo: Data Engineer (Junior)
+  empresa: Decision Point Latam
+  anios_experiencia: 1
+  requisitos:
+    - "1 o más años como Data Engineer"
+    - "Licenciatura en computación, ingeniería, estadística, matemáticas o afín; inglés avanzado"
+    - "Almacenamiento de datos en la nube; despliegue en una plataforma de nube"
+    - "SQL, modelado relacional, ETL y data warehousing; Python para pipelines"
+    - "Excel"
+    - "Deseables: DBT, Airflow, Snowflake o Databricks; maestría"
+- url: https://jobs.intel.cn/%e5%b7%a5%e4%bd%9c/%e7%93%9c%e8%be%be%e6%8b%89%e5%93%88%e6%8b%89/mechanical-engineering-intern/41147/78345100336
+  titulo: Mechanical Engineering Intern (Guadalajara)
+  empresa: Intel
+  anios_experiencia: 0
+  requisitos:
+    - "Estudiante de Ingeniería Mecánica o afín con al menos un año restante"
+    - "3 meses de experiencia o un curso en diseño mecánico, análisis estructural y térmico, dibujo, CAD 3D (de preferencia Creo y Ansys), resistencia de materiales, manufactura"
+    - "Inglés avanzado; derecho a trabajar en México"
+    - "Deseables: Abaqus, Windchill, GD&T y análisis estadístico de tolerancias, diseño para manufactura"
+- url: https://jobs.intel.cn/%e5%b7%a5%e4%bd%9c/%e7%93%9c%e8%be%be%e6%8b%89%e5%93%88%e6%8b%89/validation-technician-intern/41147/78029871072
+  titulo: Validation Technician Intern (Guadalajara)
+  empresa: Intel
+  anios_experiencia: 0
+  requisitos:
+    - "Estudiante de electrónica, mecatrónica, computación, eléctrica o afín"
+    - "6 meses de experiencia con Linux"
+    - "6 meses con arquitectura y ensamble de componentes de PC"
+    - "Inglés intermedio a avanzado; derecho a trabajar en México"
+    - "Deseables: Python y depuración desde línea de comandos"
+- url: https://jobs.intel.cn/%e5%b7%a5%e4%bd%9c/%e7%93%9c%e8%be%be%e6%8b%89%e5%93%88%e6%8b%89/mcu-patch-validation-intern/41147/78083960864
+  titulo: MCU Patch Validation Intern (Guadalajara)
+  empresa: Intel
+  anios_experiencia: 1
+  requisitos:
+    - "Estudiante de licenciatura o maestría en electrónica, eléctrica, computación o afín"
+    - "1 año combinado de hardware, circuitos analógicos y digitales, y programación en Python o C"
+    - "Inglés intermedio"
+    - "Deseables: hardware de servidores y validación de firmware"
+- url: https://www.jobleads.com/mx/job/data-analyst-junior--ciudad-de-mexico--e06f88fe28e0e189aad06b44a15973666
+  titulo: Data Analyst Junior
+  empresa: Decathlon México
+  anios_experiencia: 1
+  requisitos:
+    - "1 año o más en manipulación y gestión de datos"
+    - "Licenciatura en computación, ciencia de datos, ingeniería, matemáticas o física"
+    - "SQL, Python y R avanzados; tableros con Tableau"
+    - "Machine learning en Python (NLP, series de tiempo)"
+    - "AWS (Redshift, S3); Databricks, PostgreSQL, GitHub"
+    - "Inglés y español"
+- url: https://jobs.ashbyhq.com/nubank/fac13a25-9ede-43a9-b644-ad0e2760cb6d
+  titulo: AI Engineer, Design
+  empresa: Nubank
+  anios_experiencia: null
+  requisitos:
+    - "Ingeniero de IA con amplia experiencia (sin número de años)"
+    - "Experiencia con modelos de IA: consumo de tokens, límites de tasa, latencia, servidores MCP"
+    - "Trayectoria en sistemas de UX: sistemas de diseño, plataformas de componentes, infraestructura front-end"
+    - "Sistemas agénticos para diseño; evidencia en GitHub, herramientas y demos"
+- url: https://apply.workable.com/j/28D7BEC272
+  titulo: Product Designer
+  empresa: Platzi
+  anios_experiencia: 4
+  requisitos:
+    - "4 o más años en diseño de producto"
+    - "Figma y FigJam; portafolio con razonamiento y resultados"
+    - "Sistemas de diseño; diseño multiplataforma web y móvil"
+    - "Investigación de usuarios y analítica; design sprints y design thinking"
+    - "Inglés y español; deseable B2C o SaaS y startups"
