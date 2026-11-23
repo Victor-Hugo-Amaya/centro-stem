@@ -1,0 +1,116 @@
+# Lectura de requisitos de la muestra semanal (docs/prompts/loop-semanal.md, paso 6).
+# Fecha de lectura: 2026-11-09. Las 15 vacantes de Computrabajo de la muestra no se abrieron
+# (su robots.txt prohíbe la lectura automática; se respetó, igual que el 2-nov). Varias vacantes
+# de ATS de la muestra ya se habían leído el 26-oct o el 2-nov; para no duplicar, se leyeron
+# vacantes nuevas del mismo escáner (Clara, Deuna, Get on Board) y, para cubrir las familias de
+# la semana, prácticas de Intel Guadalajara (portal oficial jobs.intel.com) y una vacante de
+# técnico de Flex Guadalajara (agregador The Muse, publicada el 29-ago-2026).
+# Descartadas: Solarig (becario de O&M en CDMX; el anuncio venció el 11-jun-2026) y una segunda
+# vacante de Flex publicada en marzo de 2026 (antigua y duplicada).
+# anios_experiencia: null cuando la vacante no indica años (no se infiere).
+- url: https://job-boards.greenhouse.io/clara/jobs/5236289007
+  titulo: Security Engineer (Ingeniero/a de Seguridad)
+  empresa: Clara
+  anios_experiencia: 2
+  requisitos:
+    - "2 a 4 años en ingeniería de seguridad, seguridad en la nube o de aplicaciones, con experiencia en producción"
+    - "Seguridad en AWS y/o GCP: IAM, controles de red, logging y detección; infraestructura como código (Terraform)"
+    - "Programación en Python, Go o JavaScript/TypeScript para herramientas y automatización"
+    - "Código seguro: inyección, autenticación y autorización, secretos, cadena de suministro"
+    - "SIEM (de preferencia Splunk) y EDR: ingeniería de detección e investigación"
+    - "Comprensión de sistemas basados en LLM y agentes, y de sus modos de falla"
+    - "Comunicación oral y escrita en español e inglés"
+- url: https://jobs.lever.co/deuna/4fc7a9ec-e8d7-460b-b16a-f2755ef895de
+  titulo: DevOps Engineer
+  empresa: Deuna
+  anios_experiencia: 3
+  requisitos:
+    - "3 a 6+ años en DevOps, infraestructura en la nube, SRE o ingeniería de plataforma"
+    - "AWS: VPC, PrivateLink, DNS, IAM, conectividad entre cuentas y servicios serverless"
+    - "Operación de Snowflake y MongoDB Atlas"
+    - "Infraestructura como código con Terraform y AWS CDK; CI/CD"
+    - "Grafana, Prometheus, Loki, Tempo y OpenTelemetry"
+    - "Python y SQL para automatización y operación"
+    - "Seguridad en la nube, alta disponibilidad y recuperación ante desastres"
+- url: https://www.getonbrd.com/jobs/data-consultant-artefact-latam-bogota-santiago-ciudad-de-mexico
+  titulo: Data Consultant
+  empresa: Artefact LatAm
+  anios_experiencia: 1
+  requisitos:
+    - "1 a 2 años en consultoría o roles relacionados (nivel semi senior)"
+    - "Ingeniería industrial, ingeniería comercial, economía o afín"
+    - "Excel, PowerPoint y Word avanzados"
+    - "Análisis de datos para apoyar decisiones"
+    - "Deseable: Python y Power BI o Tableau; conceptos de ciencia de datos; inglés profesional"
+- url: https://www.getonbrd.com/jobs/qa-engineer-qa-analyst-latam-bc-tecnologia-remote
+  titulo: QA Engineer / QA Analyst (LATAM)
+  empresa: BC Tecnología
+  anios_experiencia: 3
+  requisitos:
+    - "Profesional o estudiante avanzado en Ingeniería en Sistemas o afines"
+    - "Certificación ISTQB Foundation o Agile Tester"
+    - "3+ años en QA funcional y automatización"
+    - "Pruebas de POS, WMS, API REST, móviles (Android/iOS) y BI"
+    - "Agile, Scrum y Kanban"
+- url: https://www.getonbrd.com/jobs/devops-engineer-cloud-engineer-latam-bc-tecnologia-remote
+  titulo: DevOps Engineer / Cloud Engineer (LATAM)
+  empresa: BC Tecnología
+  anios_experiencia: 3
+  requisitos:
+    - "Al menos 3 años en DevOps, nube u operaciones (semi senior, contrato de 6 meses)"
+    - "Título en computación, sistemas o afín"
+    - "Linux/UNIX, redes y fundamentos de seguridad"
+    - "Infraestructura como código, Kubernetes y monitoreo con Prometheus, CloudWatch o Grafana"
+    - "Valorado: AWS, Azure o GCP; Terraform, CloudFormation o Ansible; Docker; Bash y Python"
+    - "Deseable: certificaciones de nube o DevOps (sin nombrar una en particular)"
+- url: https://jobs.intel.com/ms/kerja/guadalajara/hardware-design-intern-at-data-center-validation-platforms/41147/78545750976
+  titulo: Hardware Design Intern at Data Center Validation Platforms
+  empresa: Intel
+  anios_experiencia: 0
+  requisitos:
+    - "Estudiante de licenciatura, maestría o doctorado en ingeniería eléctrica, computación o afín, con al menos 1 año restante"
+    - "3+ meses con electrónica digital y principios de diseño de hardware"
+    - "3+ meses con Python, C o C++"
+    - "Inglés intermedio a avanzado; derecho a trabajar en México"
+    - "Deseable: captura de esquemáticos y PCB (Cadence o Altium), FPGA, integridad de señal y potencia, validación de hardware"
+- url: https://jobs.intel.com/es/trabajo/guadalajara/software-and-system-validation-student-worker/41147/61732926848
+  titulo: Software and System Validation Student Worker
+  empresa: Intel
+  anios_experiencia: 0
+  requisitos:
+    - "Estudiante de licenciatura o maestría en ciencias de la computación, ingeniería en computación o afín, con al menos 1 año restante"
+    - "6+ meses programando en C, C++, Python u otro lenguaje de scripting"
+    - "3+ meses con sistemas operativos y kernel; depuración de software o hardware embebido"
+    - "Inglés intermedio"
+    - "Deseable: sistemas embebidos, control, RTL (VHDL, SystemVerilog), herramientas Xilinx, ML o visión por computadora, seguridad, GitHub"
+- url: https://job-boards.greenhouse.io/clara/jobs/5161494007
+  titulo: AI Business Operations Analyst
+  empresa: Clara
+  anios_experiencia: 3
+  requisitos:
+    - "3 a 7 años en operaciones, estrategia o afín"
+    - "Automatización con IA en operaciones, con ejemplos concretos; herramientas no-code o low-code"
+    - "Uso de API de LLM para construir herramientas o agentes"
+    - "CRM, herramientas de soporte, data warehouses y BI"
+    - "SQL y BI (por ejemplo, Metabase)"
+    - "Inglés fluido"
+- url: https://www.themuse.com/jobs/flex/automation-technician-d1a4cc
+  titulo: Automation Technician (PLC, sensores)
+  empresa: Flex
+  anios_experiencia: null
+  requisitos:
+    - "Carrera técnica en electrónica, electromecánica o mecatrónica"
+    - "Programación de PLC y análisis de fallas"
+    - "Sistemas eléctricos y mecánicos; sistemas robóticos"
+    - "Deseable: inglés intermedio, TIA Portal y sistemas de visión Siemens"
+- url: https://job-boards.greenhouse.io/clara/jobs/5283288007
+  titulo: AI CRM Analyst
+  empresa: Clara
+  anios_experiencia: 2
+  requisitos:
+    - "2+ años en CRM, lifecycle o growth en startup o B2B SaaS"
+    - "Customer.io, Braze, HubSpot o similares: journeys, segmentos y campañas automatizadas"
+    - "Uso práctico de IA y automatización de flujos"
+    - "Análisis de datos de clientes y producto, experimentos y métricas"
+    - "Inglés y español o portugués"
+    - "Deseable: SQL y HTML/CSS"
