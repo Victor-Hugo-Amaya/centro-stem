@@ -1,0 +1,117 @@
+# Lectura de requisitos de la muestra semanal (docs/prompts/loop-semanal.md, paso 6).
+# Fecha de lectura: 2026-11-23. De las 20 vacantes de la muestra, 17 son de Computrabajo y no se
+# abrieron (su robots.txt prohíbe la lectura automática; se respetó). Las 3 de Clara de la muestra:
+# Product Designer y AI-Native New Grad (CDMX) ya se habían leído en semanas anteriores; sólo
+# Customer Happiness Associate es nueva. Para llegar a 10 vacantes nuevas se leyeron otras del mismo
+# escáner (BC Tecnología, Qulane, Artefact en Get on Board; Clara en Greenhouse) y tres de Intel
+# Guadalajara en su portal oficial de Workday. Todas se leyeron con Firecrawl: el entorno de la nube
+# bloquea getonbrd.com, greenhouse.io y myworkdayjobs.com.
+# anios_experiencia: null cuando la vacante no indica años (no se infiere).
+- url: https://intel.wd1.myworkdayjobs.com/en-US/External/job/Mexico-Guadalajara/Silicon-Design---Flows-and-Methodology-Intern_JR0286647
+  titulo: Silicon Design - Flows and Methodology Intern
+  empresa: Intel
+  anios_experiencia: 0
+  requisitos:
+    - "Estudiante de licenciatura en Ingeniería Eléctrica, en Computación, Ciencias de la Computación o Sistemas Embebidos, con al menos un año restante"
+    - "6+ meses de experiencia práctica (prácticas, cursos o proyectos) en Python y Unix"
+    - "Fundamentos de flujo de diseño de circuitos integrados y microarquitectura"
+    - "Familiaridad con diseño RTL y SystemVerilog"
+    - "Desarrollo de herramientas, flujos y metodologías (TFM)"
+    - "Inglés avanzado"
+- url: https://intel.wd1.myworkdayjobs.com/en-US/External/job/Mexico-Guadalajara/System-and-Board-Support-Technician--Temporary-position-_JR0288954
+  titulo: System and Board Support Technician (temporal, 24 meses)
+  empresa: Intel
+  anios_experiencia: 1
+  requisitos:
+    - "Certificación de técnico o de ingeniería, o experiencia equivalente"
+    - "1+ año de soporte de sistemas de hardware y software"
+    - "1+ año diagnosticando y reparando hardware y software de computadoras"
+    - "Inglés intermedio, incluida lectura"
+    - "Deseable: inglés fluido; depuración de hardware y software"
+- url: https://intel.wd1.myworkdayjobs.com/en-US/External/job/Mexico-Guadalajara/Development-tools-software-engineer_JR0288694
+  titulo: Development Tools Software Engineer (recién egresado)
+  empresa: Intel
+  anios_experiencia: 0
+  requisitos:
+    - "Licenciatura en Ciencias de la Computación, Ingeniería de Software o afín"
+    - "6+ meses de experiencia práctica (prácticas, proyectos académicos o cursos) en desarrollo de software"
+    - "Python, C++ o Java"
+    - "Metodologías ágiles"
+    - "Principios de programación segura y técnicas de depuración"
+    - "Uso o desarrollo de depuradores, SDK, IDE o analizadores de rendimiento"
+    - "Inglés avanzado"
+- url: https://job-boards.greenhouse.io/clara/jobs/5292963007
+  titulo: Invoicing and Operations Analyst - AI Support
+  empresa: Clara
+  anios_experiencia: 0.5
+  requisitos:
+    - "Carrera técnica, estudiante o recién egresado de Contabilidad, Administración o afín"
+    - "6 meses a 2 años en facturación electrónica en México"
+    - "CFDI 4.0 y datos fiscales obligatorios"
+    - "Automatización de flujos con agentes de IA o herramientas internas"
+    - "Alta alfabetización digital"
+    - "Comunicación verbal y escrita"
+- url: https://job-boards.greenhouse.io/clara/jobs/5260987007
+  titulo: Customer Happiness Associate
+  empresa: Clara
+  anios_experiencia: 2
+  requisitos:
+    - "2+ años en soporte, éxito o experiencia de cliente"
+    - "Clientes B2B, de preferencia fintech o startup"
+    - "Google Drive, Zendesk (o similar) y HubSpot (o CRM similar)"
+    - "Inglés intermedio; español profesional"
+- url: https://www.getonbrd.com/jobs/desarrollador-full-stack-react-node-js-ia-latam-bc-tecnologia-remote
+  titulo: Desarrollador Full-Stack – React | Node.js | IA (LATAM)
+  empresa: BC Tecnología
+  anios_experiencia: null
+  requisitos:
+    - "Experiencia intermedia (sin años indicados)"
+    - "React.js, TypeScript y Node.js"
+    - "APIs RESTful (deseable GraphQL)"
+    - "MongoDB (deseable Redis)"
+    - "Seguridad de software y buenas prácticas OWASP"
+    - "Docker, CI/CD y nube GCP o AWS"
+    - "Arquitecturas basadas en eventos"
+    - "Uso práctico de GitHub Copilot, Claude, ChatGPT u otras para código, pruebas y documentación"
+    - "Prompts, embeddings, búsqueda semántica y RAG; integrar APIs de modelos de lenguaje"
+- url: https://www.getonbrd.com/jobs/developer-backend-golang-latam-bc-tecnologia-remote
+  titulo: Developer Back-end Golang LATAM
+  empresa: BC Tecnología
+  anios_experiencia: 4
+  requisitos:
+    - "4+ años; Go avanzado y Java"
+    - "MySQL, PostgreSQL, Redis, MongoDB, Cassandra"
+    - "Docker, Kubernetes, Git"
+    - "CI/CD (GitLab CI, GitHub Actions, Jenkins)"
+    - "Kafka, RabbitMQ, APIs REST, Linux"
+    - "Clean Code, SOLID, TDD, patrones de diseño, equipos ágiles"
+- url: https://www.getonbrd.com/jobs/qa-automation-engineer-latam-remoto-bc-tecnologia-remote
+  titulo: QA Automation Engineer – LATAM
+  empresa: BC Tecnología
+  anios_experiencia: 4
+  requisitos:
+    - "4+ años en QA o pruebas de software; 2+ en automatización"
+    - "Cypress o Selenium"
+    - "Pruebas de APIs REST o GraphQL"
+    - "CI/CD (GitHub Actions, Jenkins, GitLab)"
+    - "JavaScript o TypeScript; Jest"
+    - "Pruebas de aplicaciones web o microservicios"
+- url: https://www.getonbrd.com/jobs/desarrollador-net-framework-web-forms-latam-qulane-remote-1993
+  titulo: Desarrollador .NET Web Forms + SQL Server (medio tiempo, LATAM)
+  empresa: Qulane
+  anios_experiencia: null
+  requisitos:
+    - ".NET Framework 4.x y Web Forms (experiencia real y reciente)"
+    - "SQL Server avanzado (procedimientos almacenados, optimización)"
+    - "JavaScript, jQuery, HTML y CSS"
+    - "Deseable: Entity Framework, Git, integraciones con APIs de pago, sector salud o facturación"
+- url: https://www.getonbrd.com/jobs/data-consultant-artefact-artefact-latam-lima-bogota-santiago-ciudad-de-mexico
+  titulo: Data Consultant Artefact
+  empresa: Artefact LatAm
+  anios_experiencia: null
+  requisitos:
+    - "Experiencia en consultoría estratégica o analítica avanzada"
+    - "Pensamiento estructurado y síntesis ejecutiva"
+    - "Entender datos e IA como palancas de negocio (no requiere programar)"
+    - "Autonomía en entornos ambiguos"
+    - "Español fluido; inglés profesional"

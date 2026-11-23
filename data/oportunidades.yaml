@@ -19,8 +19,8 @@
   familias: [fam-gestion-proyectos]
   fuente_url: https://www.jamexico.org.mx/programasmx/desaf%C3%ADo-innova
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-16
-  revisar_antes: 2026-11-30
+  fecha_verificacion: 2026-11-23
+  revisar_antes: 2026-12-21
   pendiente: "Confirmar fechas, sedes y si se requiere inscripción por escuela (WhatsApp 55 5211 9444)."
 
 - id: opo-ja-yo-puedo-programar
@@ -35,7 +35,7 @@
   nota: "Sesiones el 6, 9, 13, 16, 23 y 27 de noviembre (año no indicado); la página muestra 'RSVP cerrada' (confirmado de nuevo el 2-nov-2026)."
   fuente_url: https://www.jamexico.org.mx/programasmx/yo-puedo-programar
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-16
+  fecha_verificacion: 2026-11-23
   revisar_antes: 2027-01-31
 
 - id: opo-ja-mujer-digital
@@ -48,11 +48,11 @@
   costo_participante: 0
   estado: por_confirmar
   familias: [fam-ciberseguridad, fam-software-nube]
-  nota: "El sitio es inconsistente: una sección invita a la lista de espera y otra dice que hay convocatoria abierta en México. JA Americas indica registro en mayo y junio."
+  nota: "El sitio es inconsistente: al 23-nov-2026 dice a la vez 'Una nueva convocatoria de Mujer Digital está abierta' y 'Actualmente no tenemos postulaciones abiertas', sin fechas. JA Americas indica registro en mayo y junio. Requisitos publicados: mujeres de 18 a 29 años, bachillerato terminado al inicio, computadora con internet; gratuito."
   fuente_url: https://jamujerdigital.org/inscribete/
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-24
-  revisar_antes: 2026-11-30
+  fecha_verificacion: 2026-11-23
+  revisar_antes: 2026-12-21
 
 - id: opo-ja-socios-por-un-dia
   nombre: "Socios por un día (Job Shadow)"
@@ -65,8 +65,8 @@
   familias: []
   fuente_url: https://www.jamexico.org.mx/programas-empleabilidad
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-24
-  revisar_antes: 2026-11-30
+  fecha_verificacion: 2026-11-23
+  revisar_antes: 2026-12-21
   pendiente: "Confirmar empresas participantes y si incluye perfiles STEM."
 
 - id: opo-ja-servicio-social-practicas
@@ -155,8 +155,8 @@
   nota: "Es obligatorio asistir a todas las sesiones. El descuento se aplica al perfil de Microsoft Learn del correo registrado unos cinco días hábiles después."
   fuente_url: https://arch-center.azureedge.net/Credentials/microsoft-mvtd-cert-faq-en-us.pdf
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-24
-  revisar_antes: 2026-11-30
+  fecha_verificacion: 2026-11-23
+  revisar_antes: 2026-12-21
 
 - id: opo-ms-descuento-estudiantes
   nombre: "Precio académico en exámenes Microsoft"
@@ -200,8 +200,8 @@
   nota: "El anuncio oficial en AWS Builder Center (confirmado el 2-nov-2026) dice '18 años o más' e instituciones acreditadas 'worldwide', pero ni la página ni el anuncio listan países; las condiciones remiten a los Builder Terms. Sigue sin confirmarse México."
   fuente_url: https://builder.aws.com/student-rewards
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-02
-  revisar_antes: 2026-11-30
+  fecha_verificacion: 2026-11-23
+  revisar_antes: 2026-12-21
 
 - id: opo-isc2-cc-paquete-es
   nombre: "ISC2 CC en español: curso + examen + dos intentos"
@@ -215,8 +215,8 @@
   nota: "ISC2 lo describe como oferta por tiempo limitado sin fecha de cierre."
   fuente_url: https://www.isc2.org/training/online-self-paced/spanish
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-24
-  revisar_antes: 2026-11-30
+  fecha_verificacion: 2026-11-23
+  revisar_antes: 2026-12-21
 
 - id: opo-isc2-1mcc
   nombre: "ISC2 One Million Certified in Cybersecurity"
@@ -231,7 +231,7 @@
   nota: "Inscripciones cerradas el 20-may-2026. Los códigos emitidos deben usarse antes del 31-dic-2026."
   fuente_url: https://www.isc2.org/landing/1mcc
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-16
+  fecha_verificacion: 2026-11-23
   revisar_antes: 2026-12-31
 
 - id: opo-solidworks-voucher-academico
@@ -292,7 +292,7 @@
   nota: "Próximas postulaciones 'por anunciar' (confirmado el 2-nov-2026). Útil para buscar centros de trabajo STEM (manufactura, TI, energía) en el estado de la persona."
   fuente_url: https://www.programasparaelbienestar.gob.mx/programas/jovenes/jovenes-construyendo-el-futuro/
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-16
+  fecha_verificacion: 2026-11-23
   revisar_antes: 2026-12-31
 
 - id: opo-mexia-cpfia
@@ -304,10 +304,10 @@
   costo_participante: 0
   estado: recurrente
   familias: [fam-datos-ia, fam-ciberseguridad, fam-software-nube, fam-soporte-ti-redes]
-  nota: "Postulaciones de la segunda generación del 26-may al 5-jul-2026; capacitación de agosto a diciembre de 2026. La primera generación abrió el 6-nov-2025, así que la tercera podría abrir pronto: vigilar cada semana. Al 16-nov-2026 la página oficial sigue mostrando sólo la segunda generación; no hay tercera convocatoria. Algunas rutas tienen cupo limitado (por ejemplo, Network Technician de Cisco, 3,000 lugares)."
+  nota: "Postulaciones de la segunda generación del 26-may al 5-jul-2026; capacitación de agosto a diciembre de 2026. La primera generación abrió el 6-nov-2025, así que la tercera podría abrir pronto: vigilar cada semana. Al 23-nov-2026 la página oficial sigue mostrando sólo la segunda generación; no hay tercera convocatoria. Algunas rutas tienen cupo limitado (por ejemplo, Network Technician de Cisco, 3,000 lugares)."
   fuente_url: https://www.mexia.gob.mx/
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-16
+  fecha_verificacion: 2026-11-23
   revisar_antes: 2026-11-30
   pendiente: "La página oficial bloquea la lectura directa desde la nube; se leyó con Firecrawl. Confirmar requisitos de escolaridad y si cada ruta incluye el examen pagado."
 
@@ -320,11 +320,11 @@
   costo_participante: 0
   estado: por_confirmar
   familias: [fam-software-nube, fam-manufactura-avanzada]
-  nota: "Registro abierto desde junio de 2026 e inicio de cursos en septiembre de 2026 según el anuncio de Amazon (26-may-2026). La página de cursos de BLOQUE no muestra contenido a la lectura automática."
+  nota: "Registro abierto desde junio de 2026 e inicio de cursos en septiembre de 2026 según el anuncio de Amazon (26-may-2026). Una nota de prensa (Líder Empresarial, 17-nov-2026) cita el curso 'Desarrollo y despliegue de aplicaciones web en la nube', de la categoría Amazon Think Big Space, del 18-nov-2026 al 11-ene-2027, gratuito, con registro en la agenda oficial de BLOQUE (bloqueqro.municipiodequeretaro.gob.mx/agenda-cursos). Esa agenda no muestra contenido a la lectura automática, así que no se confirma en fuente oficial."
   fuente_url: https://www.aboutamazon.mx/noticias/aws/el-primer-amazon-think-big-space-de-america-latina-abre-sus-puertas-en-queretaro-un-laboratorio-donde-jovenes-mexicanos-pueden-sonar-en-grande
   fuente_tipo: oficial
-  fecha_verificacion: 2026-11-02
-  revisar_antes: 2026-11-30
+  fecha_verificacion: 2026-11-23
+  revisar_antes: 2026-12-21
   pendiente: "Confirmar en https://bloqueqro.municipiodequeretaro.gob.mx/cursos si hay grupos para 2027 y la edad mínima."
 
 # ===================== Retos y comunidad =====================
@@ -353,8 +353,24 @@
   costo_participante: null
   estado: por_confirmar
   familias: [fam-software-nube, fam-datos-ia]
-  nota: "Al 26-oct-2026 el registro de estudiantes está cerrado; la página aún muestra la temporada 2025-2026 (registro del 13-ago-2025 al 18-mar-2026) y ofrece aviso para la temporada 2026-2027. Gratuito."
+  nota: "Al 23-nov-2026 la página (modificada el 10-nov-2026) sigue mostrando la temporada 2025-2026 (registro del 13-ago-2025 al 18-mar-2026; entrega el 20-abr-2026) y no publica fechas de la temporada 2026-2027. Gratuito; disponible en español."
   fuente_url: https://technovationchallenge.org/get-involved/students
   fuente_tipo: oficial
-  fecha_verificacion: 2026-10-26
-  revisar_antes: 2026-11-30
+  fecha_verificacion: 2026-11-23
+  revisar_antes: 2026-12-21
+
+- id: opo-mexdc-beca-talento-dc
+  nombre: "Beca Talento Data Center (MEXDC y DCD>Academy)"
+  tipo: beca
+  organizacion: org-mexdc
+  beneficio: "20 becas para los cursos Data Center Technician - Facilities Management (DCT) y The Business of Data Centers de DCD>Academy: formación como técnico en operación de instalaciones de centros de datos."
+  publico: {edad_min: 18, nivel: [universidad], nota: "Estudiantes de último año o ingenieros recién graduados de ingeniería industrial, electromecánica y manufactura (según el anuncio de 2023). Edad no publicada; se asume adulto por el nivel."}
+  costo_participante: 0
+  estado: por_confirmar
+  familias: [fam-energia-ambiente, fam-manufactura-avanzada]
+  nota: "La página oficial (modificada el 6-oct-2025) dice 'Convocatoria 2025. El plazo de solicitud ya está abierto' sin fecha de cierre; la beca se cierra al otorgar las 20. Pide formulario, CV académico, carta de recomendación de un profesor y ensayo; responde en unos 30 días. No se sabe si la edición 2025 sigue recibiendo solicitudes ni si habrá una 2026. Es la única beca del directorio para técnicos de infraestructura física, un sector con inversión creciente en Querétaro y Nuevo León."
+  fuente_url: https://asmexdc.com/beca-talento-dc/
+  fuente_tipo: oficial
+  fecha_verificacion: 2026-11-23
+  revisar_antes: 2026-12-21
+  pendiente: "Confirmar con MEXDC (formulario de contacto de asmexdc.com) si la convocatoria sigue abierta."
